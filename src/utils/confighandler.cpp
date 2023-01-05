@@ -88,7 +88,7 @@ static QMap<class QString, QSharedPointer<ValueHandler>>
 #endif
     OPTION("startupLaunch"               ,Bool               ( false         )),
     OPTION("showStartupLaunchMessage"    ,Bool               ( true          )),
-    OPTION("copyAndCloseAfterUpload"     ,Bool               ( true          )),
+    OPTION("copyAndCloseAfterUpload"     ,Bool               ( false          )),
     OPTION("copyPathAfterSave"           ,Bool               ( false         )),
     OPTION("antialiasingPinZoom"         ,Bool               ( true          )),
     OPTION("useJpgForClipboard"          ,Bool               ( false         )),
