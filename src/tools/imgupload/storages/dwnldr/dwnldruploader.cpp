@@ -14,43 +14,69 @@
 #include <QShortcut>
 #include <QUrlQuery>
 #include <QMessageBox>
+#include <QDebug>
 
 DwnldrUploader::DwnldrUploader(const QPixmap& capture, QWidget* parent)
   : ImgUploaderBase(capture, parent)
 {
-    m_NetworkAM = new QNetworkAccessManager(this);
-    m_httpServer = new HttpServer(this);
+    m_networkAM = new QNetworkAccessManager(this);
+    m_authHttpServer = new DwnldrAuthHttpServer(kDwnldrLocalPort, this);
 
-    connect(m_NetworkAM, &QNetworkAccessManager::finished, this, &DwnldrUploader::handleReply);
-    connect(m_httpServer, &HttpServer::codeReceived, this, &DwnldrUploader::onCodeReceived);
+    connect(m_networkAM, &QNetworkAccessManager::finished, this, &DwnldrUploader::handleReply);
+    connect(m_authHttpServer, &DwnldrAuthHttpServer::codeReceived, this, &DwnldrUploader::onCodeReceived);
+}
+
+static QString getPercentEncodingRedirectUrl()
+{
+    QUrl redirectUrl(kDwnldrLocalHostUrl);
+    redirectUrl.setPort(kDwnldrLocalPort);
+    QString redirectUrlValue = redirectUrl.toString();
+
+    QByteArray encodedUrlBytes = QUrl::toPercentEncoding(redirectUrlValue);
+    QString encodedUrl = QString::fromUtf8(encodedUrlBytes);
+
+    return encodedUrl;
+}
+
+static QString getUserAgent()
+{
+    QString userAgent = QString(kDwnldrUserAgentTemplate).arg(
+                "3.0",
+                "Qt");
+
+    return userAgent;
 }
 
 void DwnldrUploader::onCodeReceived(const QString& code)
 {
-    QUrl url("https://download.ru/oauth/token");
+    QUrl url(kDwnldrOAuthTokenUrl);
 
     QNetworkRequest request(url);
 
+    QString userAgent = getUserAgent();
+
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/x-www-form-urlencoded");
-    request.setHeader(QNetworkRequest::UserAgentHeader, "ScreenLoad");
+    request.setHeader(QNetworkRequest::UserAgentHeader, userAgent);
+
+    QString encodedRedirectUrl = getPercentEncodingRedirectUrl();
 
     QString body = QString("grant_type=%1&code=%2&client_id=%3&client_secret=%4&redirect_uri=%5").arg(
                 "authorization_code",
                 code,
-                "0524f0e89a3fd0912b1ed4484e21cde8c02e5e5625fe070ba65e5ff2deaf78e2",
-                "7f090e18d58cf2983f071b3f5afb544e0aaba1e8ce80f83e9a9bfb9ee9b917f5",
-                "http%3a%2f%2flocalhost%3a8087%2f");
+                kDwnldrClientId,
+                kDwnldrClientSecret,
+                encodedRedirectUrl);
 
     QByteArray byteArray = body.toUtf8();
 
-    m_NetworkAM->post(request, byteArray);
+    m_networkAM->post(request, byteArray);
 }
 
 void DwnldrUploader::handleReply(QNetworkReply* reply)
 {
     QUrl url = reply->url();
 
-    if (QUrl("https://download.ru/oauth/token") == url)
+    if (QUrl(kDwnldrOAuthTokenUrl) == url)
     {
         QByteArray responseBytes = reply->readAll();
         QString responseText(responseBytes);
@@ -59,14 +85,14 @@ void DwnldrUploader::handleReply(QNetworkReply* reply)
         QJsonObject json = response.object();
         QString accessToken = json["access_token"].toString();
 
-
         QUrl uploadUrl("https://download.ru/f?locale=en&shared=true");
 
         QNetworkRequest request(uploadUrl);
 
-        request.setHeader(QNetworkRequest::UserAgentHeader, "ScreenLoad");
-        request.setRawHeader("Authorization",  QStringLiteral("Bearer %1").arg(accessToken).toUtf8());
+        QString userAgent = getUserAgent();
 
+        request.setHeader(QNetworkRequest::UserAgentHeader, userAgent);
+        request.setRawHeader("Authorization",  QStringLiteral("Bearer %1").arg(accessToken).toUtf8());
 
         QString description = FileNameHandler().parsedPattern();
 
@@ -89,7 +115,7 @@ void DwnldrUploader::handleReply(QNetworkReply* reply)
 
         request.setHeader(QNetworkRequest::ContentTypeHeader, "multipart/form-data; boundary=" + bv);
 
-        m_NetworkAM->post(request, multiPart);
+        m_networkAM->post(request, multiPart);
     }
 
     spinner()->deleteLater();
@@ -127,29 +153,18 @@ void DwnldrUploader::handleReply(QNetworkReply* reply)
 
 void DwnldrUploader::upload()
 {
-    //QMessageBox::information(nullptr, "Point1", "Point1", "ok");
+    QString encodedRedirectUrl = getPercentEncodingRedirectUrl();
 
     QUrlQuery urlQuery;
-    urlQuery.addQueryItem("client_id", "0524f0e89a3fd0912b1ed4484e21cde8c02e5e5625fe070ba65e5ff2deaf78e2");
+    urlQuery.addQueryItem("client_id", kDwnldrClientId);
     urlQuery.addQueryItem("response_type", "code");
     urlQuery.addQueryItem("state", "downloadru");
-    urlQuery.addQueryItem("redirect_uri", "http%3a%2f%2flocalhost%3a8087%2f");
+    urlQuery.addQueryItem("redirect_uri", encodedRedirectUrl);
 
     QUrl url(QStringLiteral("https://download.ru/oauth/authorize"));
     url.setQuery(urlQuery);
 
     QDesktopServices::openUrl(url);
-
-//    QMessageBox::information(nullptr, "Point1", "Point1", "ok");
-
-//    QByteArray byteArray;
-//    QBuffer buffer(&byteArray);
-//    pixmap().save(&buffer, "PNG");
-
-//    QUrl url(QStringLiteral("https://google.com/"));
-//    QNetworkRequest request(url);
-
-//    m_NetworkAM->post(request, byteArray);
 }
 
 void DwnldrUploader::deleteImage(const QString& fileName,

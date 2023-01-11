@@ -110,14 +110,17 @@ int main(int argc, char* argv[])
         QTranslator translator, qtTranslator;
         QStringList trPaths = PathInfo::translationsPaths();
 
-        for (const QString& path : trPaths) {
-            bool match = translator.load(QLocale(),
+        // TODO убрать (MarketKernel).
+        QLocale locale = QLocale("ru_RU");
+
+        for (const QString& path : trPaths)
+        {
+            bool match = translator.load(locale,
                                          QStringLiteral("Internationalization"),
                                          QStringLiteral("_"),
                                          path);
-            if (match) {
+            if (match)
                 break;
-            }
         }
 
         qtTranslator.load(

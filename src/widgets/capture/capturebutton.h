@@ -17,9 +17,9 @@ public:
                   const QString& text,
                   QWidget* parent = nullptr);
 
-    static QString globalStyleSheet();
+    //static QString globalStyleSheet();
 
-    QString styleSheet() const;
+    //QString styleSheet() const;
 
     void setColor(const QColor& c);
 

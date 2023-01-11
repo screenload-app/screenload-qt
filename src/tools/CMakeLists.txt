@@ -8,8 +8,8 @@ target_sources(flameshot PRIVATE sizeincrease/sizeincreasetool.h sizeincrease/si
 target_sources(flameshot PRIVATE sizedecrease/sizedecreasetool.h sizedecrease/sizedecreasetool.cpp)
 target_sources(
   flameshot
-        PRIVATE imgupload/storages/dwnldr/httpserver.h
-        imgupload/storages/dwnldr/httpserver.cpp
+        PRIVATE imgupload/storages/dwnldr/dwnldrauthhttpserver.h
+        imgupload/storages/dwnldr/dwnldrauthhttpserver.cpp
         imgupload/storages/dwnldr/dwnldruploader.h
         imgupload/storages/dwnldr/dwnldruploader.cpp
         imgupload/storages/imgur/imguruploader.h

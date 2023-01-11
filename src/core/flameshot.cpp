@@ -43,8 +43,9 @@ Flameshot::Flameshot()
   , m_HotkeyScreenshotHistory(nullptr)
 #endif
 {
-    QString StyleSheet = CaptureButton::globalStyleSheet();
-    qApp->setStyleSheet(StyleSheet);
+    // MarketKernel
+//    QString StyleSheet = CaptureButton::globalStyleSheet();
+//    qApp->setStyleSheet(StyleSheet);
 
 #if defined(Q_OS_MACOS)
     // Try to take a test screenshot, MacOS will request a "Screen Recording"

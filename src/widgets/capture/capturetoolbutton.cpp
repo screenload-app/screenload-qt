@@ -51,12 +51,12 @@ void CaptureToolButton::initButton()
     }
     m_tool = ToolFactory().CreateTool(m_buttonType, this);
 
-    resize(GlobalValues::buttonBaseSize(), GlobalValues::buttonBaseSize());
-    setMask(QRegion(QRect(-1,
-                          -1,
-                          GlobalValues::buttonBaseSize() + 2,
-                          GlobalValues::buttonBaseSize() + 2),
-                    QRegion::Ellipse));
+//    resize(GlobalValues::buttonBaseSize(), GlobalValues::buttonBaseSize());
+//    setMask(QRegion(QRect(-1,
+//                          -1,
+//                          GlobalValues::buttonBaseSize() + 2,
+//                          GlobalValues::buttonBaseSize() + 2),
+//                    QRegion::Ellipse));
 
     // Set a tooltip showing a shortcut in parentheses (if there is a shortcut)
     QString tooltip = m_tool->description();
@@ -112,11 +112,11 @@ void CaptureToolButton::animatedShow()
 {
     if (!isVisible()) {
         show();
-        m_emergeAnimation->start();
-        connect(m_emergeAnimation,
-                &QPropertyAnimation::finished,
-                this,
-                [this]() { updateIcon(); });
+//        m_emergeAnimation->start();
+//        connect(m_emergeAnimation,
+//                &QPropertyAnimation::finished,
+//                this,
+//                [this]() { updateIcon(); });
     }
 }
 

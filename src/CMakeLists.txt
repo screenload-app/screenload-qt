@@ -134,6 +134,7 @@ target_sources(
         # ${CMAKE_CURRENT_SOURCE_DIR}/../external/Qt-Color-Widgets/src/QtColorWidgets/color_wheel.cpp
         # ${CMAKE_CURRENT_SOURCE_DIR}/../external/Qt-Color-Widgets/include/QtColorWidgets/color_wheel.hpp
         ${CMAKE_CURRENT_SOURCE_DIR}/../data/graphics.qrc
+        ${CMAKE_CURRENT_SOURCE_DIR}/../data/files.qrc
         ${CMAKE_CURRENT_SOURCE_DIR}/../data/flameshot.rc # windows binary icon resource file
         ${QM_FILES}
         main.cpp)

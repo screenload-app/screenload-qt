@@ -6,12 +6,11 @@
 class QTcpServer;
 class QTcpSocket;
 
-class HttpServer : public QObject
+class DwnldrAuthHttpServer : public QObject
 {
     Q_OBJECT
 public:
-    HttpServer(QObject *parent);
-    ~HttpServer();
+    explicit DwnldrAuthHttpServer(const int port, QObject *parent);
 
 signals:
     void codeReceived(const QString& code);
@@ -22,5 +21,4 @@ private slots:
 
 private:
     QTcpServer *m_tcpServer;
-    QMap<int, QTcpSocket*> m_connections;
 };

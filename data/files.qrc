@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>files/AuthorizationDenied.html</file>
+        <file>files/SuccessfulAuthorization.html</file>
+        <file>files/main.css</file>
+    </qresource>
+</RCC>

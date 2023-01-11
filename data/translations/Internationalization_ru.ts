@@ -1630,6 +1630,23 @@ Please solve them manually in the configuration file.</source>
         <translation type="vanished">Загрузить выделение в Imgur</translation>
     </message>
 </context>
+
+<context>
+    <name>DwnldrAuthHttpServer</name>
+    <message>
+        <source>Successful Authorization!</source>
+        <translation>Успешная авторизация!</translation>
+    </message>
+	<message>
+        <source>You have successfully authorize &lt;strong class="text-info"&gt;ScreenLoad&lt;/strong&gt; to use your account!</source>
+        <translation>Вы успешно авторизовали приложение &lt;strong class="text-info"&gt;ScreenLoad&lt;/strong&gt;!</translation>
+    </message>
+	<message>
+        <source>This window will be closed automatically within 5 seconds.</source>
+        <translation>В течение 5 секунд это окно будет закрыто автоматически.</translation>
+    </message>
+</context>
+
 <context>
     <name>InfoWindow</name>
     <message>
