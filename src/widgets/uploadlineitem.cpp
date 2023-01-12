@@ -54,9 +54,9 @@ UploadLineItem::UploadLineItem(QWidget* parent,
             return;
         }
 
-        ImgUploaderBase* imgUploaderBase =
-          ImgUploaderManager(this).uploader(unpackFileName.type);
-        imgUploaderBase->deleteImage(unpackFileName.file, unpackFileName.token);
+//        ImgUploaderBase* imgUploaderBase =
+//          ImgUploaderManager(this).uploader(unpackFileName.type);
+//        imgUploaderBase->deleteImage(unpackFileName.file, unpackFileName.token);
 
         removeCacheFile(fullFileName);
         emit requestedDeletion();

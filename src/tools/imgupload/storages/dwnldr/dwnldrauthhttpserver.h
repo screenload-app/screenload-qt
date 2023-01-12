@@ -13,7 +13,7 @@ public:
     explicit DwnldrAuthHttpServer(const int port, QObject *parent);
 
 signals:
-    void codeReceived(const QString& code);
+    void authorizationCodeReceived(const QString& authorizationCode);
 
 private slots:
     void onNewConnection();

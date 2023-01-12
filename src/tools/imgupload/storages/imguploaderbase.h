@@ -31,8 +31,8 @@ public:
     void setInfoLabelText(const QString&);
 
     NotificationWidget* notification();
-    virtual void deleteImage(const QString& fileName,
-                             const QString& deleteToken) = 0;
+//    virtual void deleteImage(const QString& fileName,
+//                             const QString& deleteToken) = 0;
     virtual void upload() = 0;
 
 signals:
@@ -47,7 +47,7 @@ private slots:
     void openURL();
     void copyURL();
     void copyImage();
-    void deleteCurrentImage();
+//    void deleteCurrentImage();
     void saveScreenshotToFilesystem();
 
 private:
@@ -60,7 +60,7 @@ private:
     LoadSpinner* m_spinner;
     // uploaded
     QPushButton* m_openUrlButton;
-    QPushButton* m_openDeleteUrlButton;
+    //QPushButton* m_openDeleteUrlButton;
     QPushButton* m_copyUrlButton;
     QPushButton* m_toClipboardButton;
     QPushButton* m_saveToFilesystemButton;

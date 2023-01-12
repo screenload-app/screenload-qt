@@ -119,6 +119,7 @@ public:
     CONFIG_GETTER_SETTER(squareMagnifier, setSquareMagnifier, bool)
     CONFIG_GETTER_SETTER(copyOnDoubleClick, setCopyOnDoubleClick, bool)
     CONFIG_GETTER_SETTER(uploadClientSecret, setUploadClientSecret, QString)
+    CONFIG_GETTER_SETTER(dwnldrAccessToken, setDwnldrAccessToken, QString)
     CONFIG_GETTER_SETTER(saveLastRegion, setSaveLastRegion, bool)
     // SPECIAL CASES
     bool startupLaunch();

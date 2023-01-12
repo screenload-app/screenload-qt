@@ -14,19 +14,8 @@
 #include <QShortcut>
 #include <QUrlQuery>
 #include <QMessageBox>
-#include <QDebug>
 
-DwnldrUploader::DwnldrUploader(const QPixmap& capture, QWidget* parent)
-  : ImgUploaderBase(capture, parent)
-{
-    m_networkAM = new QNetworkAccessManager(this);
-    m_authHttpServer = new DwnldrAuthHttpServer(kDwnldrLocalPort, this);
-
-    connect(m_networkAM, &QNetworkAccessManager::finished, this, &DwnldrUploader::handleReply);
-    connect(m_authHttpServer, &DwnldrAuthHttpServer::codeReceived, this, &DwnldrUploader::onCodeReceived);
-}
-
-static QString getPercentEncodingRedirectUrl()
+static QString getPercentEncodedRedirectUrl()
 {
     QUrl redirectUrl(kDwnldrLocalHostUrl);
     redirectUrl.setPort(kDwnldrLocalPort);
@@ -47,22 +36,143 @@ static QString getUserAgent()
     return userAgent;
 }
 
-void DwnldrUploader::onCodeReceived(const QString& code)
+static QUrl getUploadUrl()
 {
-    QUrl url(kDwnldrOAuthTokenUrl);
+    QUrl uploadUrl("https://download.ru/f?locale=en&shared=true");
+    return uploadUrl;
+}
 
-    QNetworkRequest request(url);
+DwnldrUploader::DwnldrUploader(const QPixmap& capture, QWidget* parent)
+  : ImgUploaderBase(capture, parent)
+{
+    m_networkAM = new QNetworkAccessManager(this);
+    m_authHttpServer = new DwnldrAuthHttpServer(kDwnldrLocalPort, this);
+
+    connect(m_networkAM, &QNetworkAccessManager::finished, this, &DwnldrUploader::handleReply);
+    connect(m_authHttpServer, &DwnldrAuthHttpServer::authorizationCodeReceived, this, &DwnldrUploader::onAuthorizationCodeReceived);
+
+    new QShortcut(Qt::Key_Escape, this, SLOT(close()));
+}
+
+void DwnldrUploader::onAuthorizationCodeReceived(const QString& authorizationCode)
+{
+    requestAccessToken(authorizationCode);
+}
+
+void DwnldrUploader::handleReply(QNetworkReply* reply)
+{
+    QUrl url = reply->url();
+
+    QByteArray responseBytes = reply->readAll();
+    QJsonDocument response = QJsonDocument::fromJson(responseBytes);
+    QJsonObject json = response.object();
+
+    if (QUrl(kDwnldrOAuthTokenUrl) == url) // сервер вернул access_token или ошибку.
+    {
+        QString error = json["error"].toString();
+
+        if (!error.isNull())
+        {
+            QString errorDescription = json["error_description"].toString();
+
+            if (errorDescription.isNull())
+                errorDescription = error;
+
+            setInfoLabelText(errorDescription);
+        }
+        else
+        {
+            QString accessToken = json["access_token"].toString();
+
+            // Сохраняем accessToken.
+            ConfigHandler().setDwnldrAccessToken(accessToken);
+
+            uploadFile(accessToken);
+            return;
+        }
+    }
+    else // сервер вернул результат загрузки файла или ошибку.
+    {
+        QString errorMessage = json["message"].toString();
+
+        if (!errorMessage.isNull())
+        {
+            if (0 == QString::compare("unauthorized_access", errorMessage, Qt::CaseInsensitive))
+            {
+                authorizeViaBrowser();
+                return;
+            }
+            else
+                setInfoLabelText(errorMessage);
+        }
+        else
+        {
+            QString imagePath = json.take("object")["secure_url"].toString();
+
+            QUrl imageUrl(imagePath);
+            imageUrl.setScheme("https");
+            imageUrl.setHost("download.ru");
+
+            setImageURL(imageUrl);
+            m_currentImageName = "name1";
+
+            // save image to history
+            History history;
+            m_currentImageName = history.packFileName("imgur", "deleteToken", m_currentImageName);
+            history.save(pixmap(), m_currentImageName);
+
+            emit uploadOk(imageURL());
+        }
+    }
+
+    spinner()->deleteLater();
+}
+
+void DwnldrUploader::upload()
+{
+    QString accessToken = ConfigHandler().dwnldrAccessToken();
+
+    if (accessToken.isEmpty())
+        authorizeViaBrowser();
+    else
+        uploadFile(accessToken);
+}
+
+void DwnldrUploader::authorizeViaBrowser()
+{
+    QUrl url(QStringLiteral("https://download.ru/oauth/authorize"));
+
+    // Открываем браузер для получения authorizationCode.
+    QString encodedRedirectUrl = getPercentEncodedRedirectUrl();
+
+    QUrlQuery urlQuery;
+    urlQuery.addQueryItem("client_id", kDwnldrClientId);
+    urlQuery.addQueryItem("response_type", "code");
+    urlQuery.addQueryItem("state", "downloadru");
+    urlQuery.addQueryItem("redirect_uri", encodedRedirectUrl);
+
+    url.setQuery(urlQuery);
+
+    QDesktopServices::openUrl(url);
+}
+
+void DwnldrUploader::requestAccessToken(const QString& authorizationCode)
+{
+    // Инициируем запрос access_token.
+    QUrl oAuthTokenUrl(kDwnldrOAuthTokenUrl);
+
+    QNetworkRequest request(oAuthTokenUrl);
 
     QString userAgent = getUserAgent();
 
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/x-www-form-urlencoded");
     request.setHeader(QNetworkRequest::UserAgentHeader, userAgent);
 
-    QString encodedRedirectUrl = getPercentEncodingRedirectUrl();
+    QString encodedRedirectUrl = getPercentEncodedRedirectUrl();
 
     QString body = QString("grant_type=%1&code=%2&client_id=%3&client_secret=%4&redirect_uri=%5").arg(
                 "authorization_code",
-                code,
+                authorizationCode,
                 kDwnldrClientId,
                 kDwnldrClientSecret,
                 encodedRedirectUrl);
@@ -72,110 +182,47 @@ void DwnldrUploader::onCodeReceived(const QString& code)
     m_networkAM->post(request, byteArray);
 }
 
-void DwnldrUploader::handleReply(QNetworkReply* reply)
+// Выгрузка файла на сервер download.ru.
+void DwnldrUploader::uploadFile(const QString& accessToken)
 {
-    QUrl url = reply->url();
+    QUrl uploadUrl = getUploadUrl();
 
-    if (QUrl(kDwnldrOAuthTokenUrl) == url)
-    {
-        QByteArray responseBytes = reply->readAll();
-        QString responseText(responseBytes);
+    QNetworkRequest request(uploadUrl);
 
-        QJsonDocument response = QJsonDocument::fromJson(responseBytes);
-        QJsonObject json = response.object();
-        QString accessToken = json["access_token"].toString();
+    QString userAgent = getUserAgent();
 
-        QUrl uploadUrl("https://download.ru/f?locale=en&shared=true");
+    request.setHeader(QNetworkRequest::UserAgentHeader, userAgent);
+    request.setRawHeader("Authorization",  QStringLiteral("Bearer %1").arg(accessToken).toUtf8());
 
-        QNetworkRequest request(uploadUrl);
+    QString description = FileNameHandler().parsedPattern();
 
-        QString userAgent = getUserAgent();
+    QHttpPart imagePart;
+    imagePart.setHeader(QNetworkRequest::ContentTypeHeader, QVariant("image/png"));
+    imagePart.setHeader(QNetworkRequest::ContentDispositionHeader, QVariant("form-data; name=\"filename\"; filename=\"" + description +  ".png\""));
 
-        request.setHeader(QNetworkRequest::UserAgentHeader, userAgent);
-        request.setRawHeader("Authorization",  QStringLiteral("Bearer %1").arg(accessToken).toUtf8());
+    QByteArray byteArray;
+    QBuffer buffer(&byteArray);
+    pixmap().save(&buffer, "PNG");
 
-        QString description = FileNameHandler().parsedPattern();
+    imagePart.setBody(byteArray);
 
-        QHttpMultiPart *multiPart = new QHttpMultiPart(QHttpMultiPart::FormDataType);
+    QHttpMultiPart *multiPart = new QHttpMultiPart(QHttpMultiPart::FormDataType);
+    multiPart->append(imagePart);
 
-        QHttpPart imagePart;
-        imagePart.setHeader(QNetworkRequest::ContentTypeHeader, QVariant("image/png"));
-        imagePart.setHeader(QNetworkRequest::ContentDispositionHeader, QVariant("form-data; name=\"filename\"; filename=\"" + description +  ".png\""));
+    QString uuidValue = QUuid::createUuid().toString().remove("-");
+    QString boundaryName = QString("----------%1").arg(uuidValue);
+    QByteArray boundaryNameBytes = boundaryName.toUtf8();
 
-        QByteArray byteArray;
-        QBuffer buffer(&byteArray);
-        pixmap().save(&buffer, "PNG");
+    multiPart->setBoundary(boundaryNameBytes);
+    request.setHeader(QNetworkRequest::ContentTypeHeader, "multipart/form-data; boundary=" + boundaryName);
 
-        imagePart.setBody(byteArray);
-
-        multiPart->append(imagePart);
-
-        auto b = multiPart->boundary();
-        QString bv(b);
-
-        request.setHeader(QNetworkRequest::ContentTypeHeader, "multipart/form-data; boundary=" + bv);
-
-        m_networkAM->post(request, multiPart);
-    }
-
-    spinner()->deleteLater();
-    emit uploadOk(imageURL());
-
-//    spinner()->deleteLater();
-//    m_currentImageName.clear();
-//    if (reply->error() == QNetworkReply::NoError) {
-//        QJsonDocument response = QJsonDocument::fromJson(reply->readAll());
-//        QJsonObject json = response.object();
-//        QJsonObject data = json[QStringLiteral("data")].toObject();
-//        setImageURL(data[QStringLiteral("link")].toString());
-
-//        auto deleteToken = data[QStringLiteral("deletehash")].toString();
-
-//        // save history
-//        m_currentImageName = imageURL().toString();
-//        int lastSlash = m_currentImageName.lastIndexOf("/");
-//        if (lastSlash >= 0) {
-//            m_currentImageName = m_currentImageName.mid(lastSlash + 1);
-//        }
-
-//        // save image to history
-//        History history;
-//        m_currentImageName =
-//          history.packFileName("imgur", deleteToken, m_currentImageName);
-//        history.save(pixmap(), m_currentImageName);
-
-//        emit uploadOk(imageURL());
-//    } else {
-//        setInfoLabelText(reply->errorString());
-//    }
-//    new QShortcut(Qt::Key_Escape, this, SLOT(close()));
-}
-
-void DwnldrUploader::upload()
-{
-    QString encodedRedirectUrl = getPercentEncodingRedirectUrl();
-
-    QUrlQuery urlQuery;
-    urlQuery.addQueryItem("client_id", kDwnldrClientId);
-    urlQuery.addQueryItem("response_type", "code");
-    urlQuery.addQueryItem("state", "downloadru");
-    urlQuery.addQueryItem("redirect_uri", encodedRedirectUrl);
-
-    QUrl url(QStringLiteral("https://download.ru/oauth/authorize"));
-    url.setQuery(urlQuery);
-
-    QDesktopServices::openUrl(url);
+    QNetworkReply *reply = m_networkAM->post(request, multiPart);
+    multiPart->setParent(reply); // delete the multiPart with the reply
 }
 
 void DwnldrUploader::deleteImage(const QString& fileName,
                                 const QString& deleteToken)
 {
-//    Q_UNUSED(fileName)
-//    bool successful = QDesktopServices::openUrl(
-//      QUrl(QStringLiteral("https://imgur.com/delete/%1").arg(deleteToken)));
-//    if (!successful) {
-//        notification()->showMessage(tr("Unable to open the URL."));
-//    }
-
-//    emit deleteOk();
+    notification()->showMessage(tr("Unable to open the URL."));
+    emit deleteOk();
 }

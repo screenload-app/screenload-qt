@@ -129,12 +129,12 @@ void ImgUploaderBase::showPostUploadDialog()
 
     m_copyUrlButton = new QPushButton(tr("Copy URL"));
     m_openUrlButton = new QPushButton(tr("Open URL"));
-    m_openDeleteUrlButton = new QPushButton(tr("Delete image"));
+    //m_openDeleteUrlButton = new QPushButton(tr("Delete image"));
     m_toClipboardButton = new QPushButton(tr("Image to Clipboard."));
     m_saveToFilesystemButton = new QPushButton(tr("Save image"));
     m_hLayout->addWidget(m_copyUrlButton);
     m_hLayout->addWidget(m_openUrlButton);
-    m_hLayout->addWidget(m_openDeleteUrlButton);
+    //m_hLayout->addWidget(m_openDeleteUrlButton);
     m_hLayout->addWidget(m_toClipboardButton);
     m_hLayout->addWidget(m_saveToFilesystemButton);
 
@@ -142,10 +142,10 @@ void ImgUploaderBase::showPostUploadDialog()
       m_copyUrlButton, &QPushButton::clicked, this, &ImgUploaderBase::copyURL);
     connect(
       m_openUrlButton, &QPushButton::clicked, this, &ImgUploaderBase::openURL);
-    connect(m_openDeleteUrlButton,
-            &QPushButton::clicked,
-            this,
-            &ImgUploaderBase::deleteCurrentImage);
+//    connect(m_openDeleteUrlButton,
+//            &QPushButton::clicked,
+//            this,
+//            &ImgUploaderBase::deleteCurrentImage);
     connect(m_toClipboardButton,
             &QPushButton::clicked,
             this,
@@ -177,12 +177,12 @@ void ImgUploaderBase::copyImage()
     m_notification->showMessage(tr("Screenshot copied to clipboard."));
 }
 
-void ImgUploaderBase::deleteCurrentImage()
-{
-    History history;
-    HistoryFileName unpackFileName = history.unpackFileName(m_currentImageName);
-    deleteImage(unpackFileName.file, unpackFileName.token);
-}
+//void ImgUploaderBase::deleteCurrentImage()
+//{
+//    History history;
+//    HistoryFileName unpackFileName = history.unpackFileName(m_currentImageName);
+//    deleteImage(unpackFileName.file, unpackFileName.token);
+//}
 
 void ImgUploaderBase::saveScreenshotToFilesystem()
 {

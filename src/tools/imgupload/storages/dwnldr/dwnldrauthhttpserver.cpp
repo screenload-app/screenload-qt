@@ -67,8 +67,8 @@ void DwnldrAuthHttpServer::onReadyRead()
 
             writeHttpResponse(connection, "200 OK", "text/html", responseText);
 
-            QString code = query.queryItemValue("code");
-            emit codeReceived(code);
+            QString authorizationCode = query.queryItemValue("code");
+            emit authorizationCodeReceived(authorizationCode);
         }
     }
     else if (0 == QString::compare(path, "/main.css", Qt::CaseInsensitive))

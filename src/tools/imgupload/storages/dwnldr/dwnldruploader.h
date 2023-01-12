@@ -24,14 +24,17 @@ class DwnldrUploader : public ImgUploaderBase
     Q_OBJECT
 public:
     explicit DwnldrUploader(const QPixmap& capture, QWidget* parent = nullptr);
-    void deleteImage(const QString& fileName, const QString& deleteToken);
 
 private slots:
-    void onCodeReceived(const QString& code);
+    void onAuthorizationCodeReceived(const QString& authorizationCode);
     void handleReply(QNetworkReply* reply);
 
 private:
     void upload();
+    void deleteImage(const QString& fileName, const QString& deleteToken);
+    void authorizeViaBrowser();
+    void requestAccessToken(const QString& authorizationCode);
+    void uploadFile(const QString& accessToken);
 
 private:
     QNetworkAccessManager* m_networkAM;
