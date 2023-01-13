@@ -137,7 +137,10 @@ void DwnldrUploader::handleReply(QNetworkReply* reply)
             m_currentImageName = history.packFileName(kDwnldrStorageName, nullptr, fileName);
             history.save(pixmap(), m_currentImageName);
 
+            spinner()->deleteLater();
             emit uploadOk(imageURL());
+
+            return;
         }
     }
 

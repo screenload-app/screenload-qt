@@ -55,7 +55,10 @@ void LoadSpinner::paintEvent(QPaintEvent*)
 {
     QPainter painter(this);
     painter.setRenderHint(QPainter::Antialiasing, true);
-    auto pen = QPen(m_color);
+
+    // TODO: MarketKernel вынести в настройки?
+    //auto pen = QPen(m_color);
+    auto pen = QPen(QColor(55, 131, 201));
 
     pen.setWidth(height() / 10);
     painter.setPen(pen);
