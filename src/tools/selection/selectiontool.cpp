@@ -18,7 +18,7 @@ bool SelectionTool::closeOnButtonPressed() const
 QIcon SelectionTool::icon(const QColor& background, bool inEditor) const
 {
     Q_UNUSED(inEditor)
-    return QIcon(iconPath(background) + "square-outline.svg");
+    return QIcon(iconPath() + "quad.png");
 }
 QString SelectionTool::name() const
 {

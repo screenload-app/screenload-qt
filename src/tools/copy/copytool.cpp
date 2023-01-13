@@ -17,7 +17,7 @@ bool CopyTool::closeOnButtonPressed() const
 QIcon CopyTool::icon(const QColor& background, bool inEditor) const
 {
     Q_UNUSED(inEditor)
-    return QIcon(iconPath(background) + "content-copy.svg");
+    return QIcon(iconPath() + "copy.png");
 }
 QString CopyTool::name() const
 {

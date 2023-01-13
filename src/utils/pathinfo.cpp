@@ -16,6 +16,11 @@ const QString PathInfo::blackIconPath()
     return QStringLiteral(":/img/material/black/");
 }
 
+const QString PathInfo::iconPath()
+{
+    return QStringLiteral(":/img/tools/");
+}
+
 QStringList PathInfo::translationsPaths()
 {
     QString binaryPath =

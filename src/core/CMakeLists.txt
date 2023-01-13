@@ -1,4 +1,5 @@
 target_sources(flameshot PRIVATE
+    capturerequest.h
     flameshot.h
     flameshotdaemon.h
     flameshotdbusadapter.h

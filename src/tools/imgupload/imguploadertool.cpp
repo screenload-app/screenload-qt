@@ -15,7 +15,7 @@ bool ImgUploaderTool::closeOnButtonPressed() const
 QIcon ImgUploaderTool::icon(const QColor& background, bool inEditor) const
 {
     Q_UNUSED(inEditor);
-    return QIcon(iconPath(background) + "cloud-upload.svg");
+    return QIcon(iconPath() + "save_to_cloud.png");
 }
 
 QString ImgUploaderTool::name() const

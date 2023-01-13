@@ -40,13 +40,13 @@ void CaptureButton::init()
 //    setGraphicsEffect(dsEffect);
 }
 
-//QString CaptureButton::globalStyleSheet()
-//{
-//    return CaptureButton(nullptr).styleSheet();
-//}
+QString CaptureButton::globalStyleSheet()
+{
+    return CaptureButton(nullptr).styleSheet();
+}
 
-//QString CaptureButton::styleSheet() const
-//{
+QString CaptureButton::styleSheet() const
+{
 //    QString baseSheet = "CaptureButton { border: none;"
 //                        "padding: 3px 8px;"
 //                        "background-color: %1; color: %4 }"
@@ -55,16 +55,26 @@ void CaptureButton::init()
 //                        "CaptureButton:hover { background-color: %2; }"
 //                        "CaptureButton:pressed:!hover { "
 //                        "background-color: %1; }";
-//    // define color when mouse is hovering
-//    QColor contrast = ColorUtils::contrastColor(m_mainColor);
-//    // foreground color
-//    QColor color = ColorUtils::colorIsDark(m_mainColor) ? Qt::white : Qt::black;
 
-//    return baseSheet.arg(m_mainColor.name())
-//      .arg(contrast.name())
-//      .arg(GlobalValues::buttonBaseSize() / 2)
-//      .arg(color.name());
-//}
+    QString baseSheet = "CaptureButton { border: 0px;"
+                        "padding: 0px;"
+                        "background-color: %1; color: %3 }"
+                        "CaptureToolButton { padding: 0; }"
+                        "CaptureButton:hover { background-color: %2; }"
+                        "CaptureButton:pressed:!hover { "
+                        "background-color: %1; }";
+
+    // define color when mouse is hovering
+    QColor contrast = ColorUtils::contrastColor(m_mainColor);
+    // foreground color
+    QColor color = ColorUtils::colorIsDark(m_mainColor) ? Qt::white : Qt::black;
+
+    return baseSheet
+            .arg(m_mainColor.name())
+            .arg(contrast.name())
+            //.arg(GlobalValues::buttonBaseSize() / 2)
+            .arg(color.name());
+}
 
 void CaptureButton::setColor(const QColor& c)
 {

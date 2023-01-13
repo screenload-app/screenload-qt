@@ -65,7 +65,7 @@ QRect TextTool::boundingRect() const
 QIcon TextTool::icon(const QColor& background, bool inEditor) const
 {
     Q_UNUSED(inEditor)
-    return QIcon(iconPath(background) + "text.svg");
+    return QIcon(iconPath() + "text.png");
 }
 
 QString TextTool::name() const

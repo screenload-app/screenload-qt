@@ -38,7 +38,21 @@ static QString getUserAgent()
 
 static QUrl getUploadUrl()
 {
-    QUrl uploadUrl("https://download.ru/f?locale=en&shared=true");
+    QUrl uploadUrl("https://download.ru/f");
+
+    QUrlQuery urlQuery;
+    urlQuery.addQueryItem("locale", "en");
+
+    ConfigHandler configHandler;
+
+    if (configHandler.dwnldrShareImage())
+        urlQuery.addQueryItem("shared", "true");
+
+//    if (configHandler.dwnldrUseAnonymousAccess())
+//        urlQuery.addQueryItem("anonym_key", kDwnldrAnonymousKey);
+
+    uploadUrl.setQuery(urlQuery);
+
     return uploadUrl;
 }
 
@@ -67,7 +81,7 @@ void DwnldrUploader::handleReply(QNetworkReply* reply)
     QJsonDocument response = QJsonDocument::fromJson(responseBytes);
     QJsonObject json = response.object();
 
-    if (QUrl(kDwnldrOAuthTokenUrl) == url) // сервер вернул access_token или ошибку.
+    if (0 == QUrl(kDwnldrOAuthTokenUrl).path().compare(url.path())) // сервер вернул access_token или ошибку.
     {
         QString error = json["error"].toString();
 
@@ -107,18 +121,20 @@ void DwnldrUploader::handleReply(QNetworkReply* reply)
         }
         else
         {
-            QString imagePath = json.take("object")["secure_url"].toString();
+            // TODO: Убрать хардкод.
+            //QString imagePath = json.take("object")["secure_url"].toString();
+            QString imagePath = QString("/f/%1").arg(json.take("object")["id"].toString());
 
             QUrl imageUrl(imagePath);
             imageUrl.setScheme("https");
             imageUrl.setHost("download.ru");
 
             setImageURL(imageUrl);
-            m_currentImageName = "name1";
 
             // save image to history
+            QString fileName = imagePath.replace("/", "$") + ".png";
             History history;
-            m_currentImageName = history.packFileName("imgur", "deleteToken", m_currentImageName);
+            m_currentImageName = history.packFileName(kDwnldrStorageName, nullptr, fileName);
             history.save(pixmap(), m_currentImageName);
 
             emit uploadOk(imageURL());
@@ -130,7 +146,9 @@ void DwnldrUploader::handleReply(QNetworkReply* reply)
 
 void DwnldrUploader::upload()
 {
-    QString accessToken = ConfigHandler().dwnldrAccessToken();
+    ConfigHandler configHandler;
+
+    QString accessToken = configHandler.dwnldrAccessToken();
 
     if (accessToken.isEmpty())
         authorizeViaBrowser();

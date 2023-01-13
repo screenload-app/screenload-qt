@@ -1742,11 +1742,16 @@ void CaptureWidget::drawErrorMessage(const QString& msg, QPainter* painter)
 void CaptureWidget::drawInactiveRegion(QPainter* painter)
 {
     QColor overlayColor(0, 0, 0, m_opacity);
+
     painter->setBrush(overlayColor);
+
     QRect r;
-    if (m_selection->isVisible()) {
+
+    if (m_selection->isVisible())
+    {
         r = m_selection->geometry().normalized();
     }
+
     QRegion grey(rect());
     grey = grey.subtracted(r);
 

@@ -45,7 +45,7 @@ private:
     CaptureToolButton(QWidget* parent = nullptr);
     CaptureTool::Type m_buttonType;
 
-    QPropertyAnimation* m_emergeAnimation;
+    //QPropertyAnimation* m_emergeAnimation;
 
     static QColor m_mainColor;
 

@@ -13,7 +13,7 @@ CircleTool::CircleTool(QObject* parent)
 QIcon CircleTool::icon(const QColor& background, bool inEditor) const
 {
     Q_UNUSED(inEditor)
-    return QIcon(iconPath(background) + "circle-outline.svg");
+    return QIcon(iconPath() + "circle.png");
 }
 QString CircleTool::name() const
 {

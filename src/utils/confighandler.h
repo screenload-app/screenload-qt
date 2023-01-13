@@ -118,7 +118,9 @@ public:
     CONFIG_GETTER_SETTER(showMagnifier, setShowMagnifier, bool)
     CONFIG_GETTER_SETTER(squareMagnifier, setSquareMagnifier, bool)
     CONFIG_GETTER_SETTER(copyOnDoubleClick, setCopyOnDoubleClick, bool)
-    CONFIG_GETTER_SETTER(uploadClientSecret, setUploadClientSecret, QString)
+    //CONFIG_GETTER_SETTER(uploadClientSecret, setUploadClientSecret, QString)
+    CONFIG_GETTER_SETTER(dwnldrShareImage, setDwnldrShareImage, bool)
+    //CONFIG_GETTER_SETTER(dwnldrUseAnonymousAccess, setDwnldrUseAnonymousAccess, bool)
     CONFIG_GETTER_SETTER(dwnldrAccessToken, setDwnldrAccessToken, QString)
     CONFIG_GETTER_SETTER(saveLastRegion, setSaveLastRegion, bool)
     // SPECIAL CASES

@@ -95,5 +95,19 @@
         <file>img/material/white/move_down.svg</file>
         <file>img/material/white/move_up.svg</file>
         <file>img/material/white/delete.svg</file>
+        <file>img/tools/arrow.png</file>
+        <file>img/tools/blur.png</file>
+        <file>img/tools/circle.png</file>
+        <file>img/tools/copy.png</file>
+        <file>img/tools/counter.png</file>
+        <file>img/tools/delete.png</file>
+        <file>img/tools/line.png</file>
+        <file>img/tools/marker.png</file>
+        <file>img/tools/pencil.png</file>
+        <file>img/tools/quad.png</file>
+        <file>img/tools/save.png</file>
+        <file>img/tools/save_to_cloud.png</file>
+        <file>img/tools/text.png</file>
+        <file>img/tools/undo.png</file>
     </qresource>
 </RCC>

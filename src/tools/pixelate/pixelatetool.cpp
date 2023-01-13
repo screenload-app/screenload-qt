@@ -16,7 +16,7 @@ PixelateTool::PixelateTool(QObject* parent)
 QIcon PixelateTool::icon(const QColor& background, bool inEditor) const
 {
     Q_UNUSED(inEditor)
-    return QIcon(iconPath(background) + "pixelate.svg");
+    return QIcon(iconPath() + "blur.png");
 }
 
 QString PixelateTool::name() const

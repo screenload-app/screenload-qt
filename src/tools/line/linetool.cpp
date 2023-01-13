@@ -14,7 +14,7 @@ LineTool::LineTool(QObject* parent)
 QIcon LineTool::icon(const QColor& background, bool inEditor) const
 {
     Q_UNUSED(inEditor)
-    return QIcon(iconPath(background) + "line.svg");
+    return QIcon(iconPath() + "line.png");
 }
 
 QString LineTool::name() const

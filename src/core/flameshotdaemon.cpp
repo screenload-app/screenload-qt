@@ -344,6 +344,7 @@ void FlameshotDaemon::enableTrayIcon(bool enable)
     }
 }
 
+// MarketKernel CheckUpdates
 void FlameshotDaemon::handleReplyCheckUpdates(QNetworkReply* reply)
 {
     if (!ConfigHandler().checkForUpdates()) {

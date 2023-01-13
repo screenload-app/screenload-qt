@@ -17,7 +17,7 @@ bool SaveTool::closeOnButtonPressed() const
 QIcon SaveTool::icon(const QColor& background, bool inEditor) const
 {
     Q_UNUSED(inEditor)
-    return QIcon(iconPath(background) + "content-save.svg");
+    return QIcon(iconPath() + "save.png");
 }
 QString SaveTool::name() const
 {

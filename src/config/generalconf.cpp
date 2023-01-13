@@ -49,7 +49,8 @@ GeneralConf::GeneralConf(QWidget* parent)
     initSaveAfterCopy();
     initUploadHistoryMax();
     initUndoLimit();
-    initUploadClientSecret();
+    //initUploadClientSecret();
+    initDwnldrSection();
     initAllowMultipleGuiInstances();
 #if !defined(Q_OS_WIN)
     initAutoCloseIdleDaemon();
@@ -96,6 +97,8 @@ void GeneralConf::_updateComponents(bool allowEmptySavePath)
     m_showStartupLaunchMessage->setChecked(config.showStartupLaunchMessage());
     m_screenshotPathFixedCheck->setChecked(config.savePathFixed());
     m_uploadHistoryMax->setValue(config.uploadHistoryMax());
+    m_dwnldrShareImage->setChecked(config.dwnldrShareImage());
+    //m_dwnldrUseAnonymousAccess->setChecked(config.dwnldrUseAnonymousAccess());
     m_undoLimit->setValue(config.undoLimit());
 
     if (allowEmptySavePath || !config.savePath().isEmpty()) {
@@ -535,31 +538,61 @@ void GeneralConf::initUploadHistoryMax()
     vboxLayout->addWidget(m_uploadHistoryMax);
 }
 
-void GeneralConf::initUploadClientSecret()
+//void GeneralConf::initUploadClientSecret()
+//{
+//    auto* box = new QGroupBox(tr("Imgur Application Client ID"));
+//    box->setFlat(true);
+//    m_layout->addWidget(box);
+
+//    auto* vboxLayout = new QVBoxLayout();
+//    box->setLayout(vboxLayout);
+
+//    m_uploadClientKey = new QLineEdit(this);
+//    QString foreground = this->palette().windowText().color().name();
+//    m_uploadClientKey->setStyleSheet(
+//      QStringLiteral("color: %1").arg(foreground));
+//    m_uploadClientKey->setText(ConfigHandler().uploadClientSecret());
+//    connect(m_uploadClientKey,
+//            SIGNAL(editingFinished()),
+//            this,
+//            SLOT(uploadClientKeyEdited()));
+//    vboxLayout->addWidget(m_uploadClientKey);
+//}
+
+void GeneralConf::initDwnldrSection()
 {
-    auto* box = new QGroupBox(tr("Imgur Application Client ID"));
+    auto* box = new QGroupBox(tr("Download.RU settings"));
     box->setFlat(true);
     m_layout->addWidget(box);
 
     auto* vboxLayout = new QVBoxLayout();
     box->setLayout(vboxLayout);
 
-    m_uploadClientKey = new QLineEdit(this);
-    QString foreground = this->palette().windowText().color().name();
-    m_uploadClientKey->setStyleSheet(
-      QStringLiteral("color: %1").arg(foreground));
-    m_uploadClientKey->setText(ConfigHandler().uploadClientSecret());
-    connect(m_uploadClientKey,
-            SIGNAL(editingFinished()),
-            this,
-            SLOT(uploadClientKeyEdited()));
-    vboxLayout->addWidget(m_uploadClientKey);
+    m_dwnldrShareImage =
+      new QCheckBox(tr("Share image after upload"), this);
+    m_dwnldrShareImage->setToolTip(
+      tr("Share image after upload after uploading was successful"));
+
+//    m_dwnldrUseAnonymousAccess =
+//      new QCheckBox(tr("Use anonymous access"), this);
+//    m_dwnldrUseAnonymousAccess->setToolTip(
+//      tr("Use anonymous access for image uploading"));
+
+    vboxLayout->addWidget(m_dwnldrShareImage);
+    //vboxLayout->addWidget(m_dwnldrUseAnonymousAccess);
+
+    connect(m_dwnldrShareImage, &QCheckBox::clicked, [](bool checked) {
+        ConfigHandler().setDwnldrShareImage(checked);
+    });
+//    connect(m_dwnldrUseAnonymousAccess, &QCheckBox::clicked, [](bool checked) {
+//        ConfigHandler().setDwnldrUseAnonymousAccess(checked);
+//    });
 }
 
-void GeneralConf::uploadClientKeyEdited()
-{
-    ConfigHandler().setUploadClientSecret(m_uploadClientKey->text());
-}
+//void GeneralConf::uploadClientKeyEdited()
+//{
+//    ConfigHandler().setUploadClientSecret(m_uploadClientKey->text());
+//}
 
 void GeneralConf::uploadHistoryMaxChanged(int max)
 {

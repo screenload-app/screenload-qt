@@ -165,6 +165,11 @@ protected:
         to->m_count = from->m_count;
     }
 
+    QString iconPath() const
+    {
+        return PathInfo::iconPath();
+    }
+
     QString iconPath(const QColor& c) const
     {
         return ColorUtils::colorIsDark(c) ? PathInfo::whiteIconPath()

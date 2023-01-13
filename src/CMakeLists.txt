@@ -83,7 +83,6 @@ add_subdirectory(utils)
 add_subdirectory(widgets)
 add_subdirectory(tools)
 
-
 set(FLAMESHOT_TS_FILES
       ${CMAKE_SOURCE_DIR}/data/translations/Internationalization_bg.ts
       ${CMAKE_SOURCE_DIR}/data/translations/Internationalization_ca.ts

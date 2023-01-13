@@ -19,7 +19,7 @@ CircleCountTool::CircleCountTool(QObject* parent)
 QIcon CircleCountTool::icon(const QColor& background, bool inEditor) const
 {
     Q_UNUSED(inEditor)
-    return QIcon(iconPath(background) + "circlecount-outline.svg");
+    return QIcon(iconPath() + "counter.png");
 }
 
 QString CircleCountTool::info()

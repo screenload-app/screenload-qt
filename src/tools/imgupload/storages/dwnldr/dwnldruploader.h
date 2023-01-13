@@ -9,6 +9,8 @@ class QNetworkReply;
 class QNetworkAccessManager;
 class QUrl;
 
+constexpr char* kDwnldrStorageName = "dwnldr";
+
 constexpr char* kDwnldrLocalHostUrl = "http://localhost/";
 constexpr int kDwnldrLocalPort = 8087;
 
@@ -18,6 +20,7 @@ constexpr char* kDwnldrOAuthTokenUrl = "https://download.ru/oauth/token";
 
 constexpr char* kDwnldrClientId = "0524f0e89a3fd0912b1ed4484e21cde8c02e5e5625fe070ba65e5ff2deaf78e2";
 constexpr char* kDwnldrClientSecret = "7f090e18d58cf2983f071b3f5afb544e0aaba1e8ce80f83e9a9bfb9ee9b917f5";
+constexpr char* kDwnldrAnonymousKey = "d0327c42657d96742bcd979acedbf0a3";
 
 class DwnldrUploader : public ImgUploaderBase
 {

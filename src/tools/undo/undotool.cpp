@@ -16,7 +16,7 @@ bool UndoTool::closeOnButtonPressed() const
 QIcon UndoTool::icon(const QColor& background, bool inEditor) const
 {
     Q_UNUSED(inEditor)
-    return QIcon(iconPath(background) + "undo-variant.svg");
+    return QIcon(iconPath() + "undo.png");
 }
 QString UndoTool::name() const
 {

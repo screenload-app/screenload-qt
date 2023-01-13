@@ -72,7 +72,15 @@ void UploadHistory::addLine(const QString& path, const QString& fileName)
     History history;
     HistoryFileName unpackFileName = history.unpackFileName(fileName);
 
-    QString url = ImgUploaderManager(this).uploaderPlugin() + ": " + unpackFileName.file;
+    // TODO: Убрать хардкод!
+    QString urlPath = unpackFileName.file.replace("$", "/");
+    int extensionIndex = urlPath.lastIndexOf(".png");
+
+    if (extensionIndex > 0)
+        urlPath = urlPath.left(extensionIndex);
+
+    QString url = "https://download.ru" + urlPath;
+    //QString url = ImgUploaderManager(this).uploaderPlugin() + ": " + unpackFileName.file;
 
     // load pixmap
     QPixmap pixmap;
