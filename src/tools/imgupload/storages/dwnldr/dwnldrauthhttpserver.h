@@ -1,7 +1,8 @@
 #pragma once
 
 #include <QObject>
-#include <QTNetwork>
+#include <QTcpServer>
+#include <QTcpSocket>
 
 class QTcpServer;
 class QTcpSocket;

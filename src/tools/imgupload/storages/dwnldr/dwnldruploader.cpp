@@ -13,7 +13,8 @@
 #include <QNetworkRequest>
 #include <QShortcut>
 #include <QUrlQuery>
-#include <QMessageBox>
+#include <QHttpPart>
+#include <QHttpMultiPart>
 
 static QString getPercentEncodedRedirectUrl()
 {

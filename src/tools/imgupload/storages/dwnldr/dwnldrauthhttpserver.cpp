@@ -1,5 +1,9 @@
 #include "dwnldrauthhttpserver.h"
 #include <QDateTime>
+#include <QResource>
+#include <QUrl>
+#include <QUrlQuery>
+#include <QString>
 
 DwnldrAuthHttpServer::DwnldrAuthHttpServer(const int port, QObject *parent)
     : QObject(parent)
