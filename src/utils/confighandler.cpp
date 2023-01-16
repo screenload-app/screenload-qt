@@ -17,6 +17,7 @@
 #include <QVector>
 #include <algorithm>
 #include <stdexcept>
+#include <QMessageBox>
 
 #if defined(Q_OS_MACOS)
 #include <QProcess>
@@ -194,6 +195,8 @@ ConfigHandler::ConfigHandler()
                              emit getInstance()->fileChanged();
 
                              if (QFile(fileName).exists()) {
+                                 QMessageBox::information(nullptr, "Point1", fileName);
+
                                  m_configWatcher->addPath(fileName);
                              }
                              if (m_skipNextErrorCheck) {
