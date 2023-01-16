@@ -1252,6 +1252,18 @@ Please solve them manually in the configuration file.</source>
         <source>Imgur Application Client ID</source>
         <translation>Ключ API Imgur</translation>
     </message>
+	<message>
+        <source>Download.RU settings</source>
+        <translation>Интеграция с Download.RU</translation>
+    </message>
+	<message>
+        <source>Share image after upload</source>
+        <translation>Сделать ссылку общедоступной после загрузки файла</translation>
+    </message>
+	<message>
+        <source>Share image after upload after uploading was successful</source>
+        <translation>После загрузки файла просматривать смогут все, у кого есть ссылка</translation>
+    </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="571"/>
         <source>Undo limit</source>

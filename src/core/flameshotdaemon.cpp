@@ -347,37 +347,45 @@ void FlameshotDaemon::enableTrayIcon(bool enable)
 // MarketKernel CheckUpdates
 void FlameshotDaemon::handleReplyCheckUpdates(QNetworkReply* reply)
 {
-    if (!ConfigHandler().checkForUpdates()) {
+    if (!ConfigHandler().checkForUpdates())
         return;
-    }
-    if (reply->error() == QNetworkReply::NoError) {
+
+    if (reply->error() == QNetworkReply::NoError)
+    {
         QJsonDocument response = QJsonDocument::fromJson(reply->readAll());
         QJsonObject json = response.object();
         m_appLatestVersion = json["tag_name"].toString().replace("v", "");
 
-        QVersionNumber appLatestVersion =
-          QVersionNumber::fromString(m_appLatestVersion);
-        if (Flameshot::instance()->getVersion() < appLatestVersion) {
+        QVersionNumber appLatestVersion = QVersionNumber::fromString(m_appLatestVersion);
+
+        if (Flameshot::instance()->getVersion() < appLatestVersion)
+        {
             emit newVersionAvailable(appLatestVersion);
             m_appLatestUrl = json["html_url"].toString();
             QString newVersion =
               tr("New version %1 is available").arg(m_appLatestVersion);
-            if (m_showCheckAppUpdateStatus) {
-                sendTrayNotification(newVersion, "Flameshot");
+            if (m_showCheckAppUpdateStatus)
+            {
+                sendTrayNotification(newVersion, "Screenload");
                 QDesktopServices::openUrl(QUrl(m_appLatestUrl));
             }
-        } else if (m_showCheckAppUpdateStatus) {
-            sendTrayNotification(tr("You have the latest version"),
-                                 "Flameshot");
+
         }
-    } else {
+        else if (m_showCheckAppUpdateStatus)
+        {
+            sendTrayNotification(tr("You have the latest version"),
+                                 "Screenload");
+        }
+    }
+    else {
         qWarning() << "Failed to get information about the latest version. "
                    << reply->errorString();
-        if (m_showCheckAppUpdateStatus) {
+        if (m_showCheckAppUpdateStatus)
+        {
             if (FlameshotDaemon::instance()) {
                 FlameshotDaemon::instance()->sendTrayNotification(
                   tr("Failed to get information about the latest version."),
-                  "Flameshot");
+                  "Screenload");
             }
         }
     }
