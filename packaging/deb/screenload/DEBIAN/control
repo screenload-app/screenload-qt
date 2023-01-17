@@ -1,0 +1,16 @@
+Package: screenload
+Version: 3.0.0
+Architecture: amd64
+Maintainer: Download.Ru <support@download.ru>
+Installed-Size: 2939
+Depends: hicolor-icon-theme, libqt5svg5 (>= 5.9.0~), libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libqt5core5a (>= 5.15.1), libqt5dbus5 (>= 5.14.1), libqt5gui5 (>= 5.14.1) | libqt5gui5-gles (>= 5.14.1), libqt5network5 (>= 5.9.0~), libqt5widgets5 (>= 5.15.1), libstdc++6 (>= 5.2)
+Recommends: xdg-desktop-portal-gtk | xdg-desktop-portal-gnome | xdg-desktop-portal-kde | xdg-desktop-portal-wlr, grim
+Suggests: ca-certificates, openssl
+Section: graphics
+Priority: optional
+Homepage: https://screenload.ru/
+Description: Powerful yet simple-to-use screenshot software
+ ScreenLoad is a powerful yet simple-to-use screenshot software, based on ScreenLoad.
+ Notable features include customizable appearance, in-app screenshot editing,
+ D-Bus interface, experimental GNOME/KDE Wayland support, integration with
+ Download.Ru and support for both GUI and CLI interface.
