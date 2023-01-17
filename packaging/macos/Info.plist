@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleExecutable</key>
-	<string>Flameshot</string>
+	<string>ScreenLoad</string>
 	<key>CFBundleIconFile</key>
-	<string>flameshot</string>
+	<string>screenload</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.Flameshot.flameshot</string>
+	<string>com.ScreenLoad.screenload</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleSignature</key>

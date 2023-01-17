@@ -3,7 +3,7 @@
 
 #include "infowindow.h"
 #include "./ui_infowindow.h"
-#include "src/core/flameshotdaemon.h"
+#include "src/core/screenloaddaemon.h"
 #include "src/core/qguiappcurrentscreen.h"
 #include "src/utils/globalvalues.h"
 #include <QKeyEvent>
@@ -52,6 +52,6 @@ QString generateKernelString()
 
 void InfoWindow::on_CopyInfoButton_clicked()
 {
-    FlameshotDaemon::copyToClipboard(GlobalValues::versionInfo() + "\n" +
+    ScreenLoadDaemon::copyToClipboard(GlobalValues::versionInfo() + "\n" +
                                      generateKernelString());
 }

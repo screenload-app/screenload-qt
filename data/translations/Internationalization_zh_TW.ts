@@ -141,66 +141,66 @@
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="100"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="185"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_capturelauncher.h" line="179"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_capturelauncher.h" line="185"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="185"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="179"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="185"/>
         <location filename="../../src/widgets/capturelauncher.cpp" line="52"/>
         <source> seconds</source>
         <translation> 秒</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="165"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="186"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_capturelauncher.h" line="184"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_capturelauncher.h" line="186"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="186"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="184"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="186"/>
         <source>Take new screenshot</source>
         <translation>擷取新螢幕截圖</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="66"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="181"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_capturelauncher.h" line="180"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_capturelauncher.h" line="181"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="181"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="180"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="181"/>
         <source>Area:</source>
         <translation>區域：</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="14"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="178"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_capturelauncher.h" line="176"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_capturelauncher.h" line="178"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="178"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="176"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="178"/>
         <source>Capture Launcher</source>
         <translation>Capture Launcher</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="34"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="179"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_capturelauncher.h" line="177"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_capturelauncher.h" line="179"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="179"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="177"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="179"/>
         <source>TextLabel</source>
         <translation>TextLabel</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="51"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="180"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_capturelauncher.h" line="178"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_capturelauncher.h" line="180"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="180"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="178"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="180"/>
         <source>Capture Mode</source>
         <translation>Capture Mode</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="80"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="183"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_capturelauncher.h" line="181"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_capturelauncher.h" line="183"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="183"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="181"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="183"/>
         <source>Delay:</source>
         <translation>延遲：</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="93"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_capturelauncher.h" line="184"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_capturelauncher.h" line="183"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_capturelauncher.h" line="184"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="184"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="183"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="184"/>
         <source>WxH+x+y</source>
         <translation>WxH+x+y</translation>
     </message>
@@ -259,13 +259,13 @@
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="509"/>
-        <source>Flameshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
-        <translation>Flameshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</translation>
+        <source>ScreenLoad has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
+        <translation>ScreenLoad has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="515"/>
-        <source>Configuration error resolved. Launch `flameshot gui` again to apply it.</source>
-        <translation>Configuration error resolved. Launch `flameshot gui` again to apply it.</translation>
+        <source>Configuration error resolved. Launch `screenload gui` again to apply it.</source>
+        <translation>Configuration error resolved. Launch `screenload gui` again to apply it.</translation>
     </message>
     <message>
         <source>Select an area with the mouse, or press Esc to exit.
@@ -587,10 +587,10 @@ Press Space to open the side panel.</source>
     <message>
         <location filename="../../src/config/configresolver.cpp" line="90"/>
         <source>Some keyboard shortcuts have conflicts.
-This will NOT prevent flameshot from starting.
+This will NOT prevent screenload from starting.
 Please solve them manually in the configuration file.</source>
         <translation>Some keyboard shortcuts have conflicts.
-This will NOT prevent flameshot from starting.
+This will NOT prevent screenload from starting.
 Please solve them manually in the configuration file.</translation>
     </message>
     <message>
@@ -792,42 +792,42 @@ Please solve them manually in the configuration file.</translation>
     </message>
 </context>
 <context>
-    <name>Flameshot</name>
+    <name>ScreenLoad</name>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="111"/>
+        <location filename="../../src/core/screenload.cpp" line="111"/>
         <source>Error</source>
         <translation type="unfinished">錯誤</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="111"/>
+        <location filename="../../src/core/screenload.cpp" line="111"/>
         <source>Unable to close active modal widgets</source>
         <translation type="unfinished">Unable to close active modal widgets</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="400"/>
+        <location filename="../../src/core/screenload.cpp" line="400"/>
         <source>URL copied to clipboard.</source>
         <translation>URL copied to clipboard.</translation>
     </message>
 </context>
 <context>
-    <name>FlameshotDaemon</name>
+    <name>ScreenLoadDaemon</name>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="363"/>
+        <location filename="../../src/core/screenloaddaemon.cpp" line="363"/>
         <source>New version %1 is available</source>
         <translation type="unfinished">已有新版本 %1 可取得</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="369"/>
+        <location filename="../../src/core/screenloaddaemon.cpp" line="369"/>
         <source>You have the latest version</source>
         <translation type="unfinished">您已安裝最新版本</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="378"/>
+        <location filename="../../src/core/screenloaddaemon.cpp" line="378"/>
         <source>Failed to get information about the latest version.</source>
         <translation type="unfinished">無法取得最新版本的資訊。</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="399"/>
+        <location filename="../../src/core/screenloaddaemon.cpp" line="399"/>
         <source>Unable to connect via DBus</source>
         <translation type="unfinished">無法透過 DBus 進行連接</translation>
     </message>
@@ -1000,8 +1000,8 @@ Please solve them manually in the configuration file.</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="356"/>
-        <source>Allow multiple flameshot GUI instances simultaneously</source>
-        <translation>Allow multiple flameshot GUI instances simultaneously</translation>
+        <source>Allow multiple screenload GUI instances simultaneously</source>
+        <translation>Allow multiple screenload GUI instances simultaneously</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="369"/>
@@ -1015,8 +1015,8 @@ Please solve them manually in the configuration file.</translation>
         <translation>自動啟動</translation>
     </message>
     <message>
-        <source>Launch Flameshot</source>
-        <translation type="vanished">啟動 Flameshot</translation>
+        <source>Launch ScreenLoad</source>
+        <translation type="vanished">啟動 ScreenLoad</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="393"/>
@@ -1088,13 +1088,13 @@ Please solve them manually in the configuration file.</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="357"/>
-        <source>This allows you to take screenshots of Flameshot itself for example</source>
-        <translation>This allows you to take screenshots of Flameshot itself for example</translation>
+        <source>This allows you to take screenshots of ScreenLoad itself for example</source>
+        <translation>This allows you to take screenshots of ScreenLoad itself for example</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="383"/>
-        <source>Launch Flameshot daemon when computer is booted</source>
-        <translation>Launch Flameshot daemon when computer is booted</translation>
+        <source>Launch ScreenLoad daemon when computer is booted</source>
+        <translation>Launch ScreenLoad daemon when computer is booted</translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="396"/>
@@ -1451,65 +1451,65 @@ Please solve them manually in the configuration file.</translation>
     <name>InfoWindow</name>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="14"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="117"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_infowindow.h" line="117"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_infowindow.h" line="117"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="117"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="117"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="117"/>
         <source>About</source>
         <translation>關於</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="26"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="118"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_infowindow.h" line="118"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_infowindow.h" line="118"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="118"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="118"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="118"/>
         <source>Icon</source>
         <translation>Icon</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="43"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="119"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_infowindow.h" line="119"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_infowindow.h" line="119"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="119"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="119"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="119"/>
         <source>License</source>
         <translation>License</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="56"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="120"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_infowindow.h" line="120"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_infowindow.h" line="120"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="120"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="120"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="120"/>
         <source>GPLv3+</source>
         <translation>GPLv3+</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="89"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="121"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_infowindow.h" line="121"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_infowindow.h" line="121"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="121"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="121"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="121"/>
         <source>Version</source>
         <translation>Version</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="102"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="122"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_infowindow.h" line="122"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_infowindow.h" line="122"/>
-        <source>Flameshot v</source>
-        <translation>Flameshot v</translation>
+        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="122"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="122"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="122"/>
+        <source>ScreenLoad v</source>
+        <translation>ScreenLoad v</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="115"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="123"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_infowindow.h" line="123"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_infowindow.h" line="123"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="123"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="123"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="123"/>
         <source>OS Info</source>
         <translation>OS Info</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="128"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_infowindow.h" line="124"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_infowindow.h" line="124"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_infowindow.h" line="124"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="124"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="124"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="124"/>
         <source>Copy Info</source>
         <translation>Copy Info</translation>
     </message>
@@ -1965,12 +1965,12 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</translati
         <translation>無法寫入</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="148"/>
+        <location filename="../../src/core/screenload.cpp" line="148"/>
         <source>Requested screen exceeds screen count</source>
         <translation>Requested screen exceeds screen count</translation>
     </message>
     <message>
-        <location filename="../../src/core/flameshot.cpp" line="378"/>
+        <location filename="../../src/core/screenload.cpp" line="378"/>
         <source>Full screen screenshot pinned to screen</source>
         <translation>Full screen screenshot pinned to screen</translation>
     </message>
@@ -2005,8 +2005,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</translati
     </message>
     <message>
         <location filename="../../src/cli/commandlineparser.cpp" line="337"/>
-        <source>Per default runs Flameshot in the background and adds a tray icon for configuration.</source>
-        <translation>Per default runs Flameshot in the background and adds a tray icon for configuration.</translation>
+        <source>Per default runs ScreenLoad in the background and adds a tray icon for configuration.</source>
+        <translation>Per default runs ScreenLoad in the background and adds a tray icon for configuration.</translation>
     </message>
     <message>
         <location filename="../../src/widgets/trayicon.cpp" line="71"/>
@@ -2189,8 +2189,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</translati
     </message>
     <message>
         <location filename="../../src/config/setshortcutwidget.cpp" line="46"/>
-        <source>Flameshot must be restarted for changes to take effect.</source>
-        <translation>Flameshot must be restarted for changes to take effect.</translation>
+        <source>ScreenLoad must be restarted for changes to take effect.</source>
+        <translation>ScreenLoad must be restarted for changes to take effect.</translation>
     </message>
 </context>
 <context>
@@ -2476,8 +2476,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</translati
     <name>SystemNotification</name>
     <message>
         <location filename="../../src/utils/systemnotification.cpp" line="39"/>
-        <source>Flameshot Info</source>
-        <translation>Flameshot 資訊</translation>
+        <source>ScreenLoad Info</source>
+        <translation>ScreenLoad 資訊</translation>
     </message>
 </context>
 <context>
@@ -2628,8 +2628,8 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</translati
     <name>UpdateNotificationWidget</name>
     <message>
         <location filename="../../src/widgets/updatenotificationwidget.cpp" line="70"/>
-        <source>New Flameshot version %1 is available</source>
-        <translation>Flameshot 的新版本 %1 可供使用</translation>
+        <source>New ScreenLoad version %1 is available</source>
+        <translation>ScreenLoad 的新版本 %1 可供使用</translation>
     </message>
     <message>
         <location filename="../../src/widgets/updatenotificationwidget.cpp" line="123"/>
@@ -2651,9 +2651,9 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</translati
     <name>UploadHistory</name>
     <message>
         <location filename="../../src/widgets/uploadhistory.ui" line="14"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_uploadhistory.h" line="67"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_uploadhistory.h" line="67"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_uploadhistory.h" line="67"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_uploadhistory.h" line="67"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadhistory.h" line="67"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadhistory.h" line="67"/>
         <source>Upload History</source>
         <translation>Upload History</translation>
     </message>
@@ -2667,33 +2667,33 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</translati
     <name>UploadLineItem</name>
     <message>
         <location filename="../../src/widgets/uploadlineitem.ui" line="20"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_uploadlineitem.h" line="113"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_uploadlineitem.h" line="113"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_uploadlineitem.h" line="113"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_uploadlineitem.h" line="113"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadlineitem.h" line="113"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadlineitem.h" line="113"/>
         <source>Form</source>
         <translation>Form</translation>
     </message>
     <message>
         <location filename="../../src/widgets/uploadlineitem.ui" line="49"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_uploadlineitem.h" line="114"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_uploadlineitem.h" line="114"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_uploadlineitem.h" line="114"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_uploadlineitem.h" line="114"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadlineitem.h" line="114"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadlineitem.h" line="114"/>
         <source>TextLabel</source>
         <translation>TextLabel</translation>
     </message>
     <message>
         <location filename="../../src/widgets/uploadlineitem.ui" line="82"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_uploadlineitem.h" line="115"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_uploadlineitem.h" line="115"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_uploadlineitem.h" line="115"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_uploadlineitem.h" line="115"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadlineitem.h" line="115"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadlineitem.h" line="115"/>
         <source>Copy URL</source>
         <translation>Copy URL</translation>
     </message>
     <message>
         <location filename="../../src/widgets/uploadlineitem.ui" line="95"/>
-        <location filename="../../build/src/flameshot_autogen/include/ui_uploadlineitem.h" line="116"/>
-        <location filename="../../cmake-build-debug/src/flameshot_autogen/include/ui_uploadlineitem.h" line="116"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/flameshot_autogen/include/ui_uploadlineitem.h" line="116"/>
+        <location filename="../../build/src/screenload_autogen/include/ui_uploadlineitem.h" line="116"/>
+        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadlineitem.h" line="116"/>
+        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadlineitem.h" line="116"/>
         <source>Open In Browser</source>
         <translation>Open In Browser</translation>
     </message>

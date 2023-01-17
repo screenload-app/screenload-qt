@@ -1,14 +1,14 @@
 #!/bin/bash
 
 echo "Change the permission of .dmg file"
-hdiutil convert "flameshot.dmg" -format UDRW -o "flameshot_rw.dmg"
+hdiutil convert "screenload.dmg" -format UDRW -o "screenload_rw.dmg"
 
 echo "Mount it and save the device"
-DEVICE=$(hdiutil attach -readwrite -noverify "flameshot_rw.dmg" | grep -E '^/dev/' | sed 1q | awk '{print $1}')
+DEVICE=$(hdiutil attach -readwrite -noverify "screenload_rw.dmg" | grep -E '^/dev/' | sed 1q | awk '{print $1}')
 sleep 5
 
 echo "Create the sysmbolic link to application folder"
-PATH_AT_VOLUME="/Volumes/flameshot/"
+PATH_AT_VOLUME="/Volumes/screenload/"
 CURRENT_PATH="$(pwd)"
 cd "${PATH_AT_VOLUME}"
 ln -s /Applications
@@ -25,7 +25,7 @@ cd "${CURRENT_PATH}"
 ##  change the icon size, place the icons in the right position, etc.
 #echo '
 #    tell application "Finder"
-#    tell disk "/Volumes/src:flameshot"
+#    tell disk "/Volumes/src:screenload"
 #        open
 #            set current view of container window to icon view
 #            set toolbar visible of container window to false
@@ -35,7 +35,7 @@ cd "${CURRENT_PATH}"
 #            set arrangement of viewOptions to not arranged
 #            set icon size of viewOptions to 72
 #            set background picture of viewOptions to file ".background:backgroundImage.png"
-#            set position of item "flameshot.app" of container window to {160, 325}
+#            set position of item "screenload.app" of container window to {160, 325}
 #            set position of item "Applications" of container window to {560, 320}
 #        close
 #        open
@@ -49,7 +49,7 @@ cd "${CURRENT_PATH}"
 
 # unmount it
 hdiutil detach "${DEVICE}"
-rm -f "flameshot.dmg"
+rm -f "screenload.dmg"
 
-hdiutil convert "flameshot_rw.dmg" -format UDZO -o "flameshot.dmg"
-rm -f "flameshot_rw.dmg"
+hdiutil convert "screenload_rw.dmg" -format UDZO -o "screenload.dmg"
+rm -f "screenload_rw.dmg"

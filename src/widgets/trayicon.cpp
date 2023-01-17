@@ -1,7 +1,7 @@
 #include "trayicon.h"
 
-#include "src/core/flameshot.h"
-#include "src/core/flameshotdaemon.h"
+#include "src/core/screenload.h"
+#include "src/core/screenloaddaemon.h"
 #include "src/utils/globalvalues.h"
 
 #include "src/utils/confighandler.h"
@@ -20,7 +20,7 @@ TrayIcon::TrayIcon(QObject* parent)
 {
     initMenu();
 
-    setToolTip(QStringLiteral("Flameshot"));
+    setToolTip(QStringLiteral("ScreenLoad"));
 #if defined(Q_OS_MACOS)
     // Because of the following issues on MacOS "Catalina":
     // https://bugreports.qt.io/browse/QTBUG-86393
@@ -33,7 +33,7 @@ TrayIcon::TrayIcon(QObject* parent)
     setContextMenu(m_menu);
 #endif
     QIcon icon =
-      QIcon::fromTheme("flameshot-tray", QIcon(GlobalValues::iconPathPNG()));
+      QIcon::fromTheme("screenload-tray", QIcon(GlobalValues::iconPathPNG()));
     setIcon(icon);
 
 #if defined(Q_OS_MACOS)
@@ -67,7 +67,7 @@ TrayIcon::TrayIcon(QObject* parent)
 
     if (ConfigHandler().showStartupLaunchMessage()) {
         showMessage(
-          "Flameshot",
+          "ScreenLoad",
           QObject::tr(
             "Hello, I'm here! Click icon in the tray to take a screenshot or "
             "click with a right button to see more options."),
@@ -116,25 +116,25 @@ void TrayIcon::initMenu()
     auto* launcherAction = new QAction(tr("&Open Launcher"), this);
     connect(launcherAction,
             &QAction::triggered,
-            Flameshot::instance(),
-            &Flameshot::launcher);
+            ScreenLoad::instance(),
+            &ScreenLoad::launcher);
     auto* configAction = new QAction(tr("&Configuration"), this);
     connect(configAction,
             &QAction::triggered,
-            Flameshot::instance(),
-            &Flameshot::config);
+            ScreenLoad::instance(),
+            &ScreenLoad::config);
     auto* infoAction = new QAction(tr("&About"), this);
     connect(
-      infoAction, &QAction::triggered, Flameshot::instance(), &Flameshot::info);
+      infoAction, &QAction::triggered, ScreenLoad::instance(), &ScreenLoad::info);
 
     m_appUpdates = new QAction(tr("Check for updates"), this);
     connect(m_appUpdates,
             &QAction::triggered,
-            FlameshotDaemon::instance(),
-            &FlameshotDaemon::checkForUpdates);
+            ScreenLoadDaemon::instance(),
+            &ScreenLoadDaemon::checkForUpdates);
 
-    connect(FlameshotDaemon::instance(),
-            &FlameshotDaemon::newVersionAvailable,
+    connect(ScreenLoadDaemon::instance(),
+            &ScreenLoadDaemon::newVersionAvailable,
             this,
             [this](QVersionNumber version) {
                 QString newVersion =
@@ -149,8 +149,8 @@ void TrayIcon::initMenu()
     QAction* recentAction = new QAction(tr("&Latest Uploads"), this);
     connect(recentAction,
             &QAction::triggered,
-            Flameshot::instance(),
-            &Flameshot::history);
+            ScreenLoad::instance(),
+            &ScreenLoad::history);
 
     m_menu->addAction(captureAction);
     m_menu->addAction(launcherAction);
@@ -172,12 +172,12 @@ void TrayIcon::enableCheckUpdatesAction(bool enable)
         m_appUpdates->setEnabled(enable);
     }
     if (enable) {
-        FlameshotDaemon::instance()->getLatestAvailableVersion();
+        ScreenLoadDaemon::instance()->getLatestAvailableVersion();
     }
 }
 
 void TrayIcon::startGuiCapture()
 {
-    auto* widget = Flameshot::instance()->gui();
-    FlameshotDaemon::instance()->showUpdateNotificationIfAvailable(widget);
+    auto* widget = ScreenLoad::instance()->gui();
+    ScreenLoadDaemon::instance()->showUpdateNotificationIfAvailable(widget);
 }

@@ -3,7 +3,7 @@ add_subdirectory(capture)
 
 # Required to generate MOC
 target_sources(
-        flameshot
+        screenload
         PRIVATE
         infowindow.ui
         capturelauncher.ui
@@ -27,7 +27,7 @@ target_sources(
 )
 
 target_sources(
-        flameshot
+        screenload
         PRIVATE capturelauncher.cpp
         draggablewidgetmaker.cpp
         imagelabel.cpp

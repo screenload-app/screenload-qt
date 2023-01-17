@@ -1,11 +1,11 @@
 ---
 
-name: flameshot
-adopt-info: flameshot
+name: screenload
+adopt-info: screenload
 base: core20
 summary: Powerful yet simple to use screenshot software
 description: |
-  A powerful open source screenshot and annotation tool for Linux, Flameshot
+  A powerful open source screenshot and annotation tool for Linux, ScreenLoad
   has a varied set of markup tools available, which include Freehand drawing,
   Lines, Arrows, Boxes, Circles, Highlighting, Blur. Additionally, you can
   customise the color, size and/or thickness of many of these image annotation
@@ -18,16 +18,16 @@ architectures:
   - build-on: amd64
 
 apps:
-  flameshot:
-    command: usr/local/bin/flameshot
-    desktop: usr/local/share/applications/org.flameshot.Flameshot.desktop
+  screenload:
+    command: usr/local/bin/screenload
+    desktop: usr/local/share/applications/ru.screenload.ScreenLoad.desktop
     extensions:
       - kde-neon
     environment:
       DISABLE_WAYLAND: 1
       XDG_DATA_DIRS: $SNAP/share:$XDG_DATA_DIRS
       QT_QPA_PLATFORMTHEME: gtk3
-    slots: [dbus-flameshot]
+    slots: [dbus-screenload]
     plugs:
       - home
       - removable-media
@@ -41,13 +41,13 @@ apps:
       - unity7
 
 parts:
-  flameshot:
+  screenload:
     build-snaps:
       - kde-frameworks-5-qt-5-15-core20
-    source: https://github.com/flameshot-org/flameshot.git
+    source: https://github.com/screenload-org/screenload.git
     plugin: cmake
     cmake-parameters:
-       - -DFLAMESHOT_ICON=/snap/flameshot/current/usr/local/share/icons/hicolor/scalable/apps/flameshot.svg
+       - -DSCREENLOAD_ICON=/snap/screenload/current/usr/local/share/icons/hicolor/scalable/apps/screenload.svg
        # This cannot be enabled until the KF5 toolkit in the snap is updated
        #- -DUSE_WAYLAND_CLIPBOARD=1
     source-type: git
@@ -61,9 +61,9 @@ parts:
     override-build: |
       snapcraftctl build
       # Correct the Icon path
-      sed -i 's|^Exec=flameshot|Exec=/snap/bin/org.flameshot.Flameshot|' ${SNAPCRAFT_PART_INSTALL}/usr/local/share/applications/org.flameshot.Flameshot.desktop
-      sed -i 's|^Icon=.*|Icon=${SNAP}/usr/local/share/icons/hicolor/scalable/apps/org.flameshot.Flameshot.svg|' ${SNAPCRAFT_PART_INSTALL}/usr/local/share/applications/org.flameshot.Flameshot.desktop
-      sed -i 's/^\(Name\(\[.\+\]\)\?=.*\)$/\1 (Snappy Edition)/g' ${SNAPCRAFT_PART_INSTALL}/usr/local/share/applications/org.flameshot.Flameshot.desktop
+      sed -i 's|^Exec=screenload|Exec=/snap/bin/ru.screenload.ScreenLoad|' ${SNAPCRAFT_PART_INSTALL}/usr/local/share/applications/ru.screenload.ScreenLoad.desktop
+      sed -i 's|^Icon=.*|Icon=${SNAP}/usr/local/share/icons/hicolor/scalable/apps/ru.screenload.ScreenLoad.svg|' ${SNAPCRAFT_PART_INSTALL}/usr/local/share/applications/ru.screenload.ScreenLoad.desktop
+      sed -i 's/^\(Name\(\[.\+\]\)\?=.*\)$/\1 (Snappy Edition)/g' ${SNAPCRAFT_PART_INSTALL}/usr/local/share/applications/ru.screenload.ScreenLoad.desktop
     build-packages:
       - g++
       - make
@@ -86,7 +86,7 @@ slots:
   # Depending on in which environment we're running we either need
   # to use the system or session DBus so we also need to have one
   # slot for each.
-  dbus-flameshot:
+  dbus-screenload:
     interface: dbus
     bus: session
-    name: org.flameshot.Flameshot
+    name: ru.screenload.ScreenLoad

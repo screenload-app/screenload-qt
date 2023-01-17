@@ -1,19 +1,14 @@
 cmake_minimum_required(VERSION 3.13)
 # cmake_policy(SET CMP0076 OLD)
 
-set(FLAMESHOT_VERSION 12.1.0)
-
-# Flameshot-org
-set(GIT_API_URL "https://api.github.com/repos/flameshot-org/flameshot/releases/latest")
-# Namecheap
-# set(GIT_API_URL "https://api.github.com/repos/namecheap/flameshot/releases/latest")
+set(SCREENLOAD_VERSION 3.0.0)
 
 # TODO - fix it for all linux distros
 #find_package (Git)
 #if (GIT_FOUND)
 #  message("git found: ${GIT_EXECUTABLE} in version     ${GIT_VERSION_STRING}")
 #
-#  # set flameshot updates url
+#  # set screenload updates url
 #  execute_process(COMMAND ${GIT_EXECUTABLE} ls-remote --get-url OUTPUT_VARIABLE GIT_ORIGIN_REMOTE)
 #  message("GIT_ORIGIN_REMOTE: ${GIT_ORIGIN_REMOTE}")
 #  string(REGEX REPLACE ".git\r*\n*$" "/releases/latest" GIT_API_URL ${GIT_ORIGIN_REMOTE})
@@ -21,20 +16,20 @@ set(GIT_API_URL "https://api.github.com/repos/flameshot-org/flameshot/releases/l
 #  message("GIT_API_URL: '${GIT_API_URL}'")
 #
 #  # get application version
-#  execute_process(COMMAND ${GIT_EXECUTABLE} describe --tags --abbrev=0 --match v[0-9]* OUTPUT_VARIABLE FLAMESHOT_VERSION)
-#  string(REGEX REPLACE "\r" "" FLAMESHOT_VERSION ${FLAMESHOT_VERSION})
-#  string(REGEX REPLACE "\n" "" FLAMESHOT_VERSION ${FLAMESHOT_VERSION})
-#  string(REGEX REPLACE "^v" "" FLAMESHOT_VERSION ${FLAMESHOT_VERSION})
-#  message("FLAMESHOT_VERSION: '${FLAMESHOT_VERSION}'")
+#  execute_process(COMMAND ${GIT_EXECUTABLE} describe --tags --abbrev=0 --match v[0-9]* OUTPUT_VARIABLE SCREENLOAD_VERSION)
+#  string(REGEX REPLACE "\r" "" SCREENLOAD_VERSION ${SCREENLOAD_VERSION})
+#  string(REGEX REPLACE "\n" "" SCREENLOAD_VERSION ${SCREENLOAD_VERSION})
+#  string(REGEX REPLACE "^v" "" SCREENLOAD_VERSION ${SCREENLOAD_VERSION})
+#  message("SCREENLOAD_VERSION: '${SCREENLOAD_VERSION}'")
 #else()
 #  message("git command is not found")
 #endif ()
 
 project(
-        flameshot
-        VERSION ${FLAMESHOT_VERSION}
+        screenload
+        VERSION ${SCREENLOAD_VERSION}
         LANGUAGES CXX)
-set(PROJECT_NAME_CAPITALIZED "Flameshot")
+set(PROJECT_NAME_CAPITALIZED "ScreenLoad")
 
 # This can be read from ${PROJECT_NAME} after project() is called
 if (APPLE)
@@ -47,11 +42,11 @@ set(DEFAULT_RUN_IN_PLACE FALSE)
 if(WIN32)
   set(DEFAULT_RUN_IN_PLACE TRUE)
   # For Windows RC file.
-  add_definitions(-DFLAMESHOT_VERSION_MAJOR=${CMAKE_PROJECT_VERSION_MAJOR})
-  add_definitions(-DFLAMESHOT_VERSION_MINOR=${CMAKE_PROJECT_VERSION_MINOR})
-  add_definitions(-DFLAMESHOT_VERSION_BUGFIX=${CMAKE_PROJECT_VERSION_PATCH})
-  add_definitions(-DFLAMESHOT_VERSION_BUILD=1)
-  add_definitions(-DFLAMESHOT_VERSION_STRING="${PROJECT_VERSION}")
+  add_definitions(-DSCREENLOAD_VERSION_MAJOR=${CMAKE_PROJECT_VERSION_MAJOR})
+  add_definitions(-DSCREENLOAD_VERSION_MINOR=${CMAKE_PROJECT_VERSION_MINOR})
+  add_definitions(-DSCREENLOAD_VERSION_BUGFIX=${CMAKE_PROJECT_VERSION_PATCH})
+  add_definitions(-DSCREENLOAD_VERSION_BUILD=1)
+  add_definitions(-DSCREENLOAD_VERSION_STRING="${PROJECT_VERSION}")
 elseif(APPLE)
   set(Qt5_DIR "$(brew --prefix qt5)/lib/cmake/Qt5/" CACHE PATH "directory where Qt5Config.cmake exists.")
   set(CMAKE_MACOSX_BUNDLE ON)
@@ -62,7 +57,7 @@ set(RUN_IN_PLACE
         CACHE BOOL "Run directly in source directory structure")
 
 
-option(FLAMESHOT_DEBUG_CAPTURE "Enable mode to make debugging easier" OFF)
+option(SCREENLOAD_DEBUG_CAPTURE "Enable mode to make debugging easier" OFF)
 option(USE_MONOCHROME_ICON "Build using monochrome icon as default" OFF)
 option(GENERATE_TS "Regenerate translation source files" OFF)
 option(USE_EXTERNAL_SINGLEAPPLICATION "Use external QtSingleApplication library" OFF)
@@ -107,7 +102,7 @@ endif()
 
 option(BUILD_STATIC_LIBS ON)
 option(BUILD_SHARED_LIBS OFF)
-add_subdirectory(external/Qt-Color-Widgets EXCLUDE_FROM_ALL) 
+add_subdirectory(external/Qt-Color-Widgets EXCLUDE_FROM_ALL)
 
 
 if (APPLE)
@@ -116,12 +111,12 @@ endif()
 add_subdirectory(src)
 
 # CPack
-set(CPACK_PACKAGE_VENDOR "flameshot-org")
+set(CPACK_PACKAGE_VENDOR "Download.Ru")
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Powerful yet simple to use screenshot software.")
 set(CPACK_PACKAGE_VERSION ${PROJECT_VERSION})
-set(CPACK_PACKAGE_HOMEPAGE_URL "https://flameshot.org")
-set(CPACK_PACKAGE_CONTACT "flameshot-org developers <info@flameshot.org>")
-set(CPACK_PACKAGE_ICON "${CMAKE_SOURCE_DIR}/data/img/app/org.flameshot.Flameshot.svg") # TODO: Can any generator make
+set(CPACK_PACKAGE_HOMEPAGE_URL "https://screenload.ru/")
+set(CPACK_PACKAGE_CONTACT "ScreenLoad developers <support@download.ru>")
+set(CPACK_PACKAGE_ICON "${CMAKE_SOURCE_DIR}/data/img/app/ru.screenload.ScreenLoad.svg") # TODO: Can any generator make
 # use of this?
 set(CPACK_PACKAGE_DESCRIPTION_FILE "${CMAKE_SOURCE_DIR}/README.md") # TODO: Where is this used? Do we need a better
 # source?
@@ -148,7 +143,7 @@ if(WIN32)
 
     # WIX (Windows .msi installer)
     # 48x48 pixels
-    set(CPACK_WIX_PRODUCT_ICON "${CMAKE_SOURCE_DIR}/data/img/app/flameshot.ico")
+    set(CPACK_WIX_PRODUCT_ICON "${CMAKE_SOURCE_DIR}/data/img/app/screenload.ico")
     # Supported languages can be found at http://wixtoolset.org/documentation/manual/v3/wixui/wixui_localization.html
     # set(CPACK_WIX_CULTURES "ar-SA,bg-BG,ca-ES,hr-HR,cs-CZ,da-DK,nl-NL,en-US,et-EE,fi-FI,fr-FR,de-DE")
     set(CPACK_WIX_UI_BANNER "${CMAKE_SOURCE_DIR}/packaging/win-installer/Bitmaps/CPACK_WIX_UI_BANNER.BMP")

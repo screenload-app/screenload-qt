@@ -13,7 +13,7 @@
 #include "abstractlogger.h"
 #include "copytool.h"
 #include "src/config/cacheutils.h"
-#include "src/core/flameshot.h"
+#include "src/core/screenload.h"
 #include "src/core/qguiappcurrentscreen.h"
 #include "src/tools/toolfactory.h"
 #include "src/utils/colorutils.h"
@@ -137,8 +137,8 @@ CaptureWidget::CaptureWidget(const CaptureRequest& req,
         move(currentScreen->geometry().x(), currentScreen->geometry().y());
         resize(currentScreen->size());
 #else
-// Call cmake with -DFLAMESHOT_DEBUG_CAPTURE=ON to enable easier debugging
-#if !defined(FLAMESHOT_DEBUG_CAPTURE)
+// Call cmake with -DSCREENLOAD_DEBUG_CAPTURE=ON to enable easier debugging
+#if !defined(SCREENLOAD_DEBUG_CAPTURE)
         setWindowFlags(Qt::BypassWindowManagerHint | Qt::WindowStaysOnTopHint |
                        Qt::FramelessWindowHint | Qt::Tool);
         resize(pixmap().size());
@@ -264,10 +264,10 @@ CaptureWidget::~CaptureWidget()
         setLastRegion(lastRegion);
         QRect geometry(m_context.selection);
         geometry.setTopLeft(geometry.topLeft() + m_context.widgetOffset);
-        Flameshot::instance()->exportCapture(
+        ScreenLoad::instance()->exportCapture(
           pixmap(), geometry, m_context.request);
     } else {
-        emit Flameshot::instance()->captureFailed();
+        emit ScreenLoad::instance()->captureFailed();
     }
 }
 
@@ -506,13 +506,13 @@ void CaptureWidget::paintEvent(QPaintEvent* paintEvent)
 
     if (!isActiveWindow()) {
         drawErrorMessage(
-          tr("Flameshot has lost focus. Keyboard shortcuts won't "
+          tr("ScreenLoad has lost focus. Keyboard shortcuts won't "
              "work until you click somewhere."),
           &painter);
     } else if (m_configError) {
         drawErrorMessage(ConfigHandler().errorMessage(), &painter);
     } else if (m_configErrorResolved) {
-        drawErrorMessage(tr("Configuration error resolved. Launch `flameshot "
+        drawErrorMessage(tr("Configuration error resolved. Launch `screenload "
                             "gui` again to apply it."),
                          &painter);
     }
@@ -1202,7 +1202,7 @@ void CaptureWidget::handleToolSignal(CaptureTool::Request r)
                 w->setAttribute(Qt::WA_DeleteOnClose);
                 w->activateWindow();
                 w->show();
-                Flameshot::instance()->setExternalWidget(true);
+                ScreenLoad::instance()->setExternalWidget(true);
             }
             break;
         case CaptureTool::REQ_INCREASE_TOOL_SIZE:

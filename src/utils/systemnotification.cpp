@@ -1,5 +1,5 @@
 #include "systemnotification.h"
-#include "src/core/flameshot.h"
+#include "src/core/screenload.h"
 #include "src/utils/confighandler.h"
 #include <QApplication>
 #include <QUrl>
@@ -9,14 +9,14 @@
 #include <QDBusInterface>
 #include <QDBusMessage>
 #else
-#include "src/core/flameshotdaemon.h"
+#include "src/core/screenloaddaemon.h"
 #endif
 
 // work-around for snap, which cannot install icons into
 // the system folder, so instead the absolute path to the
-// icon (saved somewhere in /snap/flameshot/...) is passed
-#ifndef FLAMESHOT_ICON
-#define FLAMESHOT_ICON "flameshot"
+// icon (saved somewhere in /snap/screenload/...) is passed
+#ifndef SCREENLOAD_ICON
+#define SCREENLOAD_ICON "screenload"
 #endif
 
 SystemNotification::SystemNotification(QObject* parent)
@@ -36,7 +36,7 @@ SystemNotification::SystemNotification(QObject* parent)
 void SystemNotification::sendMessage(const QString& text,
                                      const QString& savePath)
 {
-    sendMessage(text, tr("Flameshot Info"), savePath);
+    sendMessage(text, tr("ScreenLoad Info"), savePath);
 }
 
 void SystemNotification::sendMessage(const QString& text,
@@ -53,9 +53,9 @@ void SystemNotification::sendMessage(const QString& text,
       this,
       [&]() {
           // The call is queued to avoid recursive static initialization of
-          // Flameshot and ConfigHandler.
-          if (FlameshotDaemon::instance())
-              FlameshotDaemon::instance()->sendTrayNotification(
+          // ScreenLoad and ConfigHandler.
+          if (ScreenLoadDaemon::instance())
+              ScreenLoadDaemon::instance()->sendTrayNotification(
                 text, title, timeout);
       },
       Qt::QueuedConnection);
@@ -71,7 +71,7 @@ void SystemNotification::sendMessage(const QString& text,
 
     args << (qAppName())                 // appname
          << static_cast<unsigned int>(0) // id
-         << FLAMESHOT_ICON               // icon
+         << SCREENLOAD_ICON               // icon
          << title                        // summary
          << text                         // body
          << QStringList()                // actions

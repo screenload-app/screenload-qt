@@ -216,12 +216,12 @@
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="497"/>
-        <source>Flameshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
+        <source>ScreenLoad has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../../src/widgets/capture/capturewidget.cpp" line="503"/>
-        <source>Configuration error resolved. Launch `flameshot gui` again to apply it.</source>
+        <source>Configuration error resolved. Launch `screenload gui` again to apply it.</source>
         <translation></translation>
     </message>
     <message>
@@ -442,7 +442,7 @@ Premeu Espai per obrir el calaix lateral.</translation>
     <message>
         <location filename="../../src/config/configresolver.cpp" line="90"/>
         <source>Some keyboard shortcuts have conflicts.
-This will NOT prevent flameshot from starting.
+This will NOT prevent screenload from starting.
 Please solve them manually in the configuration file.</source>
         <translation></translation>
     </message>
@@ -662,9 +662,9 @@ Please solve them manually in the configuration file.</source>
     </message>
 </context>
 <context>
-    <name>FlameshotDaemon</name>
+    <name>ScreenLoadDaemon</name>
     <message>
-        <location filename="../../src/core/flameshotdaemon.cpp" line="262"/>
+        <location filename="../../src/core/screenloaddaemon.cpp" line="262"/>
         <source>Unable to connect via DBus</source>
         <translation></translation>
     </message>
@@ -843,12 +843,12 @@ Please solve them manually in the configuration file.</source>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="330"/>
-        <source>Allow multiple flameshot GUI instances simultaneously</source>
+        <source>Allow multiple screenload GUI instances simultaneously</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="331"/>
-        <source>This allows you to take screenshots of flameshot itself for example.</source>
+        <source>This allows you to take screenshots of screenload itself for example.</source>
         <translation></translation>
     </message>
     <message>
@@ -864,7 +864,7 @@ Please solve them manually in the configuration file.</source>
     </message>
     <message>
         <location filename="../../src/config/generalconf.cpp" line="356"/>
-        <source>Launch Flameshot</source>
+        <source>Launch ScreenLoad</source>
         <translation></translation>
     </message>
     <message>
@@ -1650,7 +1650,7 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/cli/commandlineparser.cpp" line="335"/>
-        <source>Per default runs Flameshot in the background and adds a tray icon for configuration.</source>
+        <source>Per default runs ScreenLoad in the background and adds a tray icon for configuration.</source>
         <translation></translation>
     </message>
     <message>
@@ -1824,7 +1824,7 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     </message>
     <message>
         <location filename="../../src/config/setshortcutwidget.cpp" line="46"/>
-        <source>Flameshot must be restarted for changes to take effect.</source>
+        <source>ScreenLoad must be restarted for changes to take effect.</source>
         <translation></translation>
     </message>
 </context>
@@ -2036,7 +2036,7 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     <name>SystemNotification</name>
     <message>
         <location filename="../../src/utils/systemnotification.cpp" line="30"/>
-        <source>Flameshot Info</source>
+        <source>ScreenLoad Info</source>
         <translation></translation>
     </message>
 </context>
@@ -2146,7 +2146,7 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     <name>UpdateNotificationWidget</name>
     <message>
         <location filename="../../src/widgets/updatenotificationwidget.cpp" line="69"/>
-        <source>New Flameshot version %1 is available</source>
+        <source>New ScreenLoad version %1 is available</source>
         <translation></translation>
     </message>
     <message>

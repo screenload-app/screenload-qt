@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 // SPDX-FileCopyrightText: 2017-2019 Alejandro Sirgo Rica & Contributors
 #include "generalconf.h"
-#include "src/core/flameshot.h"
+#include "src/core/screenload.h"
 #include "src/utils/confighandler.h"
 #include <QCheckBox>
 #include <QComboBox>
@@ -356,9 +356,9 @@ void GeneralConf::initCheckForUpdates()
 void GeneralConf::initAllowMultipleGuiInstances()
 {
     m_allowMultipleGuiInstances = new QCheckBox(
-      tr("Allow multiple flameshot GUI instances simultaneously"), this);
+      tr("Allow multiple screenload GUI instances simultaneously"), this);
     m_allowMultipleGuiInstances->setToolTip(tr(
-      "This allows you to take screenshots of Flameshot itself for example"));
+      "This allows you to take screenshots of ScreenLoad itself for example"));
     m_scrollAreaLayout->addWidget(m_allowMultipleGuiInstances);
     connect(m_allowMultipleGuiInstances,
             &QCheckBox::clicked,
@@ -383,7 +383,7 @@ void GeneralConf::initAutostart()
 {
     m_autostart = new QCheckBox(tr("Launch at startup"), this);
     m_autostart->setToolTip(
-      tr("Launch Flameshot daemon when computer is booted"));
+      tr("Launch ScreenLoad daemon when computer is booted"));
     m_scrollAreaLayout->addWidget(m_autostart);
 
     connect(

@@ -1,6 +1,6 @@
 # V11.0 Beta
 
-This is the BETA release for version 11. As you will see below there were major refactorings to the internals of Flameshot. We did our best internal testing, but this particular beta is more likely to have issues than most.
+This is the BETA release for version 11. As you will see below there were major refactorings to the internals of ScreenLoad. We did our best internal testing, but this particular beta is more likely to have issues than most.
 
 We will be in beta for 1-2 weeks depending on what kind of issues are found and then do the official release. 
 
@@ -12,12 +12,12 @@ We will be in beta for 1-2 weeks depending on what kind of issues are found and 
 
 - DBus is no longer required for CLI options.
 
-- Flameshot can now be run in "one off" mode which means the background systray component is now optional. See the CLI details below.
+- ScreenLoad can now be run in "one off" mode which means the background systray component is now optional. See the CLI details below.
 
 - The CLI has been completely refactored. With the new architecture we added the following:
-  - The man page has been rewritten to reflect all the new options. The best place to learn about these new features is the man page or flameshot --help, but some notable new features will be outlined here. 
+  - The man page has been rewritten to reflect all the new options. The best place to learn about these new features is the man page or screenload --help, but some notable new features will be outlined here. 
   - CLI is now callable from MacOS.
-  - CLI options are unified wherever possible. This means if an argument is added to "flameshot gui" it is also likely to be supported in "flameshot full".
+  - CLI options are unified wherever possible. This means if an argument is added to "screenload gui" it is also likely to be supported in "screenload full".
   - `--region` is a new flag that allows users to specify the exact region to screenshot. It uses the same syntax as xrandr: `WxH+x+y`.
     - This is likely to be added to the launcher in the next release. 
   - `--accept-on-select` This flag will save the image as soon as the mouse is released when selecting a region.
@@ -56,7 +56,7 @@ We will be in beta for 1-2 weeks depending on what kind of issues are found and 
 
 - MacOS users can now bind a custom hotkey for taking a screenshot. 
 
-- The config file parser has been reworked. It will now alert users if there is an error in their config. If a repair is possible, Flameshot attempts to repair the file. 
+- The config file parser has been reworked. It will now alert users if there is an error in their config. If a repair is possible, ScreenLoad attempts to repair the file. 
   - We do our best not to break existing configs, but sometimes adding new features or removing old ones force this to change. 
 
 - Double clicking can be used to copy the screenshot to the clipboard. 
@@ -78,9 +78,9 @@ We will be in beta for 1-2 weeks depending on what kind of issues are found and 
 
 - Path handling has been improved.
 
-- Fixed an issue where running Flameshot for the first time on NixOS would fail to create the config file.
+- Fixed an issue where running ScreenLoad for the first time on NixOS would fail to create the config file.
 
-- Fixed a problem with some window managers where Flameshot would lose focus and shortcuts would stop working.
+- Fixed a problem with some window managers where ScreenLoad would lose focus and shortcuts would stop working.
 
 ## Known Issues
 - Fractional scaling on linux is still not resolved.  (But we have identified a workaround finally. Hope to merge soon.)
@@ -89,33 +89,33 @@ We will be in beta for 1-2 weeks depending on what kind of issues are found and 
 I want to give special shout outs to some team members that made this release possible. 
 - @veracioux for doing most of the refactoring that made this release possible 
 - @mmahmoudian for tirelessly doing triage and community management
-- @Correct-Syntax for the [redesigned website](https://flameshot.org)
+- @Correct-Syntax for the [redesigned website](https://screenload.org)
 
-We are very excited by the many first time contributors that helped with this release. We are always looking for more people to contribute to Flameshot and are happy to provide mentorship if needed:
+We are very excited by the many first time contributors that helped with this release. We are always looking for more people to contribute to ScreenLoad and are happy to provide mentorship if needed:
 
-* @johnjago made their first contribution in https://github.com/flameshot-org/flameshot/pull/1779
-* @veracioux made their first contribution in https://github.com/flameshot-org/flameshot/pull/1782
-* @etircopyh made their first contribution in https://github.com/flameshot-org/flameshot/pull/1799
-* @uncomfyhalomacro made their first contribution in https://github.com/flameshot-org/flameshot/pull/1832
-* @karlhorky made their first contribution in https://github.com/flameshot-org/flameshot/pull/1845
-* @Cr4ckC4t made their first contribution in https://github.com/flameshot-org/flameshot/pull/1849
-* @j-tai made their first contribution in https://github.com/flameshot-org/flameshot/pull/1856
-* @CrystalSage made their first contribution in https://github.com/flameshot-org/flameshot/pull/1926
-* @a1346054 made their first contribution in https://github.com/flameshot-org/flameshot/pull/1918
-* @PrSunflower made their first contribution in https://github.com/flameshot-org/flameshot/pull/1582
-* @mgalgs made their first contribution in https://github.com/flameshot-org/flameshot/pull/1940
-* @GongHeng2017 made their first contribution in https://github.com/flameshot-org/flameshot/pull/1812
-* @gVirtu made their first contribution in https://github.com/flameshot-org/flameshot/pull/1981
-* @YizhePKU made their first contribution in https://github.com/flameshot-org/flameshot/pull/1979
-* @Lyqst made their first contribution in https://github.com/flameshot-org/flameshot/pull/1995
-* @AdavisSnakes made their first contribution in https://github.com/flameshot-org/flameshot/pull/1992
-* @deo002 made their first contribution in https://github.com/flameshot-org/flameshot/pull/2008
-* @Michael-F-Bryan made their first contribution in https://github.com/flameshot-org/flameshot/pull/2012
-* @sryze made their first contribution in https://github.com/flameshot-org/flameshot/pull/2026
-* @meesha7 made their first contribution in https://github.com/flameshot-org/flameshot/pull/2042
-* @majkinetor made their first contribution in https://github.com/flameshot-org/flameshot/pull/2056
-* @claytron5000 made their first contribution in https://github.com/flameshot-org/flameshot/pull/2068
-* @LHBosssss made their first contribution in https://github.com/flameshot-org/flameshot/pull/2098
-* @ffabss made their first contribution in https://github.com/flameshot-org/flameshot/pull/2140
-* @reggermont made their first contribution in https://github.com/flameshot-org/flameshot/pull/2150
-* @RiedleroD made their first contribution in https://github.com/flameshot-org/flameshot/pull/2130
+* @johnjago made their first contribution in https://github.com/screenload-org/screenload/pull/1779
+* @veracioux made their first contribution in https://github.com/screenload-org/screenload/pull/1782
+* @etircopyh made their first contribution in https://github.com/screenload-org/screenload/pull/1799
+* @uncomfyhalomacro made their first contribution in https://github.com/screenload-org/screenload/pull/1832
+* @karlhorky made their first contribution in https://github.com/screenload-org/screenload/pull/1845
+* @Cr4ckC4t made their first contribution in https://github.com/screenload-org/screenload/pull/1849
+* @j-tai made their first contribution in https://github.com/screenload-org/screenload/pull/1856
+* @CrystalSage made their first contribution in https://github.com/screenload-org/screenload/pull/1926
+* @a1346054 made their first contribution in https://github.com/screenload-org/screenload/pull/1918
+* @PrSunflower made their first contribution in https://github.com/screenload-org/screenload/pull/1582
+* @mgalgs made their first contribution in https://github.com/screenload-org/screenload/pull/1940
+* @GongHeng2017 made their first contribution in https://github.com/screenload-org/screenload/pull/1812
+* @gVirtu made their first contribution in https://github.com/screenload-org/screenload/pull/1981
+* @YizhePKU made their first contribution in https://github.com/screenload-org/screenload/pull/1979
+* @Lyqst made their first contribution in https://github.com/screenload-org/screenload/pull/1995
+* @AdavisSnakes made their first contribution in https://github.com/screenload-org/screenload/pull/1992
+* @deo002 made their first contribution in https://github.com/screenload-org/screenload/pull/2008
+* @Michael-F-Bryan made their first contribution in https://github.com/screenload-org/screenload/pull/2012
+* @sryze made their first contribution in https://github.com/screenload-org/screenload/pull/2026
+* @meesha7 made their first contribution in https://github.com/screenload-org/screenload/pull/2042
+* @majkinetor made their first contribution in https://github.com/screenload-org/screenload/pull/2056
+* @claytron5000 made their first contribution in https://github.com/screenload-org/screenload/pull/2068
+* @LHBosssss made their first contribution in https://github.com/screenload-org/screenload/pull/2098
+* @ffabss made their first contribution in https://github.com/screenload-org/screenload/pull/2140
+* @reggermont made their first contribution in https://github.com/screenload-org/screenload/pull/2150
+* @RiedleroD made their first contribution in https://github.com/screenload-org/screenload/pull/2130

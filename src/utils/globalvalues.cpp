@@ -13,24 +13,24 @@ int GlobalValues::buttonBaseSize()
 
 QString GlobalValues::versionInfo()
 {
-    return QStringLiteral("Flameshot " APP_VERSION " (" FLAMESHOT_GIT_HASH ")"
+    return QStringLiteral("ScreenLoad " APP_VERSION " (" SCREENLOAD_GIT_HASH ")"
                           "\nCompiled with Qt " QT_VERSION_STR);
 }
 
 QString GlobalValues::iconPath()
 {
 #if USE_MONOCHROME_ICON
-    return QString(":img/app/flameshot.monochrome.svg");
+    return QString(":img/app/screenload.monochrome.svg");
 #else
-    return { ":img/app/flameshot.svg" };
+    return { ":img/app/screenload.svg" };
 #endif
 }
 
 QString GlobalValues::iconPathPNG()
 {
 #if USE_MONOCHROME_ICON
-    return QString(":img/app/flameshot.monochrome.png");
+    return QString(":img/app/screenload.monochrome.png");
 #else
-    return { ":img/app/flameshot.png" };
+    return { ":img/app/screenload.png" };
 #endif
 }

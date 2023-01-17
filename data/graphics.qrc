@@ -1,11 +1,11 @@
 <RCC>
     <qresource prefix="/">
-        <file>img/app/org.flameshot.Flameshot.svg</file>
-        <file>img/app/flameshot.svg</file>
-        <file>img/app/org.flameshot.Flameshot.png</file>
-        <file>img/app/flameshot.png</file>
-        <file>img/app/flameshot.monochrome.png</file>
-        <file>img/app/flameshot.monochrome.svg</file>
+        <file>img/app/ru.screenload.ScreenLoad.svg</file>
+        <file>img/app/screenload.svg</file>
+        <file>img/app/ru.screenload.ScreenLoad.png</file>
+        <file>img/app/screenload.png</file>
+        <file>img/app/screenload.monochrome.png</file>
+        <file>img/app/screenload.monochrome.svg</file>
         <file>img/app/keyboard.svg</file>
         <file>img/material/black/accept.svg</file>
         <file>img/material/black/arrow-bottom-left.svg</file>

@@ -219,12 +219,12 @@ Nyomd meg a Space billentyűt, hogy megnyisd az oldalsó panelt.</translation>
         <translation type="unfinished">Bezárás</translation>
     </message>
     <message>
-        <source>Flameshot has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
-        <translation>Flameshot elvesztette a fókuszt. A billentyűparancsok nem működnek, amíg nem kattintasz valahol.</translation>
+        <source>ScreenLoad has lost focus. Keyboard shortcuts won&apos;t work until you click somewhere.</source>
+        <translation>ScreenLoad elvesztette a fókuszt. A billentyűparancsok nem működnek, amíg nem kattintasz valahol.</translation>
     </message>
     <message>
-        <source>Configuration error resolved. Launch `flameshot gui` again to apply it.</source>
-        <translation>Konfigurációs hiba megoldva. Indítsa el újra a `flameshot gui-t` az alkalmazáshoz.</translation>
+        <source>Configuration error resolved. Launch `screenload gui` again to apply it.</source>
+        <translation>Konfigurációs hiba megoldva. Indítsa el újra a `screenload gui-t` az alkalmazáshoz.</translation>
     </message>
 </context>
 <context>
@@ -452,10 +452,10 @@ Nyomd meg a Space billentyűt, hogy megnyisd az oldalsó panelt.</translation>
     </message>
     <message>
         <source>Some keyboard shortcuts have conflicts.
-This will NOT prevent flameshot from starting.
+This will NOT prevent screenload from starting.
 Please solve them manually in the configuration file.</source>
         <translation>Some keyboard shortcuts have conflicts.
-This will NOT prevent flameshot from starting.
+This will NOT prevent screenload from starting.
 Please solve them manually in the configuration file.</translation>
     </message>
     <message>
@@ -649,7 +649,7 @@ Please solve them manually in the configuration file.</translation>
     </message>
 </context>
 <context>
-    <name>Flameshot</name>
+    <name>ScreenLoad</name>
     <message>
         <source>Error</source>
         <translation type="unfinished">Hiba</translation>
@@ -664,14 +664,14 @@ Please solve them manually in the configuration file.</translation>
     </message>
 </context>
 <context>
-    <name>FlameshotDBusAdapter</name>
+    <name>ScreenLoadDBusAdapter</name>
     <message>
         <source>Unable to capture screen</source>
         <translation type="vanished">Nem lehet képernyőképet készíteni</translation>
     </message>
 </context>
 <context>
-    <name>FlameshotDaemon</name>
+    <name>ScreenLoadDaemon</name>
     <message>
         <source>Unable to connect via DBus</source>
         <translation>Unable to connect via DBus</translation>
@@ -756,8 +756,8 @@ Please solve them manually in the configuration file.</translation>
         <translation type="vanished">Indítás rendszerinduláskor</translation>
     </message>
     <message>
-        <source>Launch Flameshot</source>
-        <translation type="vanished">Flameshot indítása</translation>
+        <source>Launch ScreenLoad</source>
+        <translation type="vanished">ScreenLoad indítása</translation>
     </message>
 </context>
 <context>
@@ -843,8 +843,8 @@ Please solve them manually in the configuration file.</translation>
         <translation>Indítás rendszerinduláskor</translation>
     </message>
     <message>
-        <source>Launch Flameshot</source>
-        <translation type="vanished">Flameshot indítása</translation>
+        <source>Launch ScreenLoad</source>
+        <translation type="vanished">ScreenLoad indítása</translation>
     </message>
     <message>
         <source>Show welcome message on launch</source>
@@ -903,8 +903,8 @@ Please solve them manually in the configuration file.</translation>
         <translation>Undo limit</translation>
     </message>
     <message>
-        <source>Allow multiple flameshot GUI instances simultaneously</source>
-        <translation>Allow multiple flameshot GUI instances simultaneously</translation>
+        <source>Allow multiple screenload GUI instances simultaneously</source>
+        <translation>Allow multiple screenload GUI instances simultaneously</translation>
     </message>
     <message>
         <source>Automatically close daemon when it is not needed</source>
@@ -955,12 +955,12 @@ Please solve them manually in the configuration file.</translation>
         <translation>Check for updates automatically</translation>
     </message>
     <message>
-        <source>This allows you to take screenshots of Flameshot itself for example</source>
-        <translation>This allows you to take screenshots of Flameshot itself for example</translation>
+        <source>This allows you to take screenshots of ScreenLoad itself for example</source>
+        <translation>This allows you to take screenshots of ScreenLoad itself for example</translation>
     </message>
     <message>
-        <source>Launch Flameshot daemon when computer is booted</source>
-        <translation>Launch Flameshot daemon when computer is booted</translation>
+        <source>Launch ScreenLoad daemon when computer is booted</source>
+        <translation>Launch ScreenLoad daemon when computer is booted</translation>
     </message>
     <message>
         <source>Show the welcome message box in the middle of the screen while taking a screenshot</source>
@@ -1314,8 +1314,8 @@ Please solve them manually in the configuration file.</translation>
         <translation>Version</translation>
     </message>
     <message>
-        <source>Flameshot v</source>
-        <translation>Flameshot v</translation>
+        <source>ScreenLoad v</source>
+        <translation>ScreenLoad v</translation>
     </message>
     <message>
         <source>OS Info</source>
@@ -1669,8 +1669,8 @@ Lehet, hogy meg kepp adnod egy &apos;\&apos; karaktert a &apos;#&apos; karakter 
         <translation type="vanished">A rögzítés mentve és vágolara másolva a következőként </translation>
     </message>
     <message>
-        <source>Per default runs Flameshot in the background and adds a tray icon for configuration.</source>
-        <translation>A Flameshot alapértelmezés szerint fut a háttérben és ikont helyez el a tálcán a beállítások elérése érdekében.</translation>
+        <source>Per default runs ScreenLoad in the background and adds a tray icon for configuration.</source>
+        <translation>A ScreenLoad alapértelmezés szerint fut a háttérben és ikont helyez el a tálcán a beállítások elérése érdekében.</translation>
     </message>
     <message>
         <source>Print geometry of the selection in the format W H X Y. Does nothing if raw is specified</source>
@@ -1843,8 +1843,8 @@ Lehet, hogy meg kepp adnod egy &apos;\&apos; karaktert a &apos;#&apos; karakter 
         <translation>Press Esc to cancel or ⌘+Backspace to disable the keyboard shortcut.</translation>
     </message>
     <message>
-        <source>Flameshot must be restarted for changes to take effect.</source>
-        <translation>Flameshot must be restarted for changes to take effect.</translation>
+        <source>ScreenLoad must be restarted for changes to take effect.</source>
+        <translation>ScreenLoad must be restarted for changes to take effect.</translation>
     </message>
 </context>
 <context>
@@ -2088,8 +2088,8 @@ Lehet, hogy meg kepp adnod egy &apos;\&apos; karaktert a &apos;#&apos; karakter 
 <context>
     <name>SystemNotification</name>
     <message>
-        <source>Flameshot Info</source>
-        <translation>A Flameshot-ról</translation>
+        <source>ScreenLoad Info</source>
+        <translation>A ScreenLoad-ról</translation>
     </message>
 </context>
 <context>
@@ -2214,8 +2214,8 @@ Lehet, hogy meg kepp adnod egy &apos;\&apos; karaktert a &apos;#&apos; karakter 
 <context>
     <name>UpdateNotificationWidget</name>
     <message>
-        <source>New Flameshot version %1 is available</source>
-        <translation>Elérhető az új %1 Flameshot verzió</translation>
+        <source>New ScreenLoad version %1 is available</source>
+        <translation>Elérhető az új %1 ScreenLoad verzió</translation>
     </message>
     <message>
         <source>Ignore</source>

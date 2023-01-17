@@ -4,8 +4,8 @@
 #include "capturetoolobjects.h"
 #include <QUndoCommand>
 
-#ifndef FLAMESHOT_MODIFICATIONCOMMAND_H
-#define FLAMESHOT_MODIFICATIONCOMMAND_H
+#ifndef SCREENLOAD_MODIFICATIONCOMMAND_H
+#define SCREENLOAD_MODIFICATIONCOMMAND_H
 
 class CaptureWidget;
 
@@ -25,4 +25,4 @@ private:
     CaptureWidget* m_captureWidget;
 };
 
-#endif // FLAMESHOT_MODIFICATIONCOMMAND_H
+#endif // SCREENLOAD_MODIFICATIONCOMMAND_H

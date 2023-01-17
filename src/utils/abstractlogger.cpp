@@ -104,7 +104,7 @@ AbstractLogger& AbstractLogger::attachNotificationPath(QString path)
 }
 
 /**
- * @brief Enable/disable message header (e.g. "flameshot: info:").
+ * @brief Enable/disable message header (e.g. "screenload: info:").
  */
 AbstractLogger& AbstractLogger::enableMessageHeader(bool enable)
 {
@@ -131,8 +131,8 @@ QString AbstractLogger::messageHeader(Channel channel, Target target)
 
     if (target == Notification) {
         messageChannel[0] = messageChannel[0].toUpper();
-        return "Flameshot " + messageChannel;
+        return "ScreenLoad " + messageChannel;
     } else {
-        return "flameshot: " + messageChannel + ": ";
+        return "screenload: " + messageChannel + ": ";
     }
 }

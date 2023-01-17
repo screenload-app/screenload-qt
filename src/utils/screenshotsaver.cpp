@@ -3,8 +3,8 @@
 
 #include "screenshotsaver.h"
 #include "abstractlogger.h"
-#include "src/core/flameshot.h"
-#include "src/core/flameshotdaemon.h"
+#include "src/core/screenload.h"
+#include "src/core/screenloaddaemon.h"
 #include "src/utils/confighandler.h"
 #include "src/utils/filenamehandler.h"
 #include "src/utils/globalvalues.h"
@@ -199,7 +199,7 @@ bool saveToFilesystemGUI(const QPixmap& capture)
         AbstractLogger().attachNotificationPath(savePath) << msg;
 
         if (config.copyPathAfterSave()) {
-            FlameshotDaemon::copyToClipboard(
+            ScreenLoadDaemon::copyToClipboard(
               savePath, QObject::tr("Path copied to clipboard as ") + savePath);
         }
 

@@ -10,11 +10,11 @@ History::History()
     // Get cache history path
     ConfigHandler config;
 #ifdef Q_OS_WIN
-    m_historyPath = QDir::homePath() + "/AppData/Roaming/flameshot/history/";
+    m_historyPath = QDir::homePath() + "/AppData/Roaming/screenload/history/";
 #else
     QString path = QProcessEnvironment::systemEnvironment().value(
       "XDG_CACHE_HOME", QDir::homePath() + "/.cache");
-    m_historyPath = path + "/flameshot/history/";
+    m_historyPath = path + "/screenload/history/";
 #endif
 
     // Check if directory for history exists and create if doesn't

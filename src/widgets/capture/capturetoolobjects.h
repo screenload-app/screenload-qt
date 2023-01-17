@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 // SPDX-FileCopyrightText: 2021 Yurii Puchkov & Contributors
 
-#ifndef FLAMESHOT_CAPTURETOOLOBJECTS_H
-#define FLAMESHOT_CAPTURETOOLOBJECTS_H
+#ifndef SCREENLOAD_CAPTURETOOLOBJECTS_H
+#define SCREENLOAD_CAPTURETOOLOBJECTS_H
 
 #include "src/tools/capturetool.h"
 #include <QList>
@@ -33,4 +33,4 @@ private:
     QVector<QImage> m_imageCache;
 };
 
-#endif // FLAMESHOT_CAPTURETOOLOBJECTS_H
+#endif // SCREENLOAD_CAPTURETOOLOBJECTS_H

@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=ru.screenload.ScreenLoad
+Exec=${CMAKE_INSTALL_FULL_BINDIR}/screenload

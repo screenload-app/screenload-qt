@@ -1,4 +1,4 @@
-target_sources(flameshot PRIVATE commandlineparser.h
+target_sources(screenload PRIVATE commandlineparser.h
     commandlineparser.cpp
     commandoption.h
     commandoption.cpp

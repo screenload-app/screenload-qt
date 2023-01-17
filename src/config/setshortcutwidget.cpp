@@ -43,7 +43,7 @@ SetShortcutDialog::SetShortcutDialog(QDialog* parent, QString shortcutName)
     if (shortcutName == "TAKE_SCREENSHOT" ||
         shortcutName == "SCREENSHOT_HISTORY") {
         msg +=
-          "\n" + tr("Flameshot must be restarted for changes to take effect.");
+          "\n" + tr("ScreenLoad must be restarted for changes to take effect.");
     }
     auto* infoBottom = new QLabel(msg);
     infoBottom->setMargin(10);

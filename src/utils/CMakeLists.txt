@@ -1,6 +1,6 @@
 # Required to generate MOC
 target_sources(
-  flameshot
+  screenload
   PRIVATE abstractlogger.h
             filenamehandler.h
         screengrabber.h
@@ -19,7 +19,7 @@ target_sources(
 )
 
 target_sources(
-  flameshot
+  screenload
   PRIVATE abstractlogger.cpp
         filenamehandler.cpp
         screengrabber.cpp

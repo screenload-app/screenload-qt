@@ -123,6 +123,7 @@ void DwnldrUploader::handleReply(QNetworkReply* reply)
         else
         {
             // TODO: Убрать хардкод.
+            // TODO: Без OpenSSL-файлов попадает сюда и не сообщает об ошибке!
             //QString imagePath = json.take("object")["secure_url"].toString();
             QString imagePath = QString("/f/%1").arg(json.take("object")["id"].toString());
 

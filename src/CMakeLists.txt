@@ -22,57 +22,57 @@ set(CMAKE_AUTOUIC ON)
 if (APPLE)
     # generate iconset
     execute_process(
-            COMMAND bash "-c" "mkdir -p flameshot.iconset"
+            COMMAND bash "-c" "mkdir -p screenload.iconset"
     )
     execute_process(
-            COMMAND bash "-c" "sips -z 16 16     \"${CMAKE_SOURCE_DIR}\"/data/img/app/flameshot.monochrome.png --out flameshot.iconset/icon_16x16.png"
-            COMMAND bash "-c" "sips -z 32 32     \"${CMAKE_SOURCE_DIR}\"/data/img/app/flameshot.monochrome.png --out flameshot.iconset/icon_16x16@2x.png"
-            COMMAND bash "-c" "sips -z 32 32     \"${CMAKE_SOURCE_DIR}\"/data/img/app/flameshot.monochrome.png --out flameshot.iconset/icon_32x32.png"
-            COMMAND bash "-c" "sips -z 64 64     \"${CMAKE_SOURCE_DIR}\"/data/img/app/flameshot.monochrome.png --out flameshot.iconset/icon_32x32@2x.png"
-            COMMAND bash "-c" "sips -z 64 64     \"${CMAKE_SOURCE_DIR}\"/data/img/app/flameshot.monochrome.png --out flameshot.iconset/icon_64x64x.png"
-            COMMAND bash "-c" "sips -z 128 128   \"${CMAKE_SOURCE_DIR}\"/data/img/app/flameshot.monochrome.png --out flameshot.iconset/icon_64x64@2.png"
-            COMMAND bash "-c" "sips -z 128 128   \"${CMAKE_SOURCE_DIR}\"/data/img/app/flameshot.monochrome-1024.png --out flameshot.iconset/icon_128x128.png"
-            COMMAND bash "-c" "sips -z 256 256   \"${CMAKE_SOURCE_DIR}\"/data/img/app/flameshot.monochrome-1024.png --out flameshot.iconset/icon_128x128@2x.png"
-            COMMAND bash "-c" "sips -z 256 256   \"${CMAKE_SOURCE_DIR}\"/data/img/app/flameshot.monochrome-1024.png --out flameshot.iconset/icon_256x256.png"
-            COMMAND bash "-c" "sips -z 512 512   \"${CMAKE_SOURCE_DIR}\"/data/img/app/flameshot.monochrome-1024.png --out flameshot.iconset/icon_256x256@2x.png"
-            COMMAND bash "-c" "sips -z 512 512   \"${CMAKE_SOURCE_DIR}\"/data/img/app/flameshot.monochrome-1024.png --out flameshot.iconset/icon_512x512.png"
-            COMMAND bash "-c" "sips -z 1024 1024 \"${CMAKE_SOURCE_DIR}\"/data/img/app/flameshot.monochrome-1024.png --out flameshot.iconset/icon_512x512@2x.png"
+            COMMAND bash "-c" "sips -z 16 16     \"${CMAKE_SOURCE_DIR}\"/data/img/app/screenload.monochrome.png --out screenload.iconset/icon_16x16.png"
+            COMMAND bash "-c" "sips -z 32 32     \"${CMAKE_SOURCE_DIR}\"/data/img/app/screenload.monochrome.png --out screenload.iconset/icon_16x16@2x.png"
+            COMMAND bash "-c" "sips -z 32 32     \"${CMAKE_SOURCE_DIR}\"/data/img/app/screenload.monochrome.png --out screenload.iconset/icon_32x32.png"
+            COMMAND bash "-c" "sips -z 64 64     \"${CMAKE_SOURCE_DIR}\"/data/img/app/screenload.monochrome.png --out screenload.iconset/icon_32x32@2x.png"
+            COMMAND bash "-c" "sips -z 64 64     \"${CMAKE_SOURCE_DIR}\"/data/img/app/screenload.monochrome.png --out screenload.iconset/icon_64x64x.png"
+            COMMAND bash "-c" "sips -z 128 128   \"${CMAKE_SOURCE_DIR}\"/data/img/app/screenload.monochrome.png --out screenload.iconset/icon_64x64@2.png"
+            COMMAND bash "-c" "sips -z 128 128   \"${CMAKE_SOURCE_DIR}\"/data/img/app/screenload.monochrome-1024.png --out screenload.iconset/icon_128x128.png"
+            COMMAND bash "-c" "sips -z 256 256   \"${CMAKE_SOURCE_DIR}\"/data/img/app/screenload.monochrome-1024.png --out screenload.iconset/icon_128x128@2x.png"
+            COMMAND bash "-c" "sips -z 256 256   \"${CMAKE_SOURCE_DIR}\"/data/img/app/screenload.monochrome-1024.png --out screenload.iconset/icon_256x256.png"
+            COMMAND bash "-c" "sips -z 512 512   \"${CMAKE_SOURCE_DIR}\"/data/img/app/screenload.monochrome-1024.png --out screenload.iconset/icon_256x256@2x.png"
+            COMMAND bash "-c" "sips -z 512 512   \"${CMAKE_SOURCE_DIR}\"/data/img/app/screenload.monochrome-1024.png --out screenload.iconset/icon_512x512.png"
+            COMMAND bash "-c" "sips -z 1024 1024 \"${CMAKE_SOURCE_DIR}\"/data/img/app/screenload.monochrome-1024.png --out screenload.iconset/icon_512x512@2x.png"
 
 
-            COMMAND bash "-c" "iconutil -c icns flameshot.iconset"
+            COMMAND bash "-c" "iconutil -c icns screenload.iconset"
     )
 
     execute_process(
-            COMMAND bash "-c" "rm -R flameshot.iconset"
+            COMMAND bash "-c" "rm -R screenload.iconset"
     )
 
     execute_process(
             # copy icon from cache generated on the localhost if generation on CI failed
-            COMMAND bash "-c" "[[ -r 'flameshot.icns' ]] || cp \"${CMAKE_SOURCE_DIR}\"/packaging/macos/flameshot.icns ./"
+            COMMAND bash "-c" "[[ -r 'screenload.icns' ]] || cp \"${CMAKE_SOURCE_DIR}\"/packaging/macos/screenload.icns ./"
     )
 
     # Set application icon
-    set(MACOSX_BUNDLE_ICON_FILE flameshot.icns)
+    set(MACOSX_BUNDLE_ICON_FILE screenload.icns)
 
     # And this part tells CMake where to find and install the file itself
-    set(APP_ICON_MACOSX ${CMAKE_BINARY_DIR}/flameshot.icns)
+    set(APP_ICON_MACOSX ${CMAKE_BINARY_DIR}/screenload.icns)
     set_source_files_properties(${APP_ICON_MACOSX} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
 
-    add_executable(flameshot MACOSX_BUNDLE main.cpp ${APP_ICON_MACOSX})
+    add_executable(screenload MACOSX_BUNDLE main.cpp ${APP_ICON_MACOSX})
 else ()
-    add_executable(flameshot)
+    add_executable(screenload)
 endif ()
 
-add_executable(Flameshot::flameshot ALIAS flameshot)
+add_executable(ScreenLoad::screenload ALIAS screenload)
 
-if(FLAMESHOT_ICON)
-  target_compile_definitions(flameshot PUBLIC FLAMESHOT_ICON="${FLAMESHOT_ICON}")
+if(SCREENLOAD_ICON)
+  target_compile_definitions(screenload PUBLIC SCREENLOAD_ICON="${SCREENLOAD_ICON}")
 endif()
 
 if (WIN32)
-    set_property(TARGET flameshot PROPERTY WIN32_EXECUTABLE true)
+    set_property(TARGET screenload PROPERTY WIN32_EXECUTABLE true)
     if (MSVC)
-        target_compile_options(flameshot PRIVATE /source-charset:utf-8)
+        target_compile_options(screenload PRIVATE /source-charset:utf-8)
     endif ()
 endif ()
 
@@ -83,7 +83,7 @@ add_subdirectory(utils)
 add_subdirectory(widgets)
 add_subdirectory(tools)
 
-set(FLAMESHOT_TS_FILES
+set(SCREENLOAD_TS_FILES
       ${CMAKE_SOURCE_DIR}/data/translations/Internationalization_bg.ts
       ${CMAKE_SOURCE_DIR}/data/translations/Internationalization_ca.ts
       ${CMAKE_SOURCE_DIR}/data/translations/Internationalization_cs.ts
@@ -121,25 +121,25 @@ set(FLAMESHOT_TS_FILES
          )
 
 if (GENERATE_TS)
-    qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${FLAMESHOT_TS_FILES})
+    qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${SCREENLOAD_TS_FILES})
 else ()
-    qt5_add_translation(QM_FILES ${FLAMESHOT_TS_FILES})
+    qt5_add_translation(QM_FILES ${SCREENLOAD_TS_FILES})
 endif ()
 
 target_sources(
-        flameshot
+        screenload
         PRIVATE
         # ${CMAKE_CURRENT_SOURCE_DIR}/../external/Qt-Color-Widgets/src/QtColorWidgets/color_utils.cpp
         # ${CMAKE_CURRENT_SOURCE_DIR}/../external/Qt-Color-Widgets/src/QtColorWidgets/color_wheel.cpp
         # ${CMAKE_CURRENT_SOURCE_DIR}/../external/Qt-Color-Widgets/include/QtColorWidgets/color_wheel.hpp
         ${CMAKE_CURRENT_SOURCE_DIR}/../data/graphics.qrc
         ${CMAKE_CURRENT_SOURCE_DIR}/../data/files.qrc
-        ${CMAKE_CURRENT_SOURCE_DIR}/../data/flameshot.rc # windows binary icon resource file
+        ${CMAKE_CURRENT_SOURCE_DIR}/../data/screenload.rc # windows binary icon resource file
         ${QM_FILES}
         main.cpp)
 
 target_include_directories(
-  flameshot
+  screenload
   PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../>
          $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/>
          $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../external/Qt-Color-Widgets/include>
@@ -177,7 +177,7 @@ target_include_directories(
          $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/widgets/capture>
          $<INSTALL_INTERFACE:include/mylib>)
 target_include_directories(
-    flameshot
+    screenload
     PUBLIC
          $<BUILD_INTERFACE:${CMAKE_BINARY_DIR}/>
          )
@@ -187,13 +187,13 @@ if (USE_EXTERNAL_SINGLEAPPLICATION)
     add_compile_definitions(USE_EXTERNAL_SINGLEAPPLICATION=1)
 else ()
     target_include_directories(
-        flameshot
+        screenload
         PUBLIC
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../external/singleapplication>)
 endif()
 
 target_link_libraries(
-        flameshot
+        screenload
         project_warnings
         project_options
         Qt5::Svg
@@ -206,19 +206,19 @@ target_link_libraries(
 )
 
 if (USE_WAYLAND_CLIPBOARD)
-  target_compile_definitions(flameshot PRIVATE USE_WAYLAND_CLIPBOARD=1)
-  target_link_libraries(flameshot KF5::GuiAddons)
+  target_compile_definitions(screenload PRIVATE USE_WAYLAND_CLIPBOARD=1)
+  target_link_libraries(screenload KF5::GuiAddons)
 endif()
 
 if (APPLE)
-    set(MACOSX_BUNDLE_IDENTIFIER "org.flameshot")
+    set(MACOSX_BUNDLE_IDENTIFIER "ru.screenload")
     set_target_properties(
-            flameshot
+            screenload
             PROPERTIES
             XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER ${MACOSX_BUNDLE_IDENTIFIER}
     )
     target_link_libraries(
-            flameshot
+            screenload
             qhotkey
     )
 endif ()
@@ -241,42 +241,42 @@ if (WIN32)
 endif ()
 
 # Choose default color palette (small or large)
-if($ENV{FLAMESHOT_PREDEFINED_COLOR_PALETTE_LARGE})
-    set(FLAMESHOT_PREDEFINED_COLOR_PALETTE_LARGE true)
+if($ENV{SCREENLOAD_PREDEFINED_COLOR_PALETTE_LARGE})
+    set(SCREENLOAD_PREDEFINED_COLOR_PALETTE_LARGE true)
 else()
-    set(FLAMESHOT_PREDEFINED_COLOR_PALETTE_LARGE false)
+    set(SCREENLOAD_PREDEFINED_COLOR_PALETTE_LARGE false)
 endif()
-message("Flameshot predefined color palette large: " ${FLAMESHOT_PREDEFINED_COLOR_PALETTE_LARGE})
-target_compile_definitions(flameshot PRIVATE PREDEFINED_COLOR_PALETTE_LARGE=${FLAMESHOT_PREDEFINED_COLOR_PALETTE_LARGE})
+message("ScreenLoad predefined color palette large: " ${SCREENLOAD_PREDEFINED_COLOR_PALETTE_LARGE})
+target_compile_definitions(screenload PRIVATE PREDEFINED_COLOR_PALETTE_LARGE=${SCREENLOAD_PREDEFINED_COLOR_PALETTE_LARGE})
 
 find_package (Git)
 if (GIT_FOUND)
     message("git found: ${GIT_EXECUTABLE} in version     ${GIT_VERSION_STRING}")
-    execute_process(COMMAND ${GIT_EXECUTABLE} rev-parse --short HEAD OUTPUT_VARIABLE FLAMESHOT_GIT_HASH)
-    string(REGEX REPLACE "\r*\n$" "" FLAMESHOT_GIT_HASH "${FLAMESHOT_GIT_HASH}")
-    target_compile_definitions(flameshot PRIVATE FLAMESHOT_GIT_HASH="${FLAMESHOT_GIT_HASH}")
-    message("FLAMESHOT_GIT_HASH: ${FLAMESHOT_GIT_HASH}")
+    execute_process(COMMAND ${GIT_EXECUTABLE} rev-parse --short HEAD OUTPUT_VARIABLE SCREENLOAD_GIT_HASH)
+    string(REGEX REPLACE "\r*\n$" "" SCREENLOAD_GIT_HASH "${SCREENLOAD_GIT_HASH}")
+    target_compile_definitions(screenload PRIVATE SCREENLOAD_GIT_HASH="${SCREENLOAD_GIT_HASH}")
+    message("SCREENLOAD_GIT_HASH: ${SCREENLOAD_GIT_HASH}")
 else()
-    target_compile_definitions(flameshot PRIVATE FLAMESHOT_GIT_HASH="-")
+    target_compile_definitions(screenload PRIVATE SCREENLOAD_GIT_HASH="-")
     message("git command is not found")
 endif ()
-target_compile_definitions(flameshot PRIVATE APP_PREFIX="${CMAKE_INSTALL_PREFIX}")
-target_compile_definitions(flameshot PRIVATE APP_VERSION="v${PROJECT_VERSION}")
-#target_compile_definitions(flameshot PRIVATE QAPPLICATION_CLASS=QApplication)
-target_compile_definitions(flameshot PRIVATE FLAMESHOT_APP_VERSION_URL="https://solution.s3.amazonaws.com/screenload-qt/Version.json")
+target_compile_definitions(screenload PRIVATE APP_PREFIX="${CMAKE_INSTALL_PREFIX}")
+target_compile_definitions(screenload PRIVATE APP_VERSION="v${PROJECT_VERSION}")
+#target_compile_definitions(screenload PRIVATE QAPPLICATION_CLASS=QApplication)
+target_compile_definitions(screenload PRIVATE SCREENLOAD_APP_VERSION_URL="https://solution.s3.amazonaws.com/screenload-qt/Version.json")
 # Enable easier debugging of screenshot capture mode
-if (FLAMESHOT_DEBUG_CAPTURE)
-    target_compile_definitions(flameshot PRIVATE FLAMESHOT_DEBUG_CAPTURE)
+if (SCREENLOAD_DEBUG_CAPTURE)
+    target_compile_definitions(screenload PRIVATE SCREENLOAD_DEBUG_CAPTURE)
 endif ()
 
 if (USE_MONOCHROME_ICON)
-    target_compile_definitions(flameshot PRIVATE USE_MONOCHROME_ICON)
+    target_compile_definitions(screenload PRIVATE USE_MONOCHROME_ICON)
 endif ()
 
 foreach (FILE ${QM_FILES})
     get_filename_component(F_NAME ${FILE} NAME)
     add_custom_command(
-            TARGET flameshot
+            TARGET screenload
             POST_BUILD
             COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/${F_NAME}
             ${CMAKE_CURRENT_BINARY_DIR}/translations/${F_NAME})
@@ -286,72 +286,72 @@ endforeach ()
 # Installation instructions
 
 include(GNUInstallDirs)
-set(INSTALL_CONFIGDIR ${CMAKE_INSTALL_LIBDIR}/cmake/Flameshot)
+set(INSTALL_CONFIGDIR ${CMAKE_INSTALL_LIBDIR}/cmake/ScreenLoad)
 
 if(USE_LAUNCHER_ABSOLUTE_PATH)
-    set(LAUNCHER_EXECUTABLE "${CMAKE_INSTALL_FULL_BINDIR}/flameshot")
+    set(LAUNCHER_EXECUTABLE "${CMAKE_INSTALL_FULL_BINDIR}/screenload")
 else()
-    set(LAUNCHER_EXECUTABLE "flameshot")
+    set(LAUNCHER_EXECUTABLE "screenload")
 endif()
 
 # Install binary
-install(TARGETS flameshot
-        EXPORT flameshot-targets
+install(TARGETS screenload
+        EXPORT screenload-targets
         BUNDLE DESTINATION ${CMAKE_INSTALL_BINDIR}
         RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
 if (UNIX)
     # Install desktop files, completion and dbus files
-    configure_file(${CMAKE_SOURCE_DIR}/data/desktopEntry/package/org.flameshot.Flameshot.desktop
-            ${CMAKE_CURRENT_BINARY_DIR}/share/applications/org.flameshot.Flameshot.desktop @ONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/desktopEntry/package/ru.screenload.ScreenLoad.desktop
+            ${CMAKE_CURRENT_BINARY_DIR}/share/applications/ru.screenload.ScreenLoad.desktop @ONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/appdata/org.flameshot.Flameshot.metainfo.xml
-            ${CMAKE_CURRENT_BINARY_DIR}/share/metainfo/org.flameshot.Flameshot.metainfo.xml COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/appdata/ru.screenload.ScreenLoad.metainfo.xml
+            ${CMAKE_CURRENT_BINARY_DIR}/share/metainfo/ru.screenload.ScreenLoad.metainfo.xml COPYONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/shell-completion/flameshot.bash
-            ${CMAKE_CURRENT_BINARY_DIR}/share/bash-completion/completions/flameshot COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/shell-completion/screenload.bash
+            ${CMAKE_CURRENT_BINARY_DIR}/share/bash-completion/completions/screenload COPYONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/shell-completion/flameshot.zsh
-            ${CMAKE_CURRENT_BINARY_DIR}/share/zsh/site-functions/_flameshot COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/shell-completion/screenload.zsh
+            ${CMAKE_CURRENT_BINARY_DIR}/share/zsh/site-functions/_screenload COPYONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/shell-completion/flameshot.fish
-            ${CMAKE_CURRENT_BINARY_DIR}/share/fish/vendor_completions.d/flameshot.fish COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/shell-completion/screenload.fish
+            ${CMAKE_CURRENT_BINARY_DIR}/share/fish/vendor_completions.d/screenload.fish COPYONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/dbus/org.flameshot.Flameshot.xml
-            ${CMAKE_CURRENT_BINARY_DIR}/share/dbus-1/interfaces/org.flameshot.Flameshot.xml COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/dbus/ru.screenload.ScreenLoad.xml
+            ${CMAKE_CURRENT_BINARY_DIR}/share/dbus-1/interfaces/ru.screenload.ScreenLoad.xml COPYONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/dbus/org.flameshot.Flameshot.service.in
-            ${CMAKE_CURRENT_BINARY_DIR}/share/dbus-1/services/org.flameshot.Flameshot.service)
+    configure_file(${CMAKE_SOURCE_DIR}/data/dbus/ru.screenload.ScreenLoad.service.in
+            ${CMAKE_CURRENT_BINARY_DIR}/share/dbus-1/services/ru.screenload.ScreenLoad.service)
 
     # Install man pages
-    configure_file(${CMAKE_SOURCE_DIR}/data/man/man1/flameshot.1
-            ${CMAKE_CURRENT_BINARY_DIR}/share/man/man1/flameshot.1 COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/man/man1/screenload.1
+            ${CMAKE_CURRENT_BINARY_DIR}/share/man/man1/screenload.1 COPYONLY)
 
     # Install Icons
-    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/48x48/apps/org.flameshot.Flameshot.png
-            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/48x48/apps/org.flameshot.Flameshot.png COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/48x48/apps/ru.screenload.ScreenLoad.png
+            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/48x48/apps/ru.screenload.ScreenLoad.png COPYONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/128x128/apps/org.flameshot.Flameshot.png
-            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/128x128/apps/org.flameshot.Flameshot.png COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/128x128/apps/ru.screenload.ScreenLoad.png
+            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/128x128/apps/ru.screenload.ScreenLoad.png COPYONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/scalable/apps/org.flameshot.Flameshot.svg
-            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/scalable/apps/org.flameshot.Flameshot.svg COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/scalable/apps/ru.screenload.ScreenLoad.svg
+            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/scalable/apps/ru.screenload.ScreenLoad.svg COPYONLY)
 
     # Install icon with both names
-    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/48x48/apps/flameshot.png
-            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/48x48/apps/flameshot.png COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/48x48/apps/screenload.png
+            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/48x48/apps/screenload.png COPYONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/128x128/apps/flameshot.png
-            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/128x128/apps/flameshot.png COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/128x128/apps/screenload.png
+            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/128x128/apps/screenload.png COPYONLY)
 
-    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/scalable/apps/flameshot.svg
-            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/scalable/apps/flameshot.svg COPYONLY)
+    configure_file(${CMAKE_SOURCE_DIR}/data/img/hicolor/scalable/apps/screenload.svg
+            ${CMAKE_CURRENT_BINARY_DIR}/share/icons/hicolor/scalable/apps/screenload.svg COPYONLY)
 
     # Install assets
     install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/share/ DESTINATION ${CMAKE_INSTALL_DATAROOTDIR})
 
     # Install Translations
-    install(FILES ${QM_FILES} DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/flameshot/translations)
+    install(FILES ${QM_FILES} DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/screenload/translations)
 endif ()
 
 # windeployqt
@@ -364,12 +364,12 @@ if (WIN32)
         endif ()
 
         add_custom_command(
-                TARGET flameshot
+                TARGET screenload
                 POST_BUILD
                 COMMAND ${CMAKE_COMMAND} -E remove_directory ${CMAKE_BINARY_DIR}/windeployqt_stuff
                 COMMAND
                 $ENV{QTDIR}/bin/windeployqt.exe ${BINARIES_TYPE} --no-translations --compiler-runtime --no-system-d3d-compiler
-                --no-angle --no-webkit2 --no-quick-import --dir ${CMAKE_BINARY_DIR}/windeployqt_stuff $<TARGET_FILE:flameshot>
+                --no-angle --no-webkit2 --no-quick-import --dir ${CMAKE_BINARY_DIR}/windeployqt_stuff $<TARGET_FILE:screenload>
                 # copy translations manually QM_FILES
                 COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_BINARY_DIR}/windeployqt_stuff/translations
                 COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_BINARY_DIR}/src/translations

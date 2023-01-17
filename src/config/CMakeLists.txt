@@ -1,5 +1,5 @@
 target_sources(
-  flameshot
+  screenload
   PRIVATE buttonlistview.h
             cacheutils.h
             clickablelabel.h

@@ -12,8 +12,8 @@
 #include "src/config/cacheutils.h"
 #include "src/config/styleoverride.h"
 #include "src/core/capturerequest.h"
-#include "src/core/flameshot.h"
-#include "src/core/flameshotdaemon.h"
+#include "src/core/screenload.h"
+#include "src/core/screenloaddaemon.h"
 #include "src/utils/confighandler.h"
 #include "src/utils/filenamehandler.h"
 #include "src/utils/pathinfo.h"
@@ -26,7 +26,7 @@
 #include <QTranslator>
 #if defined(Q_OS_LINUX) || defined(Q_OS_UNIX)
 #include "abstractlogger.h"
-#include "src/core/flameshotdbusadapter.h"
+#include "src/core/screenloaddbusadapter.h"
 #include <QApplication>
 #include <QDBusConnection>
 #include <QDBusMessage>
@@ -47,22 +47,22 @@ void wayland_hacks()
 
 void requestCaptureAndWait(const CaptureRequest& req)
 {
-    Flameshot* flameshot = Flameshot::instance();
-    flameshot->requestCapture(req);
-    QObject::connect(flameshot, &Flameshot::captureTaken, [&](const QPixmap&) {
+    ScreenLoad* screenload = ScreenLoad::instance();
+    screenload->requestCapture(req);
+    QObject::connect(screenload, &ScreenLoad::captureTaken, [&](const QPixmap&) {
 #if defined(Q_OS_MACOS)
         // Only useful on MacOS because each instance hosts its own widgets
-        if (!FlameshotDaemon::isThisInstanceHostingWidgets()) {
+        if (!ScreenLoadDaemon::isThisInstanceHostingWidgets()) {
             qApp->exit(0);
         }
 #else
         // if this instance is not daemon, make sure it exit after caputre finish
-        if (FlameshotDaemon::instance() == nullptr && !Flameshot::instance()->haveExternalWidget()) {
+        if (ScreenLoadDaemon::instance() == nullptr && !ScreenLoad::instance()->haveExternalWidget()) {
             qApp->exit(0);
         }
 #endif
     });
-    QObject::connect(flameshot, &Flameshot::captureFailed, []() {
+    QObject::connect(screenload, &ScreenLoad::captureFailed, []() {
         AbstractLogger::info() << "Screenshot aborted.";
         qApp->exit(1);
     });
@@ -71,7 +71,7 @@ void requestCaptureAndWait(const CaptureRequest& req)
 
 QSharedMemory* guiMutexLock()
 {
-    QString key = "org.flameshot.Flameshot-" APP_VERSION;
+    QString key = "ru.screenload.ScreenLoad-" APP_VERSION;
     auto* shm = new QSharedMemory(key);
 #ifdef Q_OS_UNIX
     // Destroy shared memory if the last instance crashed on Unix
@@ -95,10 +95,10 @@ int main(int argc, char* argv[])
     // TODO: change to QVector in v1.0
     qRegisterMetaTypeStreamOperators<QList<int>>("QList<int>");
     QCoreApplication::setApplicationVersion(APP_VERSION);
-    QCoreApplication::setApplicationName(QStringLiteral("flameshot"));
-    QCoreApplication::setOrganizationName(QStringLiteral("flameshot"));
+    QCoreApplication::setApplicationName(QStringLiteral("screenload"));
+    QCoreApplication::setOrganizationName(QStringLiteral("screenload"));
 
-    // no arguments, just launch Flameshot
+    // no arguments, just launch ScreenLoad
     if (argc == 1) {
 #ifndef USE_EXTERNAL_SINGLEAPPLICATION
         SingleApplication app(argc, argv);
@@ -137,18 +137,18 @@ int main(int argc, char* argv[])
         qApp->installTranslator(&qtTranslator);
         qApp->setAttribute(Qt::AA_DontCreateNativeWidgetSiblings, true);
 
-        auto c = Flameshot::instance();
-        FlameshotDaemon::start();
+        auto c = ScreenLoad::instance();
+        ScreenLoadDaemon::start();
 
 #if !(defined(Q_OS_MACOS) || defined(Q_OS_WIN))
-        new FlameshotDBusAdapter(c);
+        new ScreenLoadDBusAdapter(c);
         QDBusConnection dbus = QDBusConnection::sessionBus();
         if (!dbus.isConnected()) {
             AbstractLogger::error()
               << QObject::tr("Unable to connect via DBus");
         }
         dbus.registerObject(QStringLiteral("/"), c);
-        dbus.registerService(QStringLiteral("org.flameshot.Flameshot"));
+        dbus.registerService(QStringLiteral("ru.screenload.ScreenLoad"));
 #endif
         return qApp->exec();
     }
@@ -162,7 +162,7 @@ int main(int argc, char* argv[])
     // Add description
     parser.setDescription(
       QObject::tr("Powerful yet simple to use screenshot software."));
-    parser.setGeneralErrorMessage(QObject::tr("See") + " flameshot --help.");
+    parser.setGeneralErrorMessage(QObject::tr("See") + " screenload --help.");
     // Arguments
     CommandArgument fullArgument(QStringLiteral("full"),
                                  QObject::tr("Capture the entire desktop."));
@@ -172,7 +172,7 @@ int main(int argc, char* argv[])
       QStringLiteral("gui"),
       QObject::tr("Start a manual capture in GUI mode."));
     CommandArgument configArgument(QStringLiteral("config"),
-                                   QObject::tr("Configure") + " flameshot.");
+                                   QObject::tr("Configure") + " screenload.");
     CommandArgument screenArgument(QStringLiteral("screen"),
                                    QObject::tr("Capture a single screen."));
 
@@ -348,18 +348,18 @@ int main(int argc, char* argv[])
 
     // PROCESS DATA
     //--------------
-    Flameshot::setOrigin(Flameshot::CLI);
+    ScreenLoad::setOrigin(ScreenLoad::CLI);
     if (parser.isSet(helpOption) || parser.isSet(versionOption)) {
     } else if (parser.isSet(launcherArgument)) { // LAUNCHER
         delete qApp;
         new QApplication(argc, argv);
-        Flameshot* flameshot = Flameshot::instance();
-        flameshot->launcher();
+        ScreenLoad* screenload = ScreenLoad::instance();
+        screenload->launcher();
         qApp->exec();
     } else if (parser.isSet(guiArgument)) { // GUI
         delete qApp;
         new QApplication(argc, argv);
-        // Prevent multiple instances of 'flameshot gui' from running if not
+        // Prevent multiple instances of 'screenload gui' from running if not
         // configured to do so.
         if (!ConfigHandler().allowMultipleGuiInstances()) {
             auto* mutex = guiMutexLock();
@@ -485,7 +485,7 @@ int main(int argc, char* argv[])
                 // TODO use abstract logger
                 QTextStream(stderr) << "The 'screen' command does not support "
                                        "'--region screen<N>'.\n"
-                                       "See flameshot --help.\n";
+                                       "See screenload --help.\n";
                 exit(1);
             }
             req.setInitialSelection(Region().value(region).toRect());
@@ -537,7 +537,7 @@ int main(int argc, char* argv[])
             new QApplication(argc, argv);
             QObject::connect(
               qApp, &QApplication::lastWindowClosed, qApp, &QApplication::quit);
-            Flameshot::instance()->config();
+            ScreenLoad::instance()->config();
             qApp->exec();
         } else {
             ConfigHandler config;

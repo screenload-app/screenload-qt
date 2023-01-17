@@ -4,7 +4,7 @@
 #include "capturelauncher.h"
 #include "./ui_capturelauncher.h"
 #include "src/config/cacheutils.h"
-#include "src/core/flameshot.h"
+#include "src/core/screenload.h"
 #include "src/utils/globalvalues.h"
 #include "src/utils/screengrabber.h"
 #include "src/utils/screenshotsaver.h"
@@ -110,17 +110,17 @@ void CaptureLauncher::startCapture()
     }
 
     connectCaptureSlots();
-    Flameshot::instance()->requestCapture(req);
+    ScreenLoad::instance()->requestCapture(req);
 }
 
 void CaptureLauncher::connectCaptureSlots() const
 {
-    connect(Flameshot::instance(),
-            &Flameshot::captureTaken,
+    connect(ScreenLoad::instance(),
+            &ScreenLoad::captureTaken,
             this,
             &CaptureLauncher::onCaptureTaken);
-    connect(Flameshot::instance(),
-            &Flameshot::captureFailed,
+    connect(ScreenLoad::instance(),
+            &ScreenLoad::captureFailed,
             this,
             &CaptureLauncher::onCaptureFailed);
 }
@@ -132,12 +132,12 @@ void CaptureLauncher::disconnectCaptureSlots() const
     // (random number, usually from 1 up to 20).
     // So now it enables signal on "Capture new screenshot" button and disables
     // on first success of fail.
-    disconnect(Flameshot::instance(),
-               &Flameshot::captureTaken,
+    disconnect(ScreenLoad::instance(),
+               &ScreenLoad::captureTaken,
                this,
                &CaptureLauncher::onCaptureTaken);
-    disconnect(Flameshot::instance(),
-               &Flameshot::captureFailed,
+    disconnect(ScreenLoad::instance(),
+               &ScreenLoad::captureFailed,
                this,
                &CaptureLauncher::onCaptureFailed);
 }

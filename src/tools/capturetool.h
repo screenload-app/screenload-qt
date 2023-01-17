@@ -110,7 +110,7 @@ public:
     // Name displayed for the tool, this could be translated with tr()
     virtual QString name() const = 0;
     // Codename for the tool, this shouldn't change as it is used as ID
-    // for the tool in the internals of Flameshot
+    // for the tool in the internals of ScreenLoad
     virtual CaptureTool::Type type() const = 0;
     // Short description of the tool.
     virtual QString description() const = 0;
