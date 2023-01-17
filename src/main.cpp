@@ -110,8 +110,12 @@ int main(int argc, char* argv[])
         QTranslator translator, qtTranslator;
         QStringList trPaths = PathInfo::translationsPaths();
 
-        // TODO убрать (MarketKernel).
-        QLocale locale = QLocale("ru_RU");
+        QLocale locale;
+        QLocale::Language language = locale.language();
+
+        if (QLocale::Language::Russian == language
+                || QLocale::Language::Ukrainian == language)
+            locale = QLocale("ru_RU");
 
         for (const QString& path : trPaths)
         {
