@@ -144,7 +144,11 @@ void ScreenLoad::screen(CaptureRequest req, const int screenNumber)
 
     if (screenNumber < 0) {
         QPoint globalCursorPos = QCursor::pos();
-        screen = qApp->screenAt(globalCursorPos);
+
+        // MarketKernel
+        //screen = qApp->screenAt(globalCursorPos); // включить!
+        screen = qApp->screens()[0]; // - убрать!
+
     } else if (screenNumber >= qApp->screens().count()) {
         AbstractLogger() << QObject::tr(
           "Requested screen exceeds screen count");
