@@ -235,7 +235,7 @@ void DwnldrUploader::uploadFile(const QString& accessToken)
     QHttpMultiPart *multiPart = new QHttpMultiPart(QHttpMultiPart::FormDataType);
     multiPart->append(imagePart);
 
-    QString uuidValue = QUuid::createUuid().toString().remove("-");
+    QString uuidValue = QUuid().toString().remove("-");
     QString boundaryName = QString("----------%1").arg(uuidValue);
     QByteArray boundaryNameBytes = boundaryName.toUtf8();
 
