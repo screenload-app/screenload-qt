@@ -147,7 +147,8 @@ void ScreenLoad::screen(CaptureRequest req, const int screenNumber)
 
         // MarketKernel
         //screen = qApp->screenAt(globalCursorPos); // включить!
-        screen = qApp->screens()[0]; // - убрать!
+        int cursorScreen = qApp->desktop()->screenNumber(globalCursorPos);
+        screen = qApp->screens()[cursorScreen]; // - убрать!
 
     } else if (screenNumber >= qApp->screens().count()) {
         AbstractLogger() << QObject::tr(
