@@ -22,7 +22,21 @@ void DwnldrAuthHttpServer::onNewConnection()
 static const QString readResourceText(const QString& resourceFileName)
 {
     QResource resource(resourceFileName);
-    QByteArray bytes = resource.uncompressedData();
+
+    QByteArray bytes;
+
+    int n = resource.size();
+
+    if (resource.isCompressed())
+        bytes = qUncompress(resource.data(), n);
+    else
+    {
+        const uchar* ptr_uchdata = resource.data();
+        const char* ptr_chdata = reinterpret_cast<const char*>(ptr_uchdata);
+
+        bytes = QByteArray(ptr_chdata);
+    }
+
     const QString text(bytes);
 
     return text;

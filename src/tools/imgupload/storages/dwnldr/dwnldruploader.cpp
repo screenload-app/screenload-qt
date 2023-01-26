@@ -99,11 +99,16 @@ void DwnldrUploader::handleReply(QNetworkReply* reply)
         {
             QString accessToken = json["access_token"].toString();
 
-            // Сохраняем accessToken.
-            ConfigHandler().setDwnldrAccessToken(accessToken);
+            if (!accessToken.isEmpty())
+            {
+                // Сохраняем accessToken.
+                ConfigHandler().setDwnldrAccessToken(accessToken);
 
-            uploadFile(accessToken);
-            return;
+                uploadFile(accessToken);
+                return;
+            }
+            else
+                setInfoLabelText("Error during access key request!");
         }
     }
     else // сервер вернул результат загрузки файла или ошибку.
@@ -151,9 +156,7 @@ void DwnldrUploader::handleReply(QNetworkReply* reply)
 
 void DwnldrUploader::upload()
 {
-    ConfigHandler configHandler;
-
-    QString accessToken = configHandler.dwnldrAccessToken();
+    QString accessToken = ConfigHandler().dwnldrAccessToken();
 
     if (accessToken.isEmpty())
         authorizeViaBrowser();
