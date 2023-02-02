@@ -12,13 +12,19 @@
 #include <QPixmap>
 #include <QScreen>
 
+// TODO Убрать!
+#define Q_OS_LINUX
+
 #if defined(Q_OS_LINUX) || defined(Q_OS_UNIX)
 #include "request.h"
 #include <QDBusInterface>
 #include <QDBusReply>
+#include <QFile>
 #include <QDir>
 #include <QUrl>
 #include <QUuid>
+#include <QProcess>
+#include <QStandardPaths>
 #endif
 
 ScreenGrabber::ScreenGrabber(QObject* parent)
@@ -29,6 +35,23 @@ void ScreenGrabber::freeDesktopPortal(bool& ok, QPixmap& res)
 {
 
 #if defined(Q_OS_LINUX) || defined(Q_OS_UNIX)
+
+    QString tempFolderPath = QStandardPaths::writableLocation(QStandardPaths::TempLocation);
+    QString tempFilePath = tempFolderPath + QDir::separator() + "screenload.tmp";
+    QString sg_command = QString("/usr/bin/screenload-sg -f %1").arg(tempFilePath);
+
+    int executeResult = QProcess().execute(sg_command);
+
+    if (0 == executeResult && QFile::exists(tempFilePath))
+    {
+        res = QPixmap(tempFilePath);
+        ok = true;
+
+        QFile::remove(tempFilePath);
+
+        return;
+    }
+
     QDBusInterface screenshotInterface(
       QStringLiteral("org.freedesktop.portal.Desktop"),
       QStringLiteral("/org/freedesktop/portal/desktop"),
