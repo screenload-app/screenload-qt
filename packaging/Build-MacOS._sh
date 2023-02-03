@@ -1,0 +1,21 @@
+#!/bin/bash
+
+mkdir build
+cd build
+cmake ../ -DQt5_DIR=$(brew --prefix qt5)/lib/cmake/Qt5
+make
+
+cd src
+"$(brew --prefix qt5)/bin/macdeployqt" "screenload.app" -dmg
+hdiutil convert "screenload.dmg" -format UDRW -o "screenload_rw.dmg"
+DEVICE=$(hdiutil attach -readwrite -noverify "screenload_rw.dmg" | grep -E '^/dev/' | sed 1q | awk '{print $1}')
+sleep 5
+PATH_AT_VOLUME="/Volumes/screenload/"
+CURRENT_PATH="$(pwd)"
+cd "${PATH_AT_VOLUME}"
+ln -s /Applications
+cd "${CURRENT_PATH}"
+hdiutil detach "${DEVICE}"
+rm -f "screenload.dmg"
+hdiutil convert "screenload_rw.dmg" -format UDZO -o "screenload.dmg"
+rm -f "screenload_rw.dmg"
