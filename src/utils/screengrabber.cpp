@@ -12,8 +12,7 @@
 #include <QPixmap>
 #include <QScreen>
 
-// TODO Убрать!
-#define Q_OS_LINUX
+//#define Q_OS_LINUX
 
 #if defined(Q_OS_LINUX) || defined(Q_OS_UNIX)
 #include "request.h"
