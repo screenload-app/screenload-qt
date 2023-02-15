@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.13)
 # cmake_policy(SET CMP0076 OLD)
 
-set(SCREENLOAD_VERSION 3.0.0)
+set(SCREENLOAD_VERSION 3.1.0)
 
 # TODO - fix it for all linux distros
 #find_package (Git)
