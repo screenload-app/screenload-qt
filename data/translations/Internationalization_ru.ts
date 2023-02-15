@@ -649,6 +649,16 @@ Please solve them manually in the configuration file.</source>
         <translation>Горячие клавиши</translation>
     </message>
     <message>
+        <location filename="../../src/config/configwindow.cpp" line="88"/>
+        <source>Use ScreenLoad as [Print Screen] handler instead of system tool</source>
+        <translation>Использовать ScreenLoad для обработки [Print Screen] вместо системы.</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configwindow.cpp" line="89"/>
+        <source>Use ScreenLoad to capture screenshots by [Print Screen] shortcut. Unchecking this checkbox will restore the system&apos;s default behavior.</source>
+        <translation>Использовать ScreenLoad для захвата экрана по [Print Screen]. Снятие флажка восстановит поведение системы по умолчанию.</translation>
+    </message>
+    <message>
         <location filename="../../src/config/configwindow.cpp" line="120"/>
         <source>Resolve</source>
         <translation>Решить</translation>

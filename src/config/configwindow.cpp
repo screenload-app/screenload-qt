@@ -23,8 +23,175 @@
 #include <QTabBar>
 #include <QTextStream>
 #include <QVBoxLayout>
+#include <QCheckBox>
+#include <QString>
+#include <QStringList>
+#include <QByteArray>
+#include <QProcess>
 
 // ConfigWindow contains the menus where you can configure the application
+
+// TODO: перенести в отдельный файл!
+#if defined(Q_OS_MACOS)
+#elif defined(Q_OS_WIN)
+#else
+class CommandResult
+{
+private:
+    QString outString;
+    QString errString;
+
+public:
+    explicit CommandResult(const QString &outString, const QString &errString)
+    {
+        this->outString = outString;
+        this->errString = errString;
+    }
+
+    bool hasError()
+    {
+        return !errString.isNull() && !errString.isEmpty();
+    }
+
+    bool isEmpty()
+    {
+        return outString.isNull() || outString.isEmpty();
+    }
+
+    QString getOutString()
+    {
+        return outString;
+    }
+
+    QString getErrString()
+    {
+        return errString;
+    }
+
+    QString getCleanOutString()
+    {
+        QString temp = outString;
+        temp = temp.trimmed();
+        return temp;
+    }
+
+    QStringList getStringList()
+    {
+        QString temp = outString;
+
+        temp = temp.trimmed();
+
+        if (temp.startsWith("@as", Qt::CaseInsensitive))
+            temp = temp.remove(0, 3);
+
+        temp = temp.trimmed();
+
+        if (temp.startsWith('['))
+        {
+            temp = temp.remove(0, 1);
+            temp.chop(1);
+        }
+
+        QStringList parts = temp.split(',', QString::SkipEmptyParts);
+
+        for (QStringList::iterator it = parts.begin(); it != parts.end(); ++it)
+        {
+            QString& part = *it;
+            part = part.trimmed();
+        }
+
+        return parts;
+    }
+};
+
+static CommandResult shellCommand(const QString& commandText)
+{
+    QProcess process;
+    process.start(commandText);
+    process.waitForFinished(-1);
+
+    const QByteArray stdoutBytes = process.readAllStandardOutput();
+    const QByteArray stderrBytes = process.readAllStandardError();
+
+    QString outString = QString(stdoutBytes);
+    QString errString = QString(stderrBytes);
+
+    return CommandResult(outString, errString);
+}
+
+static void setCustomKeybindingsIfNeeded()
+{
+    CommandResult getKeybindingsCommandResult = shellCommand("gsettings get org.gnome.settings-daemon.plugins.media-keys custom-keybindings");
+
+    QStringList keybindings;
+
+    if (!getKeybindingsCommandResult.hasError() && !getKeybindingsCommandResult.isEmpty())
+        keybindings = getKeybindingsCommandResult.getStringList();
+
+    const QString screenloadKeybinding = "'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/screenload/'";
+
+    if (!keybindings.isEmpty() && keybindings.contains(screenloadKeybinding, Qt::CaseInsensitive))
+        return;
+
+    keybindings.append(screenloadKeybinding);
+
+    QString keybindingsLine = keybindings.join(',');
+
+    QString setKeybindingsCommand = QString("gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings \"[%1]\"").arg(keybindingsLine);
+    shellCommand(setKeybindingsCommand);
+}
+
+static bool isCustomBindingExists()
+{
+    QString bindingCommand = QString("gsettings get org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/screenload/ binding");
+    CommandResult bindingCommandResult = shellCommand(bindingCommand);
+
+    if (bindingCommandResult.hasError())
+        return false;
+
+    QString cleanOutString = bindingCommandResult.getCleanOutString();
+
+    if (0 == cleanOutString.compare("''", Qt::CaseInsensitive))
+        return false;
+
+    return true;
+}
+
+static void setCustomBinding()
+{
+    shellCommand("gsettings reset org.gnome.settings-daemon.plugins.media-keys screenshot");
+    shellCommand("gsettings reset org.gnome.shell.keybindings show-screenshot-ui");
+
+    CommandResult commandResult = shellCommand("gsettings get org.gnome.shell.keybindings show-screenshot-ui"); // Ubuntu 22
+
+    if (commandResult.hasError()) // Ubuntu 20 or 18
+    {
+        commandResult = shellCommand("gsettings get org.gnome.settings-daemon.plugins.media-keys screenshot");
+
+        QString outString = commandResult.getOutString();
+        QString value = outString.replace("Print", ""); // формат отличается для Ubuntu 20 и Ubuntu 18, используем формат ОС и производим замену значения.
+
+        QString setCommand = QString("gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot \"%1\"").arg(value);
+        shellCommand(setCommand);
+    }
+    else
+        shellCommand("gsettings set org.gnome.shell.keybindings show-screenshot-ui \"['']\""); // Ubuntu 22
+
+    setCustomKeybindingsIfNeeded();
+
+    shellCommand("gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/screenload/ name 'screenload'");
+    shellCommand("gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/screenload/ command \"/usr/bin/screenload gui\"");
+    shellCommand("gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/screenload/ binding 'Print'");
+}
+
+static void resetCustomBinding()
+{
+    shellCommand("gsettings reset org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/screenload/ binding");
+
+    shellCommand("gsettings reset org.gnome.settings-daemon.plugins.media-keys screenshot");
+    shellCommand("gsettings reset org.gnome.shell.keybindings show-screenshot-ui");
+}
+#endif
 
 ConfigWindow::ConfigWindow(QWidget* parent)
   : QWidget(parent)
@@ -83,6 +250,25 @@ ConfigWindow::ConfigWindow(QWidget* parent)
     auto* shortcutsLayout = new QVBoxLayout(m_shortcutsTab);
     m_shortcutsTab->setLayout(shortcutsLayout);
     shortcutsLayout->addWidget(m_shortcuts);
+
+#if defined(Q_OS_MACOS)
+#elif defined(Q_OS_WIN)
+#else
+    // MarketKernel [Print Screen]
+    QCheckBox* reassignPrintScreenCheckBox = new QCheckBox(tr("Use ScreenLoad as [Print Screen] handler instead of system tool"), this);
+    reassignPrintScreenCheckBox->setChecked(isCustomBindingExists());
+    reassignPrintScreenCheckBox->setToolTip(tr("Use ScreenLoad to capture screenshots by [Print Screen] shortcut. Unchecking this checkbox will restore the system's default behavior."));
+
+    connect(reassignPrintScreenCheckBox, &QCheckBox::stateChanged, [=](int state) {
+        if (state == Qt::Checked)
+            setCustomBinding();
+        else
+            resetCustomBinding();
+    });
+
+    shortcutsLayout->addWidget(reassignPrintScreenCheckBox);
+#endif
+
     m_tabWidget->addTab(
       m_shortcutsTab, QIcon(modifier + "shortcut.svg"), tr("Shortcuts"));
 

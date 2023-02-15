@@ -18,6 +18,7 @@ GlobalShortcutFilter::GlobalShortcutFilter(QObject* parent)
     }
 }
 
+// MarketKernlel: Print Screen для Windows.
 bool GlobalShortcutFilter::nativeEventFilter(const QByteArray& eventType,
                                              void* message,
                                              long* result)

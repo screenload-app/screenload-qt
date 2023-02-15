@@ -46,6 +46,7 @@ ScreenLoad::ScreenLoad()
     QString StyleSheet = CaptureButton::globalStyleSheet();
     qApp->setStyleSheet(StyleSheet);
 
+    // MarketKernel: shortcuts for MacOS
 #if defined(Q_OS_MACOS)
     // Try to take a test screenshot, MacOS will request a "Screen Recording"
     // permissions on the first run. Otherwise it will be hidden under the
