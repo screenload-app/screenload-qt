@@ -30,7 +30,6 @@ apps:
       QT_QPA_PLATFORMTHEME: gtk3
     slots: [dbus-screenload]
     plugs:
-      - kde-frameworks-5-plug
       - home
       - removable-media
       - network
@@ -44,8 +43,6 @@ apps:
 parts:
   screenload:
     build-snaps:
-      - kde-frameworks-5-core18-sdk
-      - kde-frameworks-5-core18
       - cmake #core18 does not have new enough cmake so install from snap
     plugin: cmake
     configflags:
