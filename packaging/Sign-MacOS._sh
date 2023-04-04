@@ -1,0 +1,86 @@
+#!/bin/bash
+
+# Apple developer identity, example: "Developer ID Application: <user name> (code)"
+APPLE_DEV_IDENTITY=
+# Apple ID
+APPLE_DEV_USER=
+# Apple ID password
+APPLE_DEV_PASS=
+# Apple certificate with private and public keys
+TEMP_CI_CERT_FILENAME="certificate.p12"
+# Apple certificate password
+APPLE_DEVELOPER_ID_APPLICATION_CERT_PASS=
+# Any temporary password for keychain
+APPLE_TEMP_CI_KEYCHAIN_PASS=Temp_paSSword
+
+APP_NAME=screenload
+
+#=====================================
+#========== Create keychain ==========
+#=====================================
+
+security create-keychain -p "${APPLE_TEMP_CI_KEYCHAIN_PASS}" build.keychain
+security default-keychain -s build.keychain
+security unlock-keychain -p "${APPLE_TEMP_CI_KEYCHAIN_PASS}" build.keychain
+
+# import certificate
+security import "${TEMP_CI_CERT_FILENAME}" -P "${APPLE_DEVELOPER_ID_APPLICATION_CERT_PASS}" -k build.keychain -T /usr/bin/codesign
+security find-identity -v
+security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "${APPLE_TEMP_CI_KEYCHAIN_PASS}" build.keychain
+
+#<<<<<<<<<<<<<<<<< End create keychain
+
+
+
+#=====================================
+#============= Sign qtapp ============
+#=====================================
+
+cd src
+
+echo "--> Start application signing process"
+codesign --sign "${APPLE_DEV_IDENTITY}" --verbose --deep "${APP_NAME}.app"
+
+echo "--> Start packaging process"
+"$(brew --prefix qt5)/bin/macdeployqt" "${APP_NAME}.app" -dmg -sign-for-notarization="${APPLE_DEV_IDENTITY}"
+
+#<<<<<<<<<<<<<<<<<<<<<< End sign qtapp
+
+
+
+#=====================================
+#============ Update links ===========
+#=====================================
+
+echo "Change the permission of .dmg file"
+hdiutil convert "${APP_NAME}.dmg" -format UDRW -o "${APP_NAME}_rw.dmg"
+
+echo "Mount it and save the device"
+DEVICE=$(hdiutil attach -readwrite -noverify "${APP_NAME}_rw.dmg" | grep -E '^/dev/' | sed 1q | awk '{print $1}')
+sleep 5
+
+echo "Create the sysmbolic link to application folder"
+PATH_AT_VOLUME="/Volumes/${APP_NAME}/"
+CURRENT_PATH="$(pwd)"
+
+cd "${PATH_AT_VOLUME}"
+ln -s /Applications
+cd "${CURRENT_PATH}"
+
+hdiutil detach "${DEVICE}"
+rm -f "${APP_NAME}.dmg"
+hdiutil convert "${APP_NAME}_rw.dmg" -format UDZO -o "${APP_NAME}.dmg"
+rm -f "${APP_NAME}_rw.dmg"
+
+#<<<<<<<<<<<<<<<<<<<<<< End update links
+
+
+
+#=====================================
+#============== Sign DMG =============
+#=====================================
+
+echo "--> Start dmg signing process"
+codesign --sign "${APPLE_DEV_IDENTITY}" --verbose --deep "${APP_NAME}.dmg"
+
+#<<<<<<<<<<<<<<<<<<<<< End sign DMG
