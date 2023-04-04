@@ -2,14 +2,17 @@
 
 # Apple developer identity, example: "Developer ID Application: <user name> (code)"
 APPLE_DEV_IDENTITY=
+
 # Apple ID
 APPLE_DEV_USER=
 # Apple ID password
 APPLE_DEV_PASS=
+
 # Apple certificate with private and public keys
 TEMP_CI_CERT_FILENAME="certificate.p12"
 # Apple certificate password
 APPLE_DEVELOPER_ID_APPLICATION_CERT_PASS=
+
 # Any temporary password for keychain
 APPLE_TEMP_CI_KEYCHAIN_PASS=Temp_paSSword
 
@@ -33,24 +36,22 @@ security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "${APPLE_T
 
 
 #=====================================
-#============= Sign qtapp ============
+#============== Sign app =============
 #=====================================
-
-cd src
 
 echo "--> Start application signing process"
 codesign --sign "${APPLE_DEV_IDENTITY}" --verbose --deep "${APP_NAME}.app"
 
+#<<<<<<<<<<<<<<<<<<<<<< End sign app
+
+
+
+#=====================================
+#============= Create DMG ============
+#=====================================
+
 echo "--> Start packaging process"
 "$(brew --prefix qt5)/bin/macdeployqt" "${APP_NAME}.app" -dmg -sign-for-notarization="${APPLE_DEV_IDENTITY}"
-
-#<<<<<<<<<<<<<<<<<<<<<< End sign qtapp
-
-
-
-#=====================================
-#============ Update links ===========
-#=====================================
 
 echo "Change the permission of .dmg file"
 hdiutil convert "${APP_NAME}.dmg" -format UDRW -o "${APP_NAME}_rw.dmg"
@@ -72,7 +73,7 @@ rm -f "${APP_NAME}.dmg"
 hdiutil convert "${APP_NAME}_rw.dmg" -format UDZO -o "${APP_NAME}.dmg"
 rm -f "${APP_NAME}_rw.dmg"
 
-#<<<<<<<<<<<<<<<<<<<<<< End update links
+#<<<<<<<<<<<<<<<<<<<<<< End create DMG
 
 
 
@@ -84,3 +85,57 @@ echo "--> Start dmg signing process"
 codesign --sign "${APPLE_DEV_IDENTITY}" --verbose --deep "${APP_NAME}.dmg"
 
 #<<<<<<<<<<<<<<<<<<<<< End sign DMG
+
+
+#=====================================
+#=========== Notarization ============
+#=====================================
+
+echo "--> Start Notarization process"
+response=$(xcrun altool -t osx -f "${APP_NAME}.dmg" --primary-bundle-id "org.namecheap.${APP_NAME}" --notarize-app -u "${APPLE_DEV_USER}" -p "${APPLE_DEV_PASS}")
+requestUUID=$(echo "${response}" | tr ' ' '\n' | tail -1)
+
+for ((ATTEMPT=5; ATTEMPT>=1; ATTEMPT--))
+do
+  echo "--> Checking notarization status"
+  statusCheckResponse=$(xcrun altool --notarization-info "${requestUUID}" -u "${APPLE_DEV_USER}" -p "${APPLE_DEV_PASS}")
+
+  isSuccess=$(echo "${statusCheckResponse}" | grep "success")
+  isFailure=$(echo "${statusCheckResponse}" | grep "invalid")
+
+  if [[ "${isSuccess}" != "" ]]; then
+    echo "Notarization done!"
+    xcrun stapler staple "${APP_NAME}.dmg"
+    EXIT_CODE=$?
+    if [ ${EXIT_CODE} -ne 0 ]; then
+      echo "Stapler failed!"
+      exit ${EXIT_CODE}
+    fi
+    echo "Stapler done!"
+    break
+  fi
+  if [[ "${isFailure}" != "" ]]; then
+    echo "${statusCheckResponse}"
+    echo "Notarization failed"
+    exit 1
+  fi
+
+  echo "Notarization not finished yet, sleep 2m then check again..."
+  for num in {1..12}
+  do
+    sleep 10
+    echo "Elapsed: ${num}0 sec"
+  done
+done
+
+if [[ "${ATTEMPT}" == 0 ]]; then
+  export NOTARIZATION_CHECK="false"
+  echo "::warning Notarization check failed"
+else
+  export NOTARIZATION_CHECK="true"
+fi
+
+echo "--> Start verify signing process"
+codesign -dv --verbose=4 "${APP_NAME}.dmg"
+
+#<<<<<<<<<<<<<<<<<<<<<<<< End notarization
