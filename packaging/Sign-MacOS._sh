@@ -19,7 +19,7 @@ APPLE_TEMP_CI_KEYCHAIN_PASS=Temp_paSSword
 APP_NAME=screenload
 
 #=====================================
-#========== Create keychain ==========
+#========= 1. Create keychain ========
 #=====================================
 
 security create-keychain -p "${APPLE_TEMP_CI_KEYCHAIN_PASS}" build.keychain
@@ -36,7 +36,7 @@ security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "${APPLE_T
 
 
 #=====================================
-#============== Sign app =============
+#============ 2. Sign app ============
 #=====================================
 
 echo "--> Start application signing process"
@@ -47,7 +47,7 @@ codesign --sign "${APPLE_DEV_IDENTITY}" --verbose --deep "${APP_NAME}.app"
 
 
 #=====================================
-#============= Create DMG ============
+#=========== 3. Create DMG ===========
 #=====================================
 
 echo "--> Start packaging process"
@@ -78,7 +78,7 @@ rm -f "${APP_NAME}_rw.dmg"
 
 
 #=====================================
-#============== Sign DMG =============
+#============ 4. Sign DMG ============
 #=====================================
 
 echo "--> Start dmg signing process"
@@ -88,7 +88,7 @@ codesign --sign "${APPLE_DEV_IDENTITY}" --verbose --deep "${APP_NAME}.dmg"
 
 
 #=====================================
-#=========== Notarization ============
+#========= 5. Notarization ===========
 #=====================================
 
 echo "--> Start Notarization process"
