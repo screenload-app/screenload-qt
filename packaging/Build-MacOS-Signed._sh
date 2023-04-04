@@ -96,6 +96,10 @@ rm -f "${APP_NAME}_rw.dmg"
 echo "--> Start dmg signing process"
 codesign --sign "${APPLE_DEV_IDENTITY}" --verbose --deep "${APP_NAME}.dmg"
 
+#=====================================
+#============== Notarization =============
+#=====================================
+
 echo "--> Start Notarization process"
 response=$(xcrun altool -t osx -f "${APP_NAME}.dmg" --primary-bundle-id "org.namecheap.${APP_NAME}" --notarize-app -u "${APPLE_DEV_USER}" -p "${APPLE_DEV_PASS}")
 requestUUID=$(echo "${response}" | tr ' ' '\n' | tail -1)
