@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# Apple developer identity, example: "Developer ID Application: <user name> (code)"
+APPLE_DEV_IDENTITY=
+
+# Apple certificate with private and public keys
+TEMP_CI_CERT_FILENAME="certificate.p12"
+# Apple certificate password
+APPLE_DEVELOPER_ID_APPLICATION_CERT_PASS=
+
+# Any temporary password for keychain
+APPLE_TEMP_CI_KEYCHAIN_PASS=Temp_paSSword
+
+APP_NAME=screenload
+
+#=====================================
+#========= 1. Create keychain ========
+#=====================================
+
+security create-keychain -p "${APPLE_TEMP_CI_KEYCHAIN_PASS}" build.keychain
+security default-keychain -s build.keychain
+security unlock-keychain -p "${APPLE_TEMP_CI_KEYCHAIN_PASS}" build.keychain
+
+# import certificate
+security import "${TEMP_CI_CERT_FILENAME}" -P "${APPLE_DEVELOPER_ID_APPLICATION_CERT_PASS}" -k build.keychain -T /usr/bin/codesign
+security find-identity -v
+security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "${APPLE_TEMP_CI_KEYCHAIN_PASS}" build.keychain
+
+#<<<<<<<<<<<<<<<<< End create keychain
+
+
+
+#=====================================
+#============ 2. Sign app ============
+#=====================================
+
+echo "--> Start application signing process"
+codesign --sign "${APPLE_DEV_IDENTITY}" --verbose --deep "${APP_NAME}.app"
+
+#<<<<<<<<<<<<<<<<<<<<<< End sign app
