@@ -146,7 +146,7 @@ void DwnldrUploader::handleReply(QNetworkReply* reply)
         }
         else
         {
-            QJsonValue jsonObject = json.take("object");
+            QJsonValue jsonObject = json["object"];
             //QString imagePath = jsonObject["secure_url"].toString();
             QString imageId = jsonObject["id"].toString();
             //QString imageId = "";
