@@ -22,13 +22,17 @@ class ImgUploaderBase : public QWidget
 public:
     explicit ImgUploaderBase(const QPixmap& capture, QWidget* parent = nullptr);
 
+    QString m_currentImageName;
+
     LoadSpinner* spinner();
 
     const QUrl& imageURL();
     void setImageURL(const QUrl&);
+
+    void setErrorText(const QString &newErrorText);
+
     const QPixmap& pixmap();
     void setPixmap(const QPixmap&);
-    void setInfoLabelText(const QString&);
 
     NotificationWidget* notification();
 //    virtual void deleteImage(const QString& fileName,
@@ -37,10 +41,12 @@ public:
 
 signals:
     void uploadOk(const QUrl& url);
+    void uploadFailed();
     void deleteOk();
 
 public slots:
     void showPostUploadDialog();
+    void showUploadErrorDialog();
 
 private slots:
     void startDrag();
@@ -54,9 +60,8 @@ private:
     QPixmap m_pixmap;
 
     QVBoxLayout* m_vLayout;
-    QHBoxLayout* m_hLayout;
     // loading
-    QLabel* m_infoLabel;
+    QLabel* m_waitLabel;
     LoadSpinner* m_spinner;
     // uploaded
     QPushButton* m_openUrlButton;
@@ -65,8 +70,6 @@ private:
     QPushButton* m_toClipboardButton;
     QPushButton* m_saveToFilesystemButton;
     QUrl m_imageURL;
+    QString m_errorText;
     NotificationWidget* m_notification;
-
-public:
-    QString m_currentImageName;
 };

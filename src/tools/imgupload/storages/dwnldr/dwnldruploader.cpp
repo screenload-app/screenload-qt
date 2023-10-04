@@ -2,7 +2,6 @@
 #include "src/utils/confighandler.h"
 #include "src/utils/filenamehandler.h"
 #include "src/utils/history.h"
-#include "src/widgets/loadspinner.h"
 #include "src/widgets/notificationwidget.h"
 #include <QBuffer>
 #include <QDesktopServices>
@@ -16,6 +15,7 @@
 #include <QHttpPart>
 #include <QHttpMultiPart>
 #include <QUuid>
+#include <QLocale>
 
 static QString getPercentEncodedRedirectUrl()
 {
@@ -32,7 +32,7 @@ static QString getPercentEncodedRedirectUrl()
 static QString getUserAgent()
 {
     QString userAgent = QString(kDwnldrUserAgentTemplate).arg(
-                "3.0",
+                "3.2.0",
                 "Qt");
 
     return userAgent;
@@ -43,7 +43,18 @@ static QUrl getUploadUrl()
     QUrl uploadUrl("https://download.ru/f");
 
     QUrlQuery urlQuery;
-    urlQuery.addQueryItem("locale", "en");
+
+    QLocale locale;
+    QLocale::Language language = locale.language();
+
+    if (QLocale::Language::Russian == language)
+    {
+        urlQuery.addQueryItem("locale", "ru");
+    }
+    else
+    {
+        urlQuery.addQueryItem("locale", "en");
+    }
 
     ConfigHandler configHandler;
 
@@ -94,7 +105,8 @@ void DwnldrUploader::handleReply(QNetworkReply* reply)
             if (errorDescription.isNull())
                 errorDescription = error;
 
-            setInfoLabelText(errorDescription);
+            setErrorText(errorDescription);
+            emit uploadFailed();
         }
         else
         {
@@ -109,7 +121,10 @@ void DwnldrUploader::handleReply(QNetworkReply* reply)
                 return;
             }
             else
-                setInfoLabelText("Error during access key request!");
+            {
+                setErrorText("Error during access key request!");
+                emit uploadFailed();
+            }
         }
     }
     else // сервер вернул результат загрузки файла или ошибку.
@@ -124,36 +139,44 @@ void DwnldrUploader::handleReply(QNetworkReply* reply)
                 return;
             }
             else
-                setInfoLabelText(errorMessage);
+            {
+                setErrorText(errorMessage);
+                emit uploadFailed();
+            }
         }
         else
         {
-            // TODO: Убрать хардкод.
-            // TODO: Без OpenSSL-файлов попадает сюда и не сообщает об ошибке!
-            //QString imagePath = json.take("object")["secure_url"].toString();
-            QString imageId = json["object"].toObject()["id"].toString();
-            QString imagePath = QString("/f/%1").arg(imageId);
+            QJsonValue jsonObject = json.take("object");
+            //QString imagePath = jsonObject["secure_url"].toString();
+            QString imageId = jsonObject["id"].toString();
+            //QString imageId = "";
 
-            QUrl imageUrl(imagePath);
-            imageUrl.setScheme("https");
-            imageUrl.setHost("download.ru");
+            if (!imageId.isEmpty())
+            {
+                QString imagePath = QString("/f/%1").arg(imageId);
 
-            setImageURL(imageUrl);
+                QUrl imageUrl(imagePath);
+                imageUrl.setScheme("https");
+                imageUrl.setHost("download.ru");
 
-            // save image to history
-            QString fileName = imagePath.replace("/", "$") + ".png";
-            History history;
-            m_currentImageName = history.packFileName(kDwnldrStorageName, nullptr, fileName);
-            history.save(pixmap(), m_currentImageName);
+                setImageURL(imageUrl);
 
-            spinner()->deleteLater();
-            emit uploadOk(imageURL());
+                // save image to history
+                QString fileName = imagePath.replace("/", "$") + ".png";
+                History history;
+                m_currentImageName = history.packFileName(kDwnldrStorageName, nullptr, fileName);
+                history.save(pixmap(), m_currentImageName);
 
-            return;
+                emit uploadOk(imageURL());
+                return;
+            }
+            else
+            {
+                setErrorText("An error occurred while uploading the file!");
+                emit uploadFailed();
+            }
         }
     }
-
-    spinner()->deleteLater();
 }
 
 void DwnldrUploader::upload()

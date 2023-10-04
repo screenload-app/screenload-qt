@@ -415,6 +415,11 @@ void ScreenLoad::exportCapture(QPixmap capture,
                   widget->showPostUploadDialog();
               }
           });
+
+        QObject::connect(
+          widget, &ImgUploaderBase::uploadFailed, [=]() {
+              widget->showUploadErrorDialog();
+          });
     }
 
     if (!(tasks & CR::UPLOAD)) {
