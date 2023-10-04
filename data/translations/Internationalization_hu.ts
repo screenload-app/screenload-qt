@@ -501,6 +501,14 @@ Please solve them manually in the configuration file.</translation>
         <source>Resolve</source>
         <translation>Resolve</translation>
     </message>
+    <message>
+        <source>Use ScreenLoad as [Print Screen] handler instead of system tool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use ScreenLoad to capture screenshots by [Print Screen] shortcut. Unchecking this checkbox will restore the system&apos;s default behavior.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Controller</name>
@@ -588,6 +596,36 @@ Please solve them manually in the configuration file.</translation>
     </message>
 </context>
 <context>
+    <name>DwnldrAuthHttpServer</name>
+    <message>
+        <source>Successful Authorization!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>You have successfully authorize &lt;strong class=&quot;text-info&quot;&gt;ScreenLoad&lt;/strong&gt; to use your account!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This window will be closed automatically within 5 seconds.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>DwnldrUploader</name>
+    <message>
+        <source>Error during access key request!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>An error occurred while uploading the file!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unable to open the URL.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ExitTool</name>
     <message>
         <source>Exit</source>
@@ -646,47 +684,6 @@ Please solve them manually in the configuration file.</translation>
     <message>
         <source>screenshot</source>
         <translation type="vanished">Képernyőmentés</translation>
-    </message>
-</context>
-<context>
-    <name>ScreenLoad</name>
-    <message>
-        <source>Error</source>
-        <translation type="unfinished">Hiba</translation>
-    </message>
-    <message>
-        <source>Unable to close active modal widgets</source>
-        <translation type="unfinished">Nem sikerült bezárni az aktív widgeteket</translation>
-    </message>
-    <message>
-        <source>URL copied to clipboard.</source>
-        <translation type="unfinished">URL másolva a vágólapra.</translation>
-    </message>
-</context>
-<context>
-    <name>ScreenLoadDBusAdapter</name>
-    <message>
-        <source>Unable to capture screen</source>
-        <translation type="vanished">Nem lehet képernyőképet készíteni</translation>
-    </message>
-</context>
-<context>
-    <name>ScreenLoadDaemon</name>
-    <message>
-        <source>Unable to connect via DBus</source>
-        <translation>Unable to connect via DBus</translation>
-    </message>
-    <message>
-        <source>New version %1 is available</source>
-        <translation type="unfinished">Elérhető az új %1 verzió</translation>
-    </message>
-    <message>
-        <source>You have the latest version</source>
-        <translation type="unfinished">A legfrisebb verzió van feltelepítve</translation>
-    </message>
-    <message>
-        <source>Failed to get information about the latest version.</source>
-        <translation type="unfinished">Nem sikerült információt szerezni a legújabb verzióról.</translation>
     </message>
 </context>
 <context>
@@ -1016,7 +1013,19 @@ Please solve them manually in the configuration file.</translation>
     </message>
     <message>
         <source>Imgur Application Client ID</source>
-        <translation>Imgur Application Client ID</translation>
+        <translation type="vanished">Imgur Application Client ID</translation>
+    </message>
+    <message>
+        <source>Download.RU settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Share image after upload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Share image after upload after uploading was successful</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1135,7 +1144,7 @@ Please solve them manually in the configuration file.</translation>
     </message>
     <message>
         <source>Delete image</source>
-        <translation type="unfinished">Kép törlése</translation>
+        <translation type="obsolete">Kép törlése</translation>
     </message>
     <message>
         <source>Image to Clipboard.</source>
@@ -1201,7 +1210,7 @@ Please solve them manually in the configuration file.</translation>
     </message>
     <message>
         <source>Unable to open the URL.</source>
-        <translation>Nem lehet megnyitni az URL-t.</translation>
+        <translation type="vanished">Nem lehet megnyitni az URL-t.</translation>
     </message>
     <message>
         <source>URL copied to clipboard.</source>
@@ -1405,6 +1414,10 @@ Please solve them manually in the configuration file.</translation>
     <message>
         <source>Save to file</source>
         <translation>Save to file</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation type="unfinished">Bezárás</translation>
     </message>
 </context>
 <context>
@@ -1811,6 +1824,47 @@ Lehet, hogy meg kepp adnod egy &apos;\&apos; karaktert a &apos;#&apos; karakter 
     <message>
         <source>Hint: try setting the XDG_CURRENT_DESKTOP environment variable.</source>
         <translation>Hint: try setting the XDG_CURRENT_DESKTOP environment variable.</translation>
+    </message>
+</context>
+<context>
+    <name>ScreenLoad</name>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">Hiba</translation>
+    </message>
+    <message>
+        <source>Unable to close active modal widgets</source>
+        <translation type="unfinished">Nem sikerült bezárni az aktív widgeteket</translation>
+    </message>
+    <message>
+        <source>URL copied to clipboard.</source>
+        <translation type="unfinished">URL másolva a vágólapra.</translation>
+    </message>
+</context>
+<context>
+    <name>ScreenLoadDBusAdapter</name>
+    <message>
+        <source>Unable to capture screen</source>
+        <translation type="vanished">Nem lehet képernyőképet készíteni</translation>
+    </message>
+</context>
+<context>
+    <name>ScreenLoadDaemon</name>
+    <message>
+        <source>Unable to connect via DBus</source>
+        <translation>Unable to connect via DBus</translation>
+    </message>
+    <message>
+        <source>New version %1 is available</source>
+        <translation type="unfinished">Elérhető az új %1 verzió</translation>
+    </message>
+    <message>
+        <source>You have the latest version</source>
+        <translation type="unfinished">A legfrisebb verzió van feltelepítve</translation>
+    </message>
+    <message>
+        <source>Failed to get information about the latest version.</source>
+        <translation type="unfinished">Nem sikerült információt szerezni a legújabb verzióról.</translation>
     </message>
 </context>
 <context>

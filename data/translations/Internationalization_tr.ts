@@ -69,7 +69,7 @@
     </message>
     <message>
         <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="95"/>
-        <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="110"/>
+        <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="121"/>
         <source>Error</source>
         <translation>Hata</translation>
     </message>
@@ -79,7 +79,7 @@
         <translation>Yazılamadı</translation>
     </message>
     <message>
-        <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="110"/>
+        <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="121"/>
         <source>Unable to launch in terminal.</source>
         <translation>Terminalde başlatılamadı.</translation>
     </message>
@@ -141,66 +141,42 @@
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="100"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="185"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="179"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="185"/>
         <location filename="../../src/widgets/capturelauncher.cpp" line="52"/>
         <source> seconds</source>
         <translation> saniye</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="165"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="186"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="184"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="186"/>
         <source>Take new screenshot</source>
         <translation>Yeni ekran görüntüsü al</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="66"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="181"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="180"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="181"/>
         <source>Area:</source>
         <translation>Alan:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="14"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="178"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="176"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="178"/>
         <source>Capture Launcher</source>
         <translation>Yakalama Başlatıcı</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="34"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="179"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="177"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="179"/>
         <source>TextLabel</source>
         <translation>TextLabel</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="51"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="180"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="178"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="180"/>
         <source>Capture Mode</source>
         <translation>Yakalama Modu</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="80"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="183"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="181"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="183"/>
         <source>Delay:</source>
         <translation>Gecikme:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="93"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="184"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="183"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="184"/>
         <source>WxH+x+y</source>
         <translation>WxH+x+y</translation>
     </message>
@@ -315,73 +291,46 @@ Yan paneli açmak için Boşluk tuşuna basın.</translation>
     <name>ColorDialog</name>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="14"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="318"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="318"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="318"/>
         <source>Select Color</source>
         <translation>Renk Seç</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="55"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="319"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="319"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="319"/>
         <source>Saturation</source>
         <translation>Doygunluk</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="62"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="320"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="320"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="320"/>
         <source>Hue</source>
         <translation>Ton</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="79"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="321"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="321"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="321"/>
         <source>Hex</source>
         <translation>Hex</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="86"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="322"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="322"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="322"/>
         <source>Blue</source>
         <translation>Mavi</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="123"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="323"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="323"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="323"/>
         <source>Value</source>
         <translation>Değer</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="130"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="324"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="324"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="324"/>
         <source>Green</source>
         <translation>Yeşil</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="137"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="325"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="325"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="325"/>
         <source>Alpha</source>
         <translation>Alpha</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="144"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="326"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="326"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="326"/>
         <source>Red</source>
         <translation>Kırmızı</translation>
     </message>
@@ -517,45 +466,45 @@ Yan paneli açmak için Boşluk tuşuna basın.</translation>
 <context>
     <name>ConfigHandler</name>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="552"/>
+        <location filename="../../src/utils/confighandler.cpp" line="551"/>
         <source>Unrecognized setting: &apos;%1&apos;
 </source>
         <translation>Tanınmayan ayar: &apos;%1&apos;
 </translation>
     </message>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="560"/>
+        <location filename="../../src/utils/confighandler.cpp" line="559"/>
         <source>Unrecognized shortcut name: &apos;%1&apos;.
 </source>
         <translation>Tanınmayan kısayol adı: &apos;%1&apos;.
 </translation>
     </message>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="603"/>
+        <location filename="../../src/utils/confighandler.cpp" line="602"/>
         <source>Shortcut conflict: &apos;%1&apos; and &apos;%2&apos; have the same shortcut: %3
 </source>
         <translation>Kısayol çakışması: &apos;%1&apos; ve &apos;%2&apos; aynı kısayola sahip: %3
 </translation>
     </message>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="643"/>
+        <location filename="../../src/utils/confighandler.cpp" line="642"/>
         <source>Bad value in &apos;%1&apos;. Expected: %2
 </source>
         <translation>&apos;%1&apos; içinde hatalı değer. Beklenen: %2
 </translation>
     </message>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="693"/>
+        <location filename="../../src/utils/confighandler.cpp" line="692"/>
         <source>You have successfully resolved the configuration error.</source>
         <translation>Yapılandırma hatasını başarıyla çözdünüz.</translation>
     </message>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="716"/>
+        <location filename="../../src/utils/confighandler.cpp" line="715"/>
         <source>The configuration contains an error. Open configuration to resolve.</source>
         <translation>Yapılandırma bir hata içeriyor. Çözümlemek için yapılandırmayı açın.</translation>
     </message>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="770"/>
+        <location filename="../../src/utils/confighandler.cpp" line="769"/>
         <source>Bad config key &apos;%1&apos; in ConfigHandler. Please report this as a bug.</source>
         <translation>ConfigHandler&apos;da hatalı yapılandırma anahtarı &apos;%1&apos;. Lütfen bunu bir hata olarak bildirin.</translation>
     </message>
@@ -620,37 +569,47 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
 <context>
     <name>ConfigWindow</name>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="40"/>
+        <location filename="../../src/config/configwindow.cpp" line="207"/>
         <source>Configuration</source>
         <translation>Ayarlar</translation>
     </message>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="59"/>
+        <location filename="../../src/config/configwindow.cpp" line="226"/>
         <source>Interface</source>
         <translation>Arayüz</translation>
     </message>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="69"/>
+        <location filename="../../src/config/configwindow.cpp" line="236"/>
         <source>Filename Editor</source>
         <translation>Dosya Adı Düzenleyici</translation>
     </message>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="78"/>
+        <location filename="../../src/config/configwindow.cpp" line="245"/>
         <source>General</source>
         <translation>Genel</translation>
     </message>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="87"/>
+        <location filename="../../src/config/configwindow.cpp" line="258"/>
+        <source>Use ScreenLoad as [Print Screen] handler instead of system tool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configwindow.cpp" line="260"/>
+        <source>Use ScreenLoad to capture screenshots by [Print Screen] shortcut. Unchecking this checkbox will restore the system&apos;s default behavior.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configwindow.cpp" line="273"/>
         <source>Shortcuts</source>
         <translation>Kısayollar</translation>
     </message>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="120"/>
+        <location filename="../../src/config/configwindow.cpp" line="306"/>
         <source>Resolve</source>
         <translation>Çöz</translation>
     </message>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="124"/>
+        <location filename="../../src/config/configwindow.cpp" line="310"/>
         <source>&lt;b&gt;Configuration file has errors. Resolve them before continuing.&lt;/b&gt;</source>
         <translation>&lt;b&gt;Yapılandırma dosyasında hatalar var. Devam etmeden önce bunları çözün.&lt;/b&gt;</translation>
     </message>
@@ -739,6 +698,43 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
     </message>
 </context>
 <context>
+    <name>DwnldrAuthHttpServer</name>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldrauthhttpserver.cpp" line="81"/>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldrauthhttpserver.cpp" line="82"/>
+        <source>Successful Authorization!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldrauthhttpserver.cpp" line="83"/>
+        <source>You have successfully authorize &lt;strong class=&quot;text-info&quot;&gt;ScreenLoad&lt;/strong&gt; to use your account!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldrauthhttpserver.cpp" line="84"/>
+        <source>This window will be closed automatically within 5 seconds.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>DwnldrUploader</name>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldruploader.cpp" line="125"/>
+        <source>Error during access key request!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldruploader.cpp" line="175"/>
+        <source>An error occurred while uploading the file!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldruploader.cpp" line="277"/>
+        <source>Unable to open the URL.</source>
+        <translation type="unfinished">URL açılamıyor.</translation>
+    </message>
+</context>
+<context>
     <name>ExitTool</name>
     <message>
         <location filename="../../src/tools/exit/exittool.cpp" line="23"/>
@@ -801,47 +797,6 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
         <location filename="../../src/config/filenameeditor.cpp" line="89"/>
         <source>Deletes the name</source>
         <translation>İsmi siler</translation>
-    </message>
-</context>
-<context>
-    <name>ScreenLoad</name>
-    <message>
-        <location filename="../../src/core/screenload.cpp" line="111"/>
-        <source>Error</source>
-        <translation>Hata</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/screenload.cpp" line="111"/>
-        <source>Unable to close active modal widgets</source>
-        <translation>Etkin modal widget&apos;lar kapatılamıyor</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/screenload.cpp" line="400"/>
-        <source>URL copied to clipboard.</source>
-        <translation>URL panoya kopyalandı.</translation>
-    </message>
-</context>
-<context>
-    <name>ScreenLoadDaemon</name>
-    <message>
-        <location filename="../../src/core/screenloaddaemon.cpp" line="363"/>
-        <source>New version %1 is available</source>
-        <translation>Yeni %1 sürümü var</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/screenloaddaemon.cpp" line="369"/>
-        <source>You have the latest version</source>
-        <translation>En son sürümü kullanıyorsunuz</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/screenloaddaemon.cpp" line="378"/>
-        <source>Failed to get information about the latest version.</source>
-        <translation>En son sürüm hakkında bilgi alınamadı.</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/screenloaddaemon.cpp" line="399"/>
-        <source>Unable to connect via DBus</source>
-        <translation>DBus ile bağlanılamıyor</translation>
     </message>
 </context>
 <context>
@@ -918,47 +873,47 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
 <context>
     <name>GeneralConf</name>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="156"/>
-        <location filename="../../src/config/generalconf.cpp" line="326"/>
+        <location filename="../../src/config/generalconf.cpp" line="159"/>
+        <location filename="../../src/config/generalconf.cpp" line="329"/>
         <source>Import</source>
         <translation>İçe aktar</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="163"/>
-        <location filename="../../src/config/generalconf.cpp" line="171"/>
-        <location filename="../../src/config/generalconf.cpp" line="195"/>
-        <location filename="../../src/config/generalconf.cpp" line="681"/>
+        <location filename="../../src/config/generalconf.cpp" line="166"/>
+        <location filename="../../src/config/generalconf.cpp" line="174"/>
+        <location filename="../../src/config/generalconf.cpp" line="198"/>
+        <location filename="../../src/config/generalconf.cpp" line="714"/>
         <source>Error</source>
         <translation>Hata</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="163"/>
+        <location filename="../../src/config/generalconf.cpp" line="166"/>
         <source>Unable to read file.</source>
         <translation>Dosya okunamıyor.</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="171"/>
-        <location filename="../../src/config/generalconf.cpp" line="195"/>
+        <location filename="../../src/config/generalconf.cpp" line="174"/>
+        <location filename="../../src/config/generalconf.cpp" line="198"/>
         <source>Unable to write file.</source>
         <translation>Dosya yazılamıyor.</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="182"/>
+        <location filename="../../src/config/generalconf.cpp" line="185"/>
         <source>Save File</source>
         <translation>Dosyayı Kaydet</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="204"/>
+        <location filename="../../src/config/generalconf.cpp" line="207"/>
         <source>Confirm Reset</source>
         <translation>Sıfırlamayı Onayla</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="205"/>
+        <location filename="../../src/config/generalconf.cpp" line="208"/>
         <source>Are you sure you want to reset the configuration?</source>
         <translation>Ayarları sıfırlamak istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="236"/>
+        <location filename="../../src/config/generalconf.cpp" line="239"/>
         <source>Show help message</source>
         <translation>Yardım mesajını göster</translation>
     </message>
@@ -967,7 +922,7 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
         <translation type="vanished">Yakalama modunda başlangıçta yardım mesajını göster.</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="260"/>
+        <location filename="../../src/config/generalconf.cpp" line="263"/>
         <source>Show the side panel button</source>
         <translation>Yan panel düğmesini göster</translation>
     </message>
@@ -976,12 +931,12 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
         <translation type="vanished">Çekim modunda yan panel geçiş düğmesini göster.</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="273"/>
+        <location filename="../../src/config/generalconf.cpp" line="276"/>
         <source>Show desktop notifications</source>
         <translation>Masaüstü bildirimlerini göster</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="286"/>
+        <location filename="../../src/config/generalconf.cpp" line="289"/>
         <source>Show tray icon</source>
         <translation>Tepsi simgesini göster</translation>
     </message>
@@ -990,32 +945,32 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
         <translation type="vanished">Sistem tepsisi simgesini göster</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="299"/>
+        <location filename="../../src/config/generalconf.cpp" line="302"/>
         <source>Confirmation required to delete screenshot from the latest uploads</source>
         <translation>Son yüklenenlerden ekran görüntüsünü silmek için onay gerekli</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="314"/>
+        <location filename="../../src/config/generalconf.cpp" line="317"/>
         <source>Configuration File</source>
         <translation>Yapılandırma Dosyası</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="319"/>
+        <location filename="../../src/config/generalconf.cpp" line="322"/>
         <source>Export</source>
         <translation>Dışa aktar</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="333"/>
+        <location filename="../../src/config/generalconf.cpp" line="336"/>
         <source>Reset</source>
         <translation>Sıfırla</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="343"/>
+        <location filename="../../src/config/generalconf.cpp" line="346"/>
         <source>Automatic check for updates</source>
         <translation>Otomatik güncelleme denetimi</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="356"/>
+        <location filename="../../src/config/generalconf.cpp" line="359"/>
         <source>Allow multiple screenload GUI instances simultaneously</source>
         <translation>Aynı anda birden fazla screenload grafiksel arayüz örneğine izin ver</translation>
     </message>
@@ -1024,13 +979,13 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
         <translation type="vanished">Bu, örneğin screenload&apos;ın kendisinin ekran görüntülerini almanıza olanak tanır.</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="369"/>
-        <location filename="../../src/config/generalconf.cpp" line="371"/>
+        <location filename="../../src/config/generalconf.cpp" line="372"/>
+        <location filename="../../src/config/generalconf.cpp" line="374"/>
         <source>Automatically close daemon when it is not needed</source>
         <translation>Gerekli olmadığında arka plan programını otomatik olarak kapat</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="381"/>
+        <location filename="../../src/config/generalconf.cpp" line="384"/>
         <source>Launch at startup</source>
         <translation>Başlangıçta başlat</translation>
     </message>
@@ -1039,17 +994,17 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
         <translation type="vanished">ScreenLoad&apos;ı başlat</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="393"/>
+        <location filename="../../src/config/generalconf.cpp" line="396"/>
         <source>Show welcome message on launch</source>
         <translation>Açılışta karşılama mesajını göster</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="408"/>
+        <location filename="../../src/config/generalconf.cpp" line="411"/>
         <source>Use large predefined color palette</source>
         <translation>Önceden tanımlanmış büyük renk paleti kullan</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="432"/>
+        <location filename="../../src/config/generalconf.cpp" line="435"/>
         <source>Copy URL after upload</source>
         <translation>Yüklemeden sonra URL&apos;yi kopyala</translation>
     </message>
@@ -1058,7 +1013,7 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
         <translation type="vanished">URL&apos;yi kopyalayın ve yüklemeden sonra pencereyi kapatın</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="444"/>
+        <location filename="../../src/config/generalconf.cpp" line="447"/>
         <source>Save image after copy</source>
         <translation>Kopyaladıktan sonra resmi kaydet</translation>
     </message>
@@ -1067,179 +1022,193 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
         <translation type="vanished">Resim dosyasını kopyaladıktan sonra kaydedin</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="237"/>
+        <location filename="../../src/config/generalconf.cpp" line="240"/>
         <source>Show the help message at the beginning in the capture mode</source>
         <translation>Yakalama modu başlangıcında ipucu göster</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="247"/>
+        <location filename="../../src/config/generalconf.cpp" line="250"/>
         <source>Use last region</source>
         <translation>Son bölgeyi kullan</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="248"/>
+        <location filename="../../src/config/generalconf.cpp" line="251"/>
         <source>Uses the last region as the default selection for the next screenshot</source>
         <translation>Bir sonraki ekran görüntüsü için öntanımlı seçim olarak son bölgeyi kullanır</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="262"/>
+        <location filename="../../src/config/generalconf.cpp" line="265"/>
         <source>Show the side panel toggle button in the capture mode</source>
         <translation>Yakalama modunda yan panelde geçiş düğmesi göster</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="274"/>
+        <location filename="../../src/config/generalconf.cpp" line="277"/>
         <source>Enable desktop notifications</source>
         <translation>Masaüstü bildirimlerini etkinleştir</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="287"/>
+        <location filename="../../src/config/generalconf.cpp" line="290"/>
         <source>Show icon in the system tray</source>
         <translation>Simgeyi sistem tepsisinde göster</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="302"/>
+        <location filename="../../src/config/generalconf.cpp" line="305"/>
         <source>Ask for confirmation to delete screenshot from the latest uploads</source>
         <translation>En son yüklemelerdeki ekran görüntüsünü silmek için onay iste</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="344"/>
+        <location filename="../../src/config/generalconf.cpp" line="347"/>
         <source>Check for updates automatically</source>
         <translation>Güncellemeleri otomatik olarak kontrol et</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="357"/>
+        <location filename="../../src/config/generalconf.cpp" line="360"/>
         <source>This allows you to take screenshots of ScreenLoad itself for example</source>
         <translation>Bu, ScreenLoad&apos;ın kendi ekran görüntülerini almanıza olanak tanır</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="383"/>
+        <location filename="../../src/config/generalconf.cpp" line="386"/>
         <source>Launch ScreenLoad daemon when computer is booted</source>
         <translation>Bilgisayar başlatıldığında ScreenLoad arka plan uygulamasını başlat</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="396"/>
+        <location filename="../../src/config/generalconf.cpp" line="399"/>
         <source>Show the welcome message box in the middle of the screen while taking a screenshot</source>
         <translation>Ekran görüntüsü alırken ekranın ortasında karşılama mesajı kutusunu göster</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="410"/>
+        <location filename="../../src/config/generalconf.cpp" line="413"/>
         <source>Use a large predefined color palette</source>
         <translation>Ön tanımlı geniş renk paletini kullan</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="420"/>
+        <location filename="../../src/config/generalconf.cpp" line="423"/>
         <source>Copy on double click</source>
         <translation>Çift tıklandığında kopyala</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="421"/>
+        <location filename="../../src/config/generalconf.cpp" line="424"/>
         <source>Enable Copy on Double Click</source>
         <translation>Çift Tıklamada Kopyalamayı Etkinleştir</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="434"/>
+        <location filename="../../src/config/generalconf.cpp" line="437"/>
         <source>Copy URL and close window after uploading was successful</source>
         <translation>Yükleme başarılı olduktan sonra URL&apos;yi kopyala ve pencereyi kapat</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="446"/>
+        <location filename="../../src/config/generalconf.cpp" line="449"/>
         <source>After copying the screenshot, save it to a file as well</source>
         <translation>Ekran görüntüsünü kopyaladıktan sonra ayrıca bir resim olarak kaydedilsin</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="453"/>
+        <location filename="../../src/config/generalconf.cpp" line="456"/>
         <source>Save Path</source>
         <translation>Kaydetme Yolu</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="469"/>
+        <location filename="../../src/config/generalconf.cpp" line="472"/>
         <source>Change...</source>
         <translation>Değiştir...</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="477"/>
+        <location filename="../../src/config/generalconf.cpp" line="480"/>
         <source>Use fixed path for screenshots to save</source>
         <translation>Kaydedilecek ekran görüntüleri için sabit yol kullan</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="489"/>
+        <location filename="../../src/config/generalconf.cpp" line="492"/>
         <source>Preferred save file extension:</source>
         <translation>Tercih edilen kaydetme dosyası uzantısı:</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="518"/>
+        <location filename="../../src/config/generalconf.cpp" line="521"/>
         <source>Latest Uploads Max Size</source>
         <translation>Son Yüklenenler Azami Boyutu</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="540"/>
-        <source>Imgur Application Client ID</source>
-        <translation>Imgur API Anahtarı</translation>
+        <location filename="../../src/config/generalconf.cpp" line="564"/>
+        <source>Download.RU settings</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="571"/>
+        <location filename="../../src/config/generalconf.cpp" line="572"/>
+        <source>Share image after upload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="574"/>
+        <source>Share image after upload after uploading was successful</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Imgur Application Client ID</source>
+        <translation type="vanished">Imgur API Anahtarı</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="604"/>
         <source>Undo limit</source>
         <translation>Geri alma sınırı</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="597"/>
-        <location filename="../../src/config/generalconf.cpp" line="599"/>
+        <location filename="../../src/config/generalconf.cpp" line="630"/>
+        <location filename="../../src/config/generalconf.cpp" line="632"/>
         <source>Use JPG format for clipboard (PNG default)</source>
         <translation>Pano için JPG biçimini kullan (öntanımlı: PNG)</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="629"/>
+        <location filename="../../src/config/generalconf.cpp" line="662"/>
         <source>Copy file path after save</source>
         <translation>Kaydettikten sonra dosya yolunu kopyala</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="630"/>
+        <location filename="../../src/config/generalconf.cpp" line="663"/>
         <source>Copy the file path to clipboard after the file is saved</source>
         <translation>Dosya kaydedildikten sonra dosya yolunu panoya kopyala</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="641"/>
+        <location filename="../../src/config/generalconf.cpp" line="674"/>
         <source>Anti-aliasing image when zoom the pinned image</source>
         <translation>Sabitlenmiş görüntüye yakınlaştırırken kenar yumuşatma</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="643"/>
+        <location filename="../../src/config/generalconf.cpp" line="676"/>
         <source>After zooming the pinned image, should the image get smoothened or stay pixelated</source>
         <translation>Sabitlenmiş görüntüye yakınlaştırdıktan sonra, görüntü düzleştirilmeli veya pikselli kalmalı mı?</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="654"/>
-        <location filename="../../src/config/generalconf.cpp" line="656"/>
+        <location filename="../../src/config/generalconf.cpp" line="687"/>
+        <location filename="../../src/config/generalconf.cpp" line="689"/>
         <source>Upload image without confirmation</source>
         <translation>Onay almadan resimleri yükle</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="672"/>
+        <location filename="../../src/config/generalconf.cpp" line="705"/>
         <source>Choose a Folder</source>
         <translation>Bir Klasör Seçin</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="681"/>
+        <location filename="../../src/config/generalconf.cpp" line="714"/>
         <source>Unable to write to directory.</source>
         <translation>Dizine yazılamıyor.</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="690"/>
+        <location filename="../../src/config/generalconf.cpp" line="723"/>
         <source>Show magnifier</source>
         <translation>Büyüteci göster</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="691"/>
+        <location filename="../../src/config/generalconf.cpp" line="724"/>
         <source>Enable a magnifier while selecting the screenshot area</source>
         <translation>Ekran görüntüsü alanını seçerken büyüteci etkinleştir</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="702"/>
+        <location filename="../../src/config/generalconf.cpp" line="735"/>
         <source>Square shaped magnifier</source>
         <translation>Kare şekilli büyüteç</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="703"/>
+        <location filename="../../src/config/generalconf.cpp" line="736"/>
         <source>Make the magnifier to be square-shaped</source>
         <translation>Büyüteç kare şeklinde olsun</translation>
     </message>
@@ -1357,52 +1326,53 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
         <translation>Resim Karşıya Yükleniyor</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="130"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="119"/>
         <source>Copy URL</source>
         <translation>URL Kopyala</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="131"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="120"/>
         <source>Open URL</source>
         <translation>URL Aç</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="132"/>
         <source>Delete image</source>
-        <translation>Resmi sil</translation>
+        <translation type="vanished">Resmi sil</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="133"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="121"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="182"/>
         <source>Image to Clipboard.</source>
         <translation>Resim Pano&apos;ya.</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="134"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="122"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="183"/>
         <source>Save image</source>
         <translation>Resmi Kaydet</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="164"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="217"/>
         <source>Unable to open the URL.</source>
         <translation>URL açılamıyor.</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="171"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="224"/>
         <source>URL copied to clipboard.</source>
         <translation>URL panoya kopyalandı.</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="177"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="230"/>
         <source>Screenshot copied to clipboard.</source>
         <translation>Ekran görüntüsü panoya kopyalandı.</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="191"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="244"/>
         <source>Unable to save the screenshot to disk.</source>
         <translation>Ekran görüntüsü diske kaydedilemiyor.</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="194"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="247"/>
         <source>Screenshot saved.</source>
         <translation>Ekran görüntüsü kaydedildi.</translation>
     </message>
@@ -1447,9 +1417,8 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
         <translation type="vanished">Resim Pano&apos;ya.</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imgur/imguruploader.cpp" line="93"/>
         <source>Unable to open the URL.</source>
-        <translation>URL açılamıyor.</translation>
+        <translation type="vanished">URL açılamıyor.</translation>
     </message>
     <message>
         <source>URL copied to clipboard.</source>
@@ -1475,65 +1444,41 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
     <name>InfoWindow</name>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="14"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="117"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="117"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="117"/>
         <source>About</source>
         <translation>Hakkında</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="26"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="118"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="118"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="118"/>
         <source>Icon</source>
         <translation>Simge</translation>
     </message>
     <message>
-        <location filename="../../src/widgets/infowindow.ui" line="43"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="119"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="119"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="119"/>
+        <location filename="../../src/widgets/infowindow.ui" line="42"/>
         <source>License</source>
         <translation>Lisans</translation>
     </message>
     <message>
-        <location filename="../../src/widgets/infowindow.ui" line="56"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="120"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="120"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="120"/>
+        <location filename="../../src/widgets/infowindow.ui" line="55"/>
         <source>GPLv3+</source>
         <translation>GPLv3+</translation>
     </message>
     <message>
-        <location filename="../../src/widgets/infowindow.ui" line="89"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="121"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="121"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="121"/>
+        <location filename="../../src/widgets/infowindow.ui" line="87"/>
         <source>Version</source>
         <translation>Sürüm</translation>
     </message>
     <message>
-        <location filename="../../src/widgets/infowindow.ui" line="102"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="122"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="122"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="122"/>
+        <location filename="../../src/widgets/infowindow.ui" line="100"/>
         <source>ScreenLoad v</source>
         <translation>ScreenLoad v</translation>
     </message>
     <message>
-        <location filename="../../src/widgets/infowindow.ui" line="115"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="123"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="123"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="123"/>
+        <location filename="../../src/widgets/infowindow.ui" line="113"/>
         <source>OS Info</source>
         <translation>İşletim Sistemi</translation>
     </message>
     <message>
-        <location filename="../../src/widgets/infowindow.ui" line="128"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="124"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="124"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="124"/>
+        <location filename="../../src/widgets/infowindow.ui" line="126"/>
         <source>Copy Info</source>
         <translation>Kopya Bilgisi</translation>
     </message>
@@ -1683,19 +1628,24 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
 <context>
     <name>PinWidget</name>
     <message>
-        <location filename="../../src/tools/pin/pinwidget.cpp" line="225"/>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="229"/>
         <source>Context menu</source>
         <translation>Context menu</translation>
     </message>
     <message>
-        <location filename="../../src/tools/pin/pinwidget.cpp" line="227"/>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="231"/>
         <source>Copy to clipboard</source>
         <translation>Panoya kopyala</translation>
     </message>
     <message>
-        <location filename="../../src/tools/pin/pinwidget.cpp" line="234"/>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="238"/>
         <source>Save to file</source>
         <translation>Dosyaya kaydet</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="243"/>
+        <source>Close</source>
+        <translation type="unfinished">Kapat</translation>
     </message>
 </context>
 <context>
@@ -1781,42 +1731,42 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
         <translation type="vanished">Yakalama kaydedilir ve panoya şu adla kopyalanır </translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="136"/>
+        <location filename="../../src/main.cpp" line="148"/>
         <source>Unable to connect via DBus</source>
         <translation>DBus ile bağlanılamıyor</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="152"/>
+        <location filename="../../src/main.cpp" line="164"/>
         <source>Powerful yet simple to use screenshot software.</source>
         <translation>Güçlü ve kullanımı kolay ekran görüntüsü yazılımı.</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="153"/>
+        <location filename="../../src/main.cpp" line="165"/>
         <source>See</source>
         <translation>Bak</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="156"/>
+        <location filename="../../src/main.cpp" line="168"/>
         <source>Capture the entire desktop.</source>
         <translation>Masaüstünün tamamını yakalayın.</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="158"/>
+        <location filename="../../src/main.cpp" line="170"/>
         <source>Open the capture launcher.</source>
         <translation>Yakalama başlatıcısını açın.</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="161"/>
+        <location filename="../../src/main.cpp" line="173"/>
         <source>Start a manual capture in GUI mode.</source>
         <translation>GUI modunda elle yakalama başlatın.</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="163"/>
+        <location filename="../../src/main.cpp" line="175"/>
         <source>Configure</source>
         <translation>Yapılandır</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="165"/>
+        <location filename="../../src/main.cpp" line="177"/>
         <source>Capture a single screen.</source>
         <translation>Tek bir ekran yakalayın.</translation>
     </message>
@@ -1825,107 +1775,107 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
         <translation type="vanished">Yakalamanın kaydedileceği yol</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="170"/>
+        <location filename="../../src/main.cpp" line="182"/>
         <source>Existing directory or new file to save to</source>
         <translation>Kaydedilecek mevcut dizin veya yeni dosya</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="173"/>
+        <location filename="../../src/main.cpp" line="185"/>
         <source>Save the capture to the clipboard</source>
         <translation>Yakalamayı panoya kaydedin</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="175"/>
+        <location filename="../../src/main.cpp" line="187"/>
         <source>Pin the capture to the screen</source>
         <translation>Yakalamayı ekrana sabitleyin</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="177"/>
+        <location filename="../../src/main.cpp" line="189"/>
         <source>Upload screenshot</source>
         <translation>Upload screenshot</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="179"/>
+        <location filename="../../src/main.cpp" line="191"/>
         <source>Delay time in milliseconds</source>
         <translation>Milisaniye cinsinden gecikme süresi</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="184"/>
+        <location filename="../../src/main.cpp" line="196"/>
         <source>Repeat screenshot with previously selected region</source>
         <translation>Ekran görüntüsünü önceden seçilen bölge ile tekrarlayın</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="187"/>
+        <location filename="../../src/main.cpp" line="199"/>
         <source>Screenshot region to select</source>
         <translation>Seçilecek ekran görüntüsü bölgesi</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="190"/>
+        <location filename="../../src/main.cpp" line="202"/>
         <source>Set the filename pattern</source>
         <translation>Dosya adı desenini ayarlayın</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="194"/>
+        <location filename="../../src/main.cpp" line="206"/>
         <source>Accept capture as soon as a selection is made</source>
         <translation>Seçim yapılır yapılmaz yakalamayı kabul et</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="196"/>
+        <location filename="../../src/main.cpp" line="208"/>
         <source>Enable or disable the trayicon</source>
         <translation>Tepsi simgesini etkinleştirin veya devre dışı bırakın</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="200"/>
+        <location filename="../../src/main.cpp" line="212"/>
         <source>Enable or disable run at startup</source>
         <translation>Başlangıçta çalışmayı etkinleştirin veya devre dışı bırakın</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="203"/>
+        <location filename="../../src/main.cpp" line="215"/>
         <source>Check the configuration for errors</source>
         <translation>Yapılandırma hatalarını kontrol et</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="206"/>
+        <location filename="../../src/main.cpp" line="218"/>
         <source>Show the help message in the capture mode</source>
         <translation>Çekim modunda yardım mesajını göster</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="209"/>
+        <location filename="../../src/main.cpp" line="221"/>
         <source>Define the main UI color</source>
         <translation>Ana kullanıcı arayüzü rengini tanımlayın</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="213"/>
+        <location filename="../../src/main.cpp" line="225"/>
         <source>Define the contrast UI color</source>
         <translation>Kontrast kullanıcı arayüzü rengini tanımlayın</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="216"/>
+        <location filename="../../src/main.cpp" line="228"/>
         <source>Print raw PNG capture</source>
         <translation>Ham PNG yakalamayı yazdırın</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="219"/>
+        <location filename="../../src/main.cpp" line="231"/>
         <source>Print geometry of the selection in the format W H X Y. Does nothing if raw is specified</source>
         <translation>Seçimin geometrisini W H X Y biçiminde yazdırır. Raw belirtilirse hiçbir şey yapmaz</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="223"/>
+        <location filename="../../src/main.cpp" line="235"/>
         <source>Define the screen to capture (starting from 0)</source>
         <translation>Yakalanacak ekranı tanımla (0&apos;dan başlayarak)</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="243"/>
+        <location filename="../../src/main.cpp" line="255"/>
         <source>Invalid delay, it must be a number greater than 0</source>
         <translation>Geçersiz gecikme, 0&apos;dan büyük bir sayı olmalıdır</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="246"/>
+        <location filename="../../src/main.cpp" line="258"/>
         <source>Invalid region, use &apos;WxH+X+Y&apos; or &apos;all&apos; or &apos;screen0/screen1/...&apos;.</source>
         <translation>Geçersiz bölge, &apos;WxH+X+Y&apos; veya &apos;tümü&apos; veya &apos;screen0/screen1/...&apos; kullanın.</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="259"/>
+        <location filename="../../src/main.cpp" line="271"/>
         <source>Invalid path, must be an existing directory or a new file in an existing directory</source>
         <translation>Geçersiz yol, mevcut bir dizin veya mevcut bir dizinde yeni bir dosya olmalıdır</translation>
     </message>
@@ -1934,17 +1884,17 @@ Lütfen bunları yapılandırma dosyasında elle çözün.</translation>
         <translation type="vanished">Yakalanacak ekranı tanımlayın</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="224"/>
+        <location filename="../../src/main.cpp" line="236"/>
         <source>default: screen containing the cursor</source>
         <translation>öntanımlı: imleci içeren ekran</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="225"/>
+        <location filename="../../src/main.cpp" line="237"/>
         <source>Screen number</source>
         <translation>Ekran numarası</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="234"/>
+        <location filename="../../src/main.cpp" line="246"/>
         <source>Invalid color, this flag supports the following formats:
 - #RGB (each of R, G, and B is a single hex digit)
 - #RRGGBB
@@ -1965,7 +1915,7 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
         <translation type="vanished">Geçersiz gecikme, 0&apos;dan yüksek olmalıdır</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="245"/>
+        <location filename="../../src/main.cpp" line="257"/>
         <source>Invalid screen number, it must be non negative</source>
         <translation>Geçersiz ekran numarası, negatif olmamalıdır</translation>
     </message>
@@ -1974,7 +1924,7 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
         <translation type="vanished">Geçersiz yol, sistemde gerçek bir yol olmalıdır</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="272"/>
+        <location filename="../../src/main.cpp" line="284"/>
         <source>Invalid value, it must be defined as &apos;true&apos; or &apos;false&apos;</source>
         <translation>Geçersiz değer, &apos;true&apos; veya &apos;false&apos; olarak tanımlanmalıdır</translation>
     </message>
@@ -1989,12 +1939,12 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
         <translation>Yazılamadı</translation>
     </message>
     <message>
-        <location filename="../../src/core/screenload.cpp" line="148"/>
+        <location filename="../../src/core/screenload.cpp" line="155"/>
         <source>Requested screen exceeds screen count</source>
         <translation>İstenen ekran, ekran sayısını aşıyor</translation>
     </message>
     <message>
-        <location filename="../../src/core/screenload.cpp" line="378"/>
+        <location filename="../../src/core/screenload.cpp" line="385"/>
         <source>Full screen screenshot pinned to screen</source>
         <translation>Ekrana sabitlenmiş tam ekran ekran görüntüsü</translation>
     </message>
@@ -2161,19 +2111,60 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
 <context>
     <name>ScreenGrabber</name>
     <message>
-        <location filename="../../src/utils/screengrabber.cpp" line="112"/>
+        <location filename="../../src/utils/screengrabber.cpp" line="134"/>
         <source>Unable to detect desktop environment (GNOME? KDE? Sway? ...)</source>
         <translation>Masaüstü ortamı algılanamıyor (GNOME? KDE? Sway? ...)</translation>
     </message>
     <message>
-        <location filename="../../src/utils/screengrabber.cpp" line="115"/>
+        <location filename="../../src/utils/screengrabber.cpp" line="137"/>
         <source>Hint: try setting the XDG_CURRENT_DESKTOP environment variable.</source>
         <translation>İpucu: XDG_CURRENT_DESKTOP ortam değişkenini ayarlamayı deneyin.</translation>
     </message>
     <message>
-        <location filename="../../src/utils/screengrabber.cpp" line="120"/>
+        <location filename="../../src/utils/screengrabber.cpp" line="142"/>
         <source>Unable to capture screen</source>
         <translation>Ekran resmi alınamadı</translation>
+    </message>
+</context>
+<context>
+    <name>ScreenLoad</name>
+    <message>
+        <location filename="../../src/core/screenload.cpp" line="113"/>
+        <source>Error</source>
+        <translation>Hata</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/screenload.cpp" line="113"/>
+        <source>Unable to close active modal widgets</source>
+        <translation>Etkin modal widget&apos;lar kapatılamıyor</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/screenload.cpp" line="409"/>
+        <source>URL copied to clipboard.</source>
+        <translation>URL panoya kopyalandı.</translation>
+    </message>
+</context>
+<context>
+    <name>ScreenLoadDaemon</name>
+    <message>
+        <location filename="../../src/core/screenloaddaemon.cpp" line="366"/>
+        <source>New version %1 is available</source>
+        <translation>Yeni %1 sürümü var</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/screenloaddaemon.cpp" line="376"/>
+        <source>You have the latest version</source>
+        <translation>En son sürümü kullanıyorsunuz</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/screenloaddaemon.cpp" line="387"/>
+        <source>Failed to get information about the latest version.</source>
+        <translation>En son sürüm hakkında bilgi alınamadı.</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/screenloaddaemon.cpp" line="408"/>
+        <source>Unable to connect via DBus</source>
+        <translation>DBus ile bağlanılamıyor</translation>
     </message>
 </context>
 <context>
@@ -2675,9 +2666,6 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     <name>UploadHistory</name>
     <message>
         <location filename="../../src/widgets/uploadhistory.ui" line="14"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_uploadhistory.h" line="67"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadhistory.h" line="67"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadhistory.h" line="67"/>
         <source>Upload History</source>
         <translation>Yükleme Geçmişi</translation>
     </message>
@@ -2691,33 +2679,21 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     <name>UploadLineItem</name>
     <message>
         <location filename="../../src/widgets/uploadlineitem.ui" line="20"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_uploadlineitem.h" line="113"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadlineitem.h" line="113"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadlineitem.h" line="113"/>
         <source>Form</source>
         <translation>Form</translation>
     </message>
     <message>
         <location filename="../../src/widgets/uploadlineitem.ui" line="49"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_uploadlineitem.h" line="114"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadlineitem.h" line="114"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadlineitem.h" line="114"/>
         <source>TextLabel</source>
         <translation>TextLabel</translation>
     </message>
     <message>
         <location filename="../../src/widgets/uploadlineitem.ui" line="82"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_uploadlineitem.h" line="115"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadlineitem.h" line="115"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadlineitem.h" line="115"/>
         <source>Copy URL</source>
         <translation>URL Kopyala</translation>
     </message>
     <message>
         <location filename="../../src/widgets/uploadlineitem.ui" line="95"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_uploadlineitem.h" line="116"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadlineitem.h" line="116"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadlineitem.h" line="116"/>
         <source>Open In Browser</source>
         <translation>Tarayıcıda aç</translation>
     </message>
@@ -2806,65 +2782,41 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
     <name>color_widgets::ColorPaletteWidget</name>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="59"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="209"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="209"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="209"/>
         <source>Open a new palette from file</source>
         <translation>Dosyadan yeni bir palet aç</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="71"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="212"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="212"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="212"/>
         <source>Create a new palette</source>
         <translation>Yeni bir palet oluştur</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="83"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="215"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="215"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="215"/>
         <source>Duplicate the current palette</source>
         <translation>Geçerli paleti kopyala</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="121"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="218"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="218"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="218"/>
         <source>Delete the current palette</source>
         <translation>Geçerli paleti sil</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="133"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="221"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="221"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="221"/>
         <source>Revert changes to the current palette</source>
         <translation>Geçerli palete yapılan değişiklikleri geri al</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="145"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="224"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="224"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="224"/>
         <source>Save changes to the current palette</source>
         <translation>Değişiklikleri geçerli palete kaydet</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="170"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="227"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="227"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="227"/>
         <source>Add a color to the palette</source>
         <translation>Palete bir renk ekle</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="182"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="230"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="230"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="230"/>
         <source>Remove the selected color from the palette</source>
         <translation>Seçilen rengi paletten kaldır</translation>
     </message>

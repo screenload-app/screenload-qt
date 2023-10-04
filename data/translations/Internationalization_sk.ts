@@ -69,7 +69,7 @@
     </message>
     <message>
         <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="95"/>
-        <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="110"/>
+        <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="121"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
@@ -79,7 +79,7 @@
         <translation>Zlyhal zápis do</translation>
     </message>
     <message>
-        <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="110"/>
+        <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="121"/>
         <source>Unable to launch in terminal.</source>
         <translation>Nepodarilo sa spustiť v termináli.</translation>
     </message>
@@ -141,66 +141,42 @@
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="100"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="185"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="179"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="185"/>
         <location filename="../../src/widgets/capturelauncher.cpp" line="52"/>
         <source> seconds</source>
         <translation> sekundy</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="165"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="186"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="184"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="186"/>
         <source>Take new screenshot</source>
         <translation>Zachytiť novú snímku</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="66"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="181"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="180"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="181"/>
         <source>Area:</source>
         <translation>Oblasť:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="14"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="178"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="176"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="178"/>
         <source>Capture Launcher</source>
         <translation>Spustenie zachytávania</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="34"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="179"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="177"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="179"/>
         <source>TextLabel</source>
         <translation>TextovýPopis</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="51"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="180"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="178"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="180"/>
         <source>Capture Mode</source>
         <translation>Režim zachytávania</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="80"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="183"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="181"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="183"/>
         <source>Delay:</source>
         <translation>Oneskorenie:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="93"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="184"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="183"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="184"/>
         <source>WxH+x+y</source>
         <translation>WxH+x+y</translation>
     </message>
@@ -315,73 +291,46 @@ Stlačte medzerník pre otvorenie postranného panelu.</translation>
     <name>ColorDialog</name>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="14"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="318"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="318"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="318"/>
         <source>Select Color</source>
         <translation>Vybrať farbu</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="55"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="319"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="319"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="319"/>
         <source>Saturation</source>
         <translation>Nasýtenie</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="62"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="320"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="320"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="320"/>
         <source>Hue</source>
         <translation>Odtieň</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="79"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="321"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="321"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="321"/>
         <source>Hex</source>
         <translation>Hex</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="86"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="322"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="322"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="322"/>
         <source>Blue</source>
         <translation>Blue</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="123"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="323"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="323"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="323"/>
         <source>Value</source>
         <translation>Hodnota</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="130"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="324"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="324"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="324"/>
         <source>Green</source>
         <translation>Green</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="137"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="325"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="325"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="325"/>
         <source>Alpha</source>
         <translation>Alpha</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="144"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="326"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="326"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="326"/>
         <source>Red</source>
         <translation>Red</translation>
     </message>
@@ -517,45 +466,45 @@ Stlačte medzerník pre otvorenie postranného panelu.</translation>
 <context>
     <name>ConfigHandler</name>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="552"/>
+        <location filename="../../src/utils/confighandler.cpp" line="551"/>
         <source>Unrecognized setting: &apos;%1&apos;
 </source>
         <translation>Nerozpoznané nastavenie: &apos;%1&apos;
 </translation>
     </message>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="560"/>
+        <location filename="../../src/utils/confighandler.cpp" line="559"/>
         <source>Unrecognized shortcut name: &apos;%1&apos;.
 </source>
         <translation>Nerozpoznaný názov skratky: &apos;%1&apos;.
 </translation>
     </message>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="603"/>
+        <location filename="../../src/utils/confighandler.cpp" line="602"/>
         <source>Shortcut conflict: &apos;%1&apos; and &apos;%2&apos; have the same shortcut: %3
 </source>
         <translation>Konflikt skratiek: &apos;%1&apos; a &apos;%2&apos; majú rovnakú skratku: %3
 </translation>
     </message>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="643"/>
+        <location filename="../../src/utils/confighandler.cpp" line="642"/>
         <source>Bad value in &apos;%1&apos;. Expected: %2
 </source>
         <translation>Zlá hodnota v &apos;%1&apos;. Očakávaná hodnota: %2
 </translation>
     </message>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="693"/>
+        <location filename="../../src/utils/confighandler.cpp" line="692"/>
         <source>You have successfully resolved the configuration error.</source>
         <translation>Chybu konfigurácie ste úspešne vyriešili.</translation>
     </message>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="716"/>
+        <location filename="../../src/utils/confighandler.cpp" line="715"/>
         <source>The configuration contains an error. Open configuration to resolve.</source>
         <translation>Konfigurácia obsahuje chybu. Otvorte konfiguráciu a vyriešte ju.</translation>
     </message>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="770"/>
+        <location filename="../../src/utils/confighandler.cpp" line="769"/>
         <source>Bad config key &apos;%1&apos; in ConfigHandler. Please report this as a bug.</source>
         <translation>Zlý konfiguračný kľúč &apos;%1&apos; v ConfigHandler. Nahláste to ako chybu.</translation>
     </message>
@@ -620,37 +569,47 @@ Riešte ich ručne v konfiguračnom súbore.</translation>
 <context>
     <name>ConfigWindow</name>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="40"/>
+        <location filename="../../src/config/configwindow.cpp" line="207"/>
         <source>Configuration</source>
         <translation>Konfigurácia</translation>
     </message>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="59"/>
+        <location filename="../../src/config/configwindow.cpp" line="226"/>
         <source>Interface</source>
         <translation>Používateľské rozhranie</translation>
     </message>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="69"/>
+        <location filename="../../src/config/configwindow.cpp" line="236"/>
         <source>Filename Editor</source>
         <translation>Editor názvov súborov</translation>
     </message>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="78"/>
+        <location filename="../../src/config/configwindow.cpp" line="245"/>
         <source>General</source>
         <translation>Všeobecné</translation>
     </message>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="87"/>
+        <location filename="../../src/config/configwindow.cpp" line="258"/>
+        <source>Use ScreenLoad as [Print Screen] handler instead of system tool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configwindow.cpp" line="260"/>
+        <source>Use ScreenLoad to capture screenshots by [Print Screen] shortcut. Unchecking this checkbox will restore the system&apos;s default behavior.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configwindow.cpp" line="273"/>
         <source>Shortcuts</source>
         <translation>Klávesové skratky</translation>
     </message>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="120"/>
+        <location filename="../../src/config/configwindow.cpp" line="306"/>
         <source>Resolve</source>
         <translation>Vyriešiť</translation>
     </message>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="124"/>
+        <location filename="../../src/config/configwindow.cpp" line="310"/>
         <source>&lt;b&gt;Configuration file has errors. Resolve them before continuing.&lt;/b&gt;</source>
         <translation>&lt;b&gt;Konfiguračný súbor obsahuje chyby. Pred pokračovaním ich vyriešte.&lt;/b&gt;</translation>
     </message>
@@ -739,6 +698,43 @@ Riešte ich ručne v konfiguračnom súbore.</translation>
     </message>
 </context>
 <context>
+    <name>DwnldrAuthHttpServer</name>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldrauthhttpserver.cpp" line="81"/>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldrauthhttpserver.cpp" line="82"/>
+        <source>Successful Authorization!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldrauthhttpserver.cpp" line="83"/>
+        <source>You have successfully authorize &lt;strong class=&quot;text-info&quot;&gt;ScreenLoad&lt;/strong&gt; to use your account!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldrauthhttpserver.cpp" line="84"/>
+        <source>This window will be closed automatically within 5 seconds.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>DwnldrUploader</name>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldruploader.cpp" line="125"/>
+        <source>Error during access key request!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldruploader.cpp" line="175"/>
+        <source>An error occurred while uploading the file!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldruploader.cpp" line="277"/>
+        <source>Unable to open the URL.</source>
+        <translation type="unfinished">Nepodarilo sa otvoriť URL.</translation>
+    </message>
+</context>
+<context>
     <name>ExitTool</name>
     <message>
         <location filename="../../src/tools/exit/exittool.cpp" line="23"/>
@@ -801,47 +797,6 @@ Riešte ich ručne v konfiguračnom súbore.</translation>
         <location filename="../../src/config/filenameeditor.cpp" line="89"/>
         <source>Deletes the name</source>
         <translation>Vymaže meno</translation>
-    </message>
-</context>
-<context>
-    <name>ScreenLoad</name>
-    <message>
-        <location filename="../../src/core/screenload.cpp" line="111"/>
-        <source>Error</source>
-        <translation type="unfinished">Chyba</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/screenload.cpp" line="111"/>
-        <source>Unable to close active modal widgets</source>
-        <translation type="unfinished">Nepodarilo sa zatvoriť aktívne modálne ovládacie prvky</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/screenload.cpp" line="400"/>
-        <source>URL copied to clipboard.</source>
-        <translation type="unfinished">URL skopírovaná do schránky.</translation>
-    </message>
-</context>
-<context>
-    <name>ScreenLoadDaemon</name>
-    <message>
-        <location filename="../../src/core/screenloaddaemon.cpp" line="363"/>
-        <source>New version %1 is available</source>
-        <translation type="unfinished">Je dostupná nová verzia: %1</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/screenloaddaemon.cpp" line="369"/>
-        <source>You have the latest version</source>
-        <translation type="unfinished">Používate najnovšiu verziu</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/screenloaddaemon.cpp" line="378"/>
-        <source>Failed to get information about the latest version.</source>
-        <translation type="unfinished">Nepodarilo sa získať informácie o najnovšej verzii.</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/screenloaddaemon.cpp" line="399"/>
-        <source>Unable to connect via DBus</source>
-        <translation>Nie je možné pripojiť sa prostredníctvom DBus</translation>
     </message>
 </context>
 <context>
@@ -966,47 +921,47 @@ Riešte ich ručne v konfiguračnom súbore.</translation>
 <context>
     <name>GeneralConf</name>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="156"/>
-        <location filename="../../src/config/generalconf.cpp" line="326"/>
+        <location filename="../../src/config/generalconf.cpp" line="159"/>
+        <location filename="../../src/config/generalconf.cpp" line="329"/>
         <source>Import</source>
         <translation>Importovať</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="163"/>
-        <location filename="../../src/config/generalconf.cpp" line="171"/>
-        <location filename="../../src/config/generalconf.cpp" line="195"/>
-        <location filename="../../src/config/generalconf.cpp" line="681"/>
+        <location filename="../../src/config/generalconf.cpp" line="166"/>
+        <location filename="../../src/config/generalconf.cpp" line="174"/>
+        <location filename="../../src/config/generalconf.cpp" line="198"/>
+        <location filename="../../src/config/generalconf.cpp" line="714"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="163"/>
+        <location filename="../../src/config/generalconf.cpp" line="166"/>
         <source>Unable to read file.</source>
         <translation>Zlyhalo čítanie súboru.</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="171"/>
-        <location filename="../../src/config/generalconf.cpp" line="195"/>
+        <location filename="../../src/config/generalconf.cpp" line="174"/>
+        <location filename="../../src/config/generalconf.cpp" line="198"/>
         <source>Unable to write file.</source>
         <translation>Zlyhal zápis do súboru.</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="182"/>
+        <location filename="../../src/config/generalconf.cpp" line="185"/>
         <source>Save File</source>
         <translation>Uložiť súbor</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="204"/>
+        <location filename="../../src/config/generalconf.cpp" line="207"/>
         <source>Confirm Reset</source>
         <translation>Potvrdiť Reset</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="205"/>
+        <location filename="../../src/config/generalconf.cpp" line="208"/>
         <source>Are you sure you want to reset the configuration?</source>
         <translation>Naozaj si želáte resetovať aktuálnu konfiguráciu?</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="236"/>
+        <location filename="../../src/config/generalconf.cpp" line="239"/>
         <source>Show help message</source>
         <translation>Zobraziť nápovedu</translation>
     </message>
@@ -1015,7 +970,7 @@ Riešte ich ručne v konfiguračnom súbore.</translation>
         <translation type="vanished">Zobraziť nápovedu na začiatku počas režimu zachytávania obrazovky.</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="260"/>
+        <location filename="../../src/config/generalconf.cpp" line="263"/>
         <source>Show the side panel button</source>
         <translation>Zobraziť tlačidlo na postrannom paneli</translation>
     </message>
@@ -1024,12 +979,12 @@ Riešte ich ručne v konfiguračnom súbore.</translation>
         <translation type="vanished">V režime zachytávania zobrazovať tlačidlo na postrannom paneli.</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="273"/>
+        <location filename="../../src/config/generalconf.cpp" line="276"/>
         <source>Show desktop notifications</source>
         <translation>Zobraziť systémové upozornenia</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="286"/>
+        <location filename="../../src/config/generalconf.cpp" line="289"/>
         <source>Show tray icon</source>
         <translation>Zobraziť stavovú ikonu</translation>
     </message>
@@ -1038,32 +993,32 @@ Riešte ich ručne v konfiguračnom súbore.</translation>
         <translation type="vanished">Zobraziť ikonu v stavovej oblasti</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="299"/>
+        <location filename="../../src/config/generalconf.cpp" line="302"/>
         <source>Confirmation required to delete screenshot from the latest uploads</source>
         <translation>Odstránenie snímky z posledných nahraní je vyžadované potvrdenie</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="314"/>
+        <location filename="../../src/config/generalconf.cpp" line="317"/>
         <source>Configuration File</source>
         <translation>Súbor s konfiguráciou</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="319"/>
+        <location filename="../../src/config/generalconf.cpp" line="322"/>
         <source>Export</source>
         <translation>Exportovať</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="333"/>
+        <location filename="../../src/config/generalconf.cpp" line="336"/>
         <source>Reset</source>
         <translation>Resetovať</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="343"/>
+        <location filename="../../src/config/generalconf.cpp" line="346"/>
         <source>Automatic check for updates</source>
         <translation>Automatická kontrola aktualizácií</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="356"/>
+        <location filename="../../src/config/generalconf.cpp" line="359"/>
         <source>Allow multiple screenload GUI instances simultaneously</source>
         <translation>Povolenie viacerých inštancií grafického rozhrania ScreenLoad súčasne</translation>
     </message>
@@ -1072,13 +1027,13 @@ Riešte ich ručne v konfiguračnom súbore.</translation>
         <translation type="vanished">To vám umožní robiť napríklad snímky obrazovky samotného ScreenLoadu.</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="369"/>
-        <location filename="../../src/config/generalconf.cpp" line="371"/>
+        <location filename="../../src/config/generalconf.cpp" line="372"/>
+        <location filename="../../src/config/generalconf.cpp" line="374"/>
         <source>Automatically close daemon when it is not needed</source>
         <translation>Automatické zatvorenie démona, keď nie je potrebný</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="381"/>
+        <location filename="../../src/config/generalconf.cpp" line="384"/>
         <source>Launch at startup</source>
         <translation>Spustiť pri štarte</translation>
     </message>
@@ -1087,17 +1042,17 @@ Riešte ich ručne v konfiguračnom súbore.</translation>
         <translation type="vanished">Spustiť ScreenLoad</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="393"/>
+        <location filename="../../src/config/generalconf.cpp" line="396"/>
         <source>Show welcome message on launch</source>
         <translation>Pri spustení zobraziť uvítaciu správu</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="408"/>
+        <location filename="../../src/config/generalconf.cpp" line="411"/>
         <source>Use large predefined color palette</source>
         <translation>Používanie veľkej preddefinovanej palety farieb</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="432"/>
+        <location filename="../../src/config/generalconf.cpp" line="435"/>
         <source>Copy URL after upload</source>
         <translation>Kopírovať URL po nahratí</translation>
     </message>
@@ -1106,7 +1061,7 @@ Riešte ich ručne v konfiguračnom súbore.</translation>
         <translation type="vanished">Po nahratí skopírovať URL a zavrieť okno</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="444"/>
+        <location filename="../../src/config/generalconf.cpp" line="447"/>
         <source>Save image after copy</source>
         <translation>Uložiť obrázok po kopírovaní</translation>
     </message>
@@ -1115,179 +1070,193 @@ Riešte ich ručne v konfiguračnom súbore.</translation>
         <translation type="vanished">Uložiť obrázok so súborom po jeho skopírovaní</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="237"/>
+        <location filename="../../src/config/generalconf.cpp" line="240"/>
         <source>Show the help message at the beginning in the capture mode</source>
         <translation>V režime zachytávania zobraziť text pomocníka na začiatku</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="247"/>
+        <location filename="../../src/config/generalconf.cpp" line="250"/>
         <source>Use last region</source>
         <translation>Use last region</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="248"/>
+        <location filename="../../src/config/generalconf.cpp" line="251"/>
         <source>Uses the last region as the default selection for the next screenshot</source>
         <translation>Uses the last region as the default selection for the next screenshot</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="262"/>
+        <location filename="../../src/config/generalconf.cpp" line="265"/>
         <source>Show the side panel toggle button in the capture mode</source>
         <translation>V režime zachytávania zobrazovať tlačidlo na postrannom paneli.</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="274"/>
+        <location filename="../../src/config/generalconf.cpp" line="277"/>
         <source>Enable desktop notifications</source>
         <translation>Povoliť systémové upozornenia</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="287"/>
+        <location filename="../../src/config/generalconf.cpp" line="290"/>
         <source>Show icon in the system tray</source>
         <translation>Zobraziť ikonu v systémovej lište</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="302"/>
+        <location filename="../../src/config/generalconf.cpp" line="305"/>
         <source>Ask for confirmation to delete screenshot from the latest uploads</source>
         <translation>Pred odstránením snímky z posledného nahrania sa opýtať</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="344"/>
+        <location filename="../../src/config/generalconf.cpp" line="347"/>
         <source>Check for updates automatically</source>
         <translation>Kontrolovať aktualizácie automaticky</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="357"/>
+        <location filename="../../src/config/generalconf.cpp" line="360"/>
         <source>This allows you to take screenshots of ScreenLoad itself for example</source>
         <translation>Toto vám umožní urobiť snímku obrazovky samotného ScreenLoad-u</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="383"/>
+        <location filename="../../src/config/generalconf.cpp" line="386"/>
         <source>Launch ScreenLoad daemon when computer is booted</source>
         <translation>Pri štarte počítača spúštať ScreenLoad démona</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="396"/>
+        <location filename="../../src/config/generalconf.cpp" line="399"/>
         <source>Show the welcome message box in the middle of the screen while taking a screenshot</source>
         <translation>Pri vytváraní snímky zobraziť okno s privítaním v strede obrazovky</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="410"/>
+        <location filename="../../src/config/generalconf.cpp" line="413"/>
         <source>Use a large predefined color palette</source>
         <translation>Použiť veľkú paletu s preddefinovanými farbami</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="420"/>
+        <location filename="../../src/config/generalconf.cpp" line="423"/>
         <source>Copy on double click</source>
         <translation>Copy on double click</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="421"/>
+        <location filename="../../src/config/generalconf.cpp" line="424"/>
         <source>Enable Copy on Double Click</source>
         <translation>Enable Copy on Double Click</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="434"/>
+        <location filename="../../src/config/generalconf.cpp" line="437"/>
         <source>Copy URL and close window after uploading was successful</source>
         <translation>Po úspešnom nahratí skopírovať adresu URL a zavrieť okno</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="446"/>
+        <location filename="../../src/config/generalconf.cpp" line="449"/>
         <source>After copying the screenshot, save it to a file as well</source>
         <translation>Po skopírovaní snímky ho tiež uložiť do súboru</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="453"/>
+        <location filename="../../src/config/generalconf.cpp" line="456"/>
         <source>Save Path</source>
         <translation>Cesta pre ukladanie</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="469"/>
+        <location filename="../../src/config/generalconf.cpp" line="472"/>
         <source>Change...</source>
         <translation>Zmeniť...</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="477"/>
+        <location filename="../../src/config/generalconf.cpp" line="480"/>
         <source>Use fixed path for screenshots to save</source>
         <translation>Pre ukladanie snímok obrazovky používať rovnakú cestu</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="489"/>
+        <location filename="../../src/config/generalconf.cpp" line="492"/>
         <source>Preferred save file extension:</source>
         <translation>Uprednostňovaná prípona uloženého súboru:</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="518"/>
+        <location filename="../../src/config/generalconf.cpp" line="521"/>
         <source>Latest Uploads Max Size</source>
         <translation>Maximálna Veľkosť Posledných Uploadov</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="540"/>
-        <source>Imgur Application Client ID</source>
-        <translation>Imgur Application Client ID</translation>
+        <location filename="../../src/config/generalconf.cpp" line="564"/>
+        <source>Download.RU settings</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="571"/>
+        <location filename="../../src/config/generalconf.cpp" line="572"/>
+        <source>Share image after upload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="574"/>
+        <source>Share image after upload after uploading was successful</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Imgur Application Client ID</source>
+        <translation type="vanished">Imgur Application Client ID</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="604"/>
         <source>Undo limit</source>
         <translation>Vrátiť limiť</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="597"/>
-        <location filename="../../src/config/generalconf.cpp" line="599"/>
+        <location filename="../../src/config/generalconf.cpp" line="630"/>
+        <location filename="../../src/config/generalconf.cpp" line="632"/>
         <source>Use JPG format for clipboard (PNG default)</source>
         <translation>Pre schránku používať JPG (štandardne PNG)</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="629"/>
+        <location filename="../../src/config/generalconf.cpp" line="662"/>
         <source>Copy file path after save</source>
         <translation>Po uložení skopírovať cestu k súboru</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="630"/>
+        <location filename="../../src/config/generalconf.cpp" line="663"/>
         <source>Copy the file path to clipboard after the file is saved</source>
         <translation>Skopírovať cestu k súboru do schránky po tom, ako je súbor uložený</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="641"/>
+        <location filename="../../src/config/generalconf.cpp" line="674"/>
         <source>Anti-aliasing image when zoom the pinned image</source>
         <translation>Vyhladzovanie obrazu pri zväčšení pripnutého obrázka</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="643"/>
+        <location filename="../../src/config/generalconf.cpp" line="676"/>
         <source>After zooming the pinned image, should the image get smoothened or stay pixelated</source>
         <translation>Po priblížení pripnutého obrázka sa má obrázok vyhladiť alebo zostať pixelový</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="654"/>
-        <location filename="../../src/config/generalconf.cpp" line="656"/>
+        <location filename="../../src/config/generalconf.cpp" line="687"/>
+        <location filename="../../src/config/generalconf.cpp" line="689"/>
         <source>Upload image without confirmation</source>
         <translation>Nahrávanie obrázku bez potvrdenia</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="672"/>
+        <location filename="../../src/config/generalconf.cpp" line="705"/>
         <source>Choose a Folder</source>
         <translation>Vyberte priečinok</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="681"/>
+        <location filename="../../src/config/generalconf.cpp" line="714"/>
         <source>Unable to write to directory.</source>
         <translation>Zápis do adresára nie je možný.</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="690"/>
+        <location filename="../../src/config/generalconf.cpp" line="723"/>
         <source>Show magnifier</source>
         <translation>Zobraziť lupu</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="691"/>
+        <location filename="../../src/config/generalconf.cpp" line="724"/>
         <source>Enable a magnifier while selecting the screenshot area</source>
         <translation>Zapnúť lupu počas výberu oblasti na zosnímanie</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="702"/>
+        <location filename="../../src/config/generalconf.cpp" line="735"/>
         <source>Square shaped magnifier</source>
         <translation>Hranatá lupa</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="703"/>
+        <location filename="../../src/config/generalconf.cpp" line="736"/>
         <source>Make the magnifier to be square-shaped</source>
         <translation>Lupa bude v tvare štvorca</translation>
     </message>
@@ -1405,52 +1374,53 @@ Riešte ich ručne v konfiguračnom súbore.</translation>
         <translation>Nahrávam obrázok</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="130"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="119"/>
         <source>Copy URL</source>
         <translation>Kopírovať URL</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="131"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="120"/>
         <source>Open URL</source>
         <translation>Otvoriť URL</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="132"/>
         <source>Delete image</source>
-        <translation>Vymazať obrázok</translation>
+        <translation type="vanished">Vymazať obrázok</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="133"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="121"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="182"/>
         <source>Image to Clipboard.</source>
         <translation>Obrázok do schránky.</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="134"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="122"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="183"/>
         <source>Save image</source>
         <translation>Uložiť obrázok</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="164"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="217"/>
         <source>Unable to open the URL.</source>
         <translation>Nepodarilo sa otvoriť URL.</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="171"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="224"/>
         <source>URL copied to clipboard.</source>
         <translation>URL skopírovaná do schránky.</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="177"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="230"/>
         <source>Screenshot copied to clipboard.</source>
         <translation>Snímka obrazovky bola skopírovaná do schránky.</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="191"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="244"/>
         <source>Unable to save the screenshot to disk.</source>
         <translation>Nepodarilo sa uložiť snímku na disk.</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="194"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="247"/>
         <source>Screenshot saved.</source>
         <translation>Snímka bola uložená.</translation>
     </message>
@@ -1495,9 +1465,8 @@ Riešte ich ručne v konfiguračnom súbore.</translation>
         <translation type="vanished">Obrázok do schránky.</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imgur/imguruploader.cpp" line="93"/>
         <source>Unable to open the URL.</source>
-        <translation>Nepodarilo sa otvoriť URL.</translation>
+        <translation type="vanished">Nepodarilo sa otvoriť URL.</translation>
     </message>
     <message>
         <source>URL copied to clipboard.</source>
@@ -1523,65 +1492,41 @@ Riešte ich ručne v konfiguračnom súbore.</translation>
     <name>InfoWindow</name>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="14"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="117"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="117"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="117"/>
         <source>About</source>
         <translation>O programe</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="26"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="118"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="118"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="118"/>
         <source>Icon</source>
         <translation>Ikona</translation>
     </message>
     <message>
-        <location filename="../../src/widgets/infowindow.ui" line="43"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="119"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="119"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="119"/>
+        <location filename="../../src/widgets/infowindow.ui" line="42"/>
         <source>License</source>
         <translation>Licencia</translation>
     </message>
     <message>
-        <location filename="../../src/widgets/infowindow.ui" line="56"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="120"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="120"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="120"/>
+        <location filename="../../src/widgets/infowindow.ui" line="55"/>
         <source>GPLv3+</source>
         <translation>GPLv3+</translation>
     </message>
     <message>
-        <location filename="../../src/widgets/infowindow.ui" line="89"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="121"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="121"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="121"/>
+        <location filename="../../src/widgets/infowindow.ui" line="87"/>
         <source>Version</source>
         <translation>Verzia</translation>
     </message>
     <message>
-        <location filename="../../src/widgets/infowindow.ui" line="102"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="122"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="122"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="122"/>
+        <location filename="../../src/widgets/infowindow.ui" line="100"/>
         <source>ScreenLoad v</source>
         <translation>ScreenLoad v</translation>
     </message>
     <message>
-        <location filename="../../src/widgets/infowindow.ui" line="115"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="123"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="123"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="123"/>
+        <location filename="../../src/widgets/infowindow.ui" line="113"/>
         <source>OS Info</source>
         <translation>Informácie o OS</translation>
     </message>
     <message>
-        <location filename="../../src/widgets/infowindow.ui" line="128"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="124"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="124"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="124"/>
+        <location filename="../../src/widgets/infowindow.ui" line="126"/>
         <source>Copy Info</source>
         <translation>Kopírovať informácie</translation>
     </message>
@@ -1739,19 +1684,24 @@ Riešte ich ručne v konfiguračnom súbore.</translation>
 <context>
     <name>PinWidget</name>
     <message>
-        <location filename="../../src/tools/pin/pinwidget.cpp" line="225"/>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="229"/>
         <source>Context menu</source>
         <translation>Context menu</translation>
     </message>
     <message>
-        <location filename="../../src/tools/pin/pinwidget.cpp" line="227"/>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="231"/>
         <source>Copy to clipboard</source>
         <translation type="unfinished">Kopírovať do schránky</translation>
     </message>
     <message>
-        <location filename="../../src/tools/pin/pinwidget.cpp" line="234"/>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="238"/>
         <source>Save to file</source>
         <translation>Save to file</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="243"/>
+        <source>Close</source>
+        <translation type="unfinished">Zavrieť</translation>
     </message>
 </context>
 <context>
@@ -1783,42 +1733,42 @@ Riešte ich ručne v konfiguračnom súbore.</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../../src/main.cpp" line="136"/>
+        <location filename="../../src/main.cpp" line="148"/>
         <source>Unable to connect via DBus</source>
         <translation>Nie je možné pripojiť sa prostredníctvom DBus</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="152"/>
+        <location filename="../../src/main.cpp" line="164"/>
         <source>Powerful yet simple to use screenshot software.</source>
         <translation>Mocný, no zároveň jednoduchý softvér na zachytávanie obrazovky.</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="153"/>
+        <location filename="../../src/main.cpp" line="165"/>
         <source>See</source>
         <translation>Pozrite</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="156"/>
+        <location filename="../../src/main.cpp" line="168"/>
         <source>Capture the entire desktop.</source>
         <translation>Zachytiť celú plochu.</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="158"/>
+        <location filename="../../src/main.cpp" line="170"/>
         <source>Open the capture launcher.</source>
         <translation>Otvoriť spúšťač zachytávania.</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="161"/>
+        <location filename="../../src/main.cpp" line="173"/>
         <source>Start a manual capture in GUI mode.</source>
         <translation>Spustiť manuálne zachytávanie v GUI režime.</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="163"/>
+        <location filename="../../src/main.cpp" line="175"/>
         <source>Configure</source>
         <translation>Konfigurovať</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="165"/>
+        <location filename="../../src/main.cpp" line="177"/>
         <source>Capture a single screen.</source>
         <translation>Zachytiť jeden monitor.</translation>
     </message>
@@ -1827,107 +1777,107 @@ Riešte ich ručne v konfiguračnom súbore.</translation>
         <translation type="vanished">Cesta, kam bude snímka uložená</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="170"/>
+        <location filename="../../src/main.cpp" line="182"/>
         <source>Existing directory or new file to save to</source>
         <translation>Existujúci adresár alebo nový súbor na uloženie</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="173"/>
+        <location filename="../../src/main.cpp" line="185"/>
         <source>Save the capture to the clipboard</source>
         <translation>Uložiť snímku do schránky</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="175"/>
+        <location filename="../../src/main.cpp" line="187"/>
         <source>Pin the capture to the screen</source>
         <translation>Pripnutie snímky k obrazovke</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="177"/>
+        <location filename="../../src/main.cpp" line="189"/>
         <source>Upload screenshot</source>
         <translation>Upload screenshot</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="179"/>
+        <location filename="../../src/main.cpp" line="191"/>
         <source>Delay time in milliseconds</source>
         <translation>Oneskorenie času v milisekundách</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="184"/>
+        <location filename="../../src/main.cpp" line="196"/>
         <source>Repeat screenshot with previously selected region</source>
         <translation>Repeat screenshot with previously selected region</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="187"/>
+        <location filename="../../src/main.cpp" line="199"/>
         <source>Screenshot region to select</source>
         <translation>Oblasť obrazovky na výber</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="190"/>
+        <location filename="../../src/main.cpp" line="202"/>
         <source>Set the filename pattern</source>
         <translation>Nastaviť masku pre pomenovanie súborov</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="194"/>
+        <location filename="../../src/main.cpp" line="206"/>
         <source>Accept capture as soon as a selection is made</source>
         <translation>Akceptovať zachytenie hneď po výbere</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="196"/>
+        <location filename="../../src/main.cpp" line="208"/>
         <source>Enable or disable the trayicon</source>
         <translation>Povoliť alebo zakázať ikonu v lište</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="200"/>
+        <location filename="../../src/main.cpp" line="212"/>
         <source>Enable or disable run at startup</source>
         <translation>Povoliť alebo zakázáť spustenie pri štarte systému</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="203"/>
+        <location filename="../../src/main.cpp" line="215"/>
         <source>Check the configuration for errors</source>
         <translation>Kontrola konfigurácie na chyby</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="206"/>
+        <location filename="../../src/main.cpp" line="218"/>
         <source>Show the help message in the capture mode</source>
         <translation>Ukazovať nápovedu v režime zachytávania</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="209"/>
+        <location filename="../../src/main.cpp" line="221"/>
         <source>Define the main UI color</source>
         <translation>Nastaviť farbu hlavného používateľského rozhrania</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="213"/>
+        <location filename="../../src/main.cpp" line="225"/>
         <source>Define the contrast UI color</source>
         <translation>Nastaviť kontrastnú farbu používateľského rozhrania</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="216"/>
+        <location filename="../../src/main.cpp" line="228"/>
         <source>Print raw PNG capture</source>
         <translation>Zobraziť surovú PNG snímku</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="219"/>
+        <location filename="../../src/main.cpp" line="231"/>
         <source>Print geometry of the selection in the format W H X Y. Does nothing if raw is specified</source>
         <translation>Zobraziť geometriu výberu vo formáte Š D X Y. Neurobí nič pri nastavení raw</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="223"/>
+        <location filename="../../src/main.cpp" line="235"/>
         <source>Define the screen to capture (starting from 0)</source>
         <translation>Definujte obrazovku, ktorú chcete zachytiť (od 0)</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="243"/>
+        <location filename="../../src/main.cpp" line="255"/>
         <source>Invalid delay, it must be a number greater than 0</source>
         <translation>Neplatné oneskorenie, musí to byť číslo väčšie ako 0</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="246"/>
+        <location filename="../../src/main.cpp" line="258"/>
         <source>Invalid region, use &apos;WxH+X+Y&apos; or &apos;all&apos; or &apos;screen0/screen1/...&apos;.</source>
         <translation>Neplatná oblasť, použite &apos;WxH+X+Y&apos; alebo &apos;all&apos; alebo &apos;screen0/screen1/...&apos;.</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="259"/>
+        <location filename="../../src/main.cpp" line="271"/>
         <source>Invalid path, must be an existing directory or a new file in an existing directory</source>
         <translation>Nesprávna cesta, musí to byť existujúci adresár alebo nový súbor v existujúcom adresári</translation>
     </message>
@@ -1936,17 +1886,17 @@ Riešte ich ručne v konfiguračnom súbore.</translation>
         <translation type="vanished">Nastaviť monitor, ktorý bude zachytávaný</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="224"/>
+        <location filename="../../src/main.cpp" line="236"/>
         <source>default: screen containing the cursor</source>
         <translation>predvolené: monitor, na ktorom je kurzor myši</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="225"/>
+        <location filename="../../src/main.cpp" line="237"/>
         <source>Screen number</source>
         <translation>Číslo monitora</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="234"/>
+        <location filename="../../src/main.cpp" line="246"/>
         <source>Invalid color, this flag supports the following formats:
 - #RGB (each of R, G, and B is a single hex digit)
 - #RRGGBB
@@ -1967,7 +1917,7 @@ Možno budete musieť napísať pred &apos;#&apos; opačnú lomku, teda &apos;\#
         <translation type="vanished">Neplatné oneskorenie, musí byť vyššie ako 0</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="245"/>
+        <location filename="../../src/main.cpp" line="257"/>
         <source>Invalid screen number, it must be non negative</source>
         <translation>Neplatné číslo monitora, môže byť len kladné</translation>
     </message>
@@ -1976,7 +1926,7 @@ Možno budete musieť napísať pred &apos;#&apos; opačnú lomku, teda &apos;\#
         <translation type="vanished">Neplatná cesta, musí sa jednať o skutočnú cestu na systéme</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="272"/>
+        <location filename="../../src/main.cpp" line="284"/>
         <source>Invalid value, it must be defined as &apos;true&apos; or &apos;false&apos;</source>
         <translation>Neplatná hodnota, musí byť definovaná ako &apos;pravda&apos; alebo &apos;nepravda&apos;</translation>
     </message>
@@ -2045,12 +1995,12 @@ Možno budete musieť napísať pred &apos;#&apos; opačnú lomku, teda &apos;\#
         <translation>Chyba pri ukladaní</translation>
     </message>
     <message>
-        <location filename="../../src/core/screenload.cpp" line="148"/>
+        <location filename="../../src/core/screenload.cpp" line="155"/>
         <source>Requested screen exceeds screen count</source>
         <translation>Requested screen exceeds screen count</translation>
     </message>
     <message>
-        <location filename="../../src/core/screenload.cpp" line="378"/>
+        <location filename="../../src/core/screenload.cpp" line="385"/>
         <source>Full screen screenshot pinned to screen</source>
         <translation>Snímka celej obrazovky pripnutá na obrazovku</translation>
     </message>
@@ -2221,19 +2171,60 @@ Možno budete musieť napísať pred &apos;#&apos; opačnú lomku, teda &apos;\#
 <context>
     <name>ScreenGrabber</name>
     <message>
-        <location filename="../../src/utils/screengrabber.cpp" line="112"/>
+        <location filename="../../src/utils/screengrabber.cpp" line="134"/>
         <source>Unable to detect desktop environment (GNOME? KDE? Sway? ...)</source>
         <translation>Unable to detect desktop environment (GNOME? KDE? Sway? ...)</translation>
     </message>
     <message>
-        <location filename="../../src/utils/screengrabber.cpp" line="115"/>
+        <location filename="../../src/utils/screengrabber.cpp" line="137"/>
         <source>Hint: try setting the XDG_CURRENT_DESKTOP environment variable.</source>
         <translation>Hint: try setting the XDG_CURRENT_DESKTOP environment variable.</translation>
     </message>
     <message>
-        <location filename="../../src/utils/screengrabber.cpp" line="120"/>
+        <location filename="../../src/utils/screengrabber.cpp" line="142"/>
         <source>Unable to capture screen</source>
         <translation>Nepodarilo sa zachytiť obrazovku</translation>
+    </message>
+</context>
+<context>
+    <name>ScreenLoad</name>
+    <message>
+        <location filename="../../src/core/screenload.cpp" line="113"/>
+        <source>Error</source>
+        <translation type="unfinished">Chyba</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/screenload.cpp" line="113"/>
+        <source>Unable to close active modal widgets</source>
+        <translation type="unfinished">Nepodarilo sa zatvoriť aktívne modálne ovládacie prvky</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/screenload.cpp" line="409"/>
+        <source>URL copied to clipboard.</source>
+        <translation type="unfinished">URL skopírovaná do schránky.</translation>
+    </message>
+</context>
+<context>
+    <name>ScreenLoadDaemon</name>
+    <message>
+        <location filename="../../src/core/screenloaddaemon.cpp" line="366"/>
+        <source>New version %1 is available</source>
+        <translation type="unfinished">Je dostupná nová verzia: %1</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/screenloaddaemon.cpp" line="376"/>
+        <source>You have the latest version</source>
+        <translation type="unfinished">Používate najnovšiu verziu</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/screenloaddaemon.cpp" line="387"/>
+        <source>Failed to get information about the latest version.</source>
+        <translation type="unfinished">Nepodarilo sa získať informácie o najnovšej verzii.</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/screenloaddaemon.cpp" line="408"/>
+        <source>Unable to connect via DBus</source>
+        <translation>Nie je možné pripojiť sa prostredníctvom DBus</translation>
     </message>
 </context>
 <context>
@@ -2735,9 +2726,6 @@ Možno budete musieť napísať pred &apos;#&apos; opačnú lomku, teda &apos;\#
     <name>UploadHistory</name>
     <message>
         <location filename="../../src/widgets/uploadhistory.ui" line="14"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_uploadhistory.h" line="67"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadhistory.h" line="67"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadhistory.h" line="67"/>
         <source>Upload History</source>
         <translation>História nahratí</translation>
     </message>
@@ -2751,33 +2739,21 @@ Možno budete musieť napísať pred &apos;#&apos; opačnú lomku, teda &apos;\#
     <name>UploadLineItem</name>
     <message>
         <location filename="../../src/widgets/uploadlineitem.ui" line="20"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_uploadlineitem.h" line="113"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadlineitem.h" line="113"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadlineitem.h" line="113"/>
         <source>Form</source>
         <translation>Formulár</translation>
     </message>
     <message>
         <location filename="../../src/widgets/uploadlineitem.ui" line="49"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_uploadlineitem.h" line="114"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadlineitem.h" line="114"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadlineitem.h" line="114"/>
         <source>TextLabel</source>
         <translation>TextovýPopis</translation>
     </message>
     <message>
         <location filename="../../src/widgets/uploadlineitem.ui" line="82"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_uploadlineitem.h" line="115"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadlineitem.h" line="115"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadlineitem.h" line="115"/>
         <source>Copy URL</source>
         <translation>Kopírovať URL</translation>
     </message>
     <message>
         <location filename="../../src/widgets/uploadlineitem.ui" line="95"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_uploadlineitem.h" line="116"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadlineitem.h" line="116"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadlineitem.h" line="116"/>
         <source>Open In Browser</source>
         <translation>Otvoriť v prehliadači</translation>
     </message>
@@ -2866,65 +2842,41 @@ Možno budete musieť napísať pred &apos;#&apos; opačnú lomku, teda &apos;\#
     <name>color_widgets::ColorPaletteWidget</name>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="59"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="209"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="209"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="209"/>
         <source>Open a new palette from file</source>
         <translation>Otvoriť novú paletu zo súboru</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="71"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="212"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="212"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="212"/>
         <source>Create a new palette</source>
         <translation>Vytvorenie novej palety</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="83"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="215"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="215"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="215"/>
         <source>Duplicate the current palette</source>
         <translation>Duplikovať aktuálnu paletu</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="121"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="218"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="218"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="218"/>
         <source>Delete the current palette</source>
         <translation>Odstránenie aktuálnej palety</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="133"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="221"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="221"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="221"/>
         <source>Revert changes to the current palette</source>
         <translation>Vrátenie zmien na aktuálnu paletu</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="145"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="224"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="224"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="224"/>
         <source>Save changes to the current palette</source>
         <translation>Uloženie zmien na aktuálnu paletu</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="170"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="227"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="227"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="227"/>
         <source>Add a color to the palette</source>
         <translation>Pridanie farby do palety</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="182"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="230"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="230"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="230"/>
         <source>Remove the selected color from the palette</source>
         <translation>Odstránenie vybranej farby z palety</translation>
     </message>

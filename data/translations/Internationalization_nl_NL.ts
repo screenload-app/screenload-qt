@@ -69,7 +69,7 @@
     </message>
     <message>
         <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="95"/>
-        <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="110"/>
+        <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="121"/>
         <source>Error</source>
         <translation>Fout</translation>
     </message>
@@ -79,7 +79,7 @@
         <translation>Kan niet schrijven naar</translation>
     </message>
     <message>
-        <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="110"/>
+        <location filename="../../src/tools/launcher/applauncherwidget.cpp" line="121"/>
         <source>Unable to launch in terminal.</source>
         <translation>Kan niet openen in terminalvenster.</translation>
     </message>
@@ -141,66 +141,42 @@
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="100"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="185"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="179"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="185"/>
         <location filename="../../src/widgets/capturelauncher.cpp" line="52"/>
         <source> seconds</source>
         <translation> seconden</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="165"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="186"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="184"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="186"/>
         <source>Take new screenshot</source>
         <translation>Nieuwe schermfoto maken</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="66"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="181"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="180"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="181"/>
         <source>Area:</source>
         <translation>Gebied:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="14"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="178"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="176"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="178"/>
         <source>Capture Launcher</source>
         <translation>Opname starter</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="34"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="179"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="177"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="179"/>
         <source>TextLabel</source>
         <translation>TekstLabel</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="51"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="180"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="178"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="180"/>
         <source>Capture Mode</source>
         <translation>Opname mode</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="80"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="183"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="181"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="183"/>
         <source>Delay:</source>
         <translation>Wachttijd:</translation>
     </message>
     <message>
         <location filename="../../src/widgets/capturelauncher.ui" line="93"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_capturelauncher.h" line="184"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_capturelauncher.h" line="183"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_capturelauncher.h" line="184"/>
         <source>WxH+x+y</source>
         <translation>WxH+x+y</translation>
     </message>
@@ -315,73 +291,46 @@ Druk op spatie om het zijpaneel te openen.</translation>
     <name>ColorDialog</name>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="14"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="318"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="318"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="318"/>
         <source>Select Color</source>
         <translation>Selecteer Kleur</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="55"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="319"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="319"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="319"/>
         <source>Saturation</source>
         <translation>Verzadiging</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="62"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="320"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="320"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="320"/>
         <source>Hue</source>
         <translation>Tint</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="79"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="321"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="321"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="321"/>
         <source>Hex</source>
         <translation>Hex</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="86"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="322"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="322"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="322"/>
         <source>Blue</source>
         <translation>Blauw</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="123"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="323"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="323"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="323"/>
         <source>Value</source>
         <translation>Waarde</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="130"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="324"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="324"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="324"/>
         <source>Green</source>
         <translation>Groen</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="137"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="325"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="325"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="325"/>
         <source>Alpha</source>
         <translation>Alpha</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_dialog.ui" line="144"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="326"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="326"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_dialog.h" line="326"/>
         <source>Red</source>
         <translation>Rood</translation>
     </message>
@@ -517,45 +466,45 @@ Druk op spatie om het zijpaneel te openen.</translation>
 <context>
     <name>ConfigHandler</name>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="552"/>
+        <location filename="../../src/utils/confighandler.cpp" line="551"/>
         <source>Unrecognized setting: &apos;%1&apos;
 </source>
         <translation>Niet-herkende instelling: &apos;%1&apos;
 </translation>
     </message>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="560"/>
+        <location filename="../../src/utils/confighandler.cpp" line="559"/>
         <source>Unrecognized shortcut name: &apos;%1&apos;.
 </source>
         <translation>Niet-herkende snelkoppelingsnaam: &apos;%1&apos;.
 </translation>
     </message>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="603"/>
+        <location filename="../../src/utils/confighandler.cpp" line="602"/>
         <source>Shortcut conflict: &apos;%1&apos; and &apos;%2&apos; have the same shortcut: %3
 </source>
         <translation>Snelkoppelingsconflict: &apos;%1&apos; en &apos;%2&apos; hebben dezelfde snelkoppeling: %3
 </translation>
     </message>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="643"/>
+        <location filename="../../src/utils/confighandler.cpp" line="642"/>
         <source>Bad value in &apos;%1&apos;. Expected: %2
 </source>
         <translation>Slechte waarde in &apos;%1&apos;. Verwacht: %2
 </translation>
     </message>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="693"/>
+        <location filename="../../src/utils/confighandler.cpp" line="692"/>
         <source>You have successfully resolved the configuration error.</source>
         <translation>U hebt de configuratiefout met succes opgelost.</translation>
     </message>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="716"/>
+        <location filename="../../src/utils/confighandler.cpp" line="715"/>
         <source>The configuration contains an error. Open configuration to resolve.</source>
         <translation>De configuratie bevat een fout. Open de configuratie om op te lossen.</translation>
     </message>
     <message>
-        <location filename="../../src/utils/confighandler.cpp" line="770"/>
+        <location filename="../../src/utils/confighandler.cpp" line="769"/>
         <source>Bad config key &apos;%1&apos; in ConfigHandler. Please report this as a bug.</source>
         <translation>Slechte config key &apos;%1&apos; in ConfigHandler. Gelieve dit als een bug te melden.</translation>
     </message>
@@ -620,37 +569,47 @@ Los ze alstublieft handmatig op in het configuratiebestand.</translation>
 <context>
     <name>ConfigWindow</name>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="40"/>
+        <location filename="../../src/config/configwindow.cpp" line="207"/>
         <source>Configuration</source>
         <translation>Configuratie</translation>
     </message>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="59"/>
+        <location filename="../../src/config/configwindow.cpp" line="226"/>
         <source>Interface</source>
         <translation>Uiterlijk</translation>
     </message>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="69"/>
+        <location filename="../../src/config/configwindow.cpp" line="236"/>
         <source>Filename Editor</source>
         <translation>Bestandsnaambewerker</translation>
     </message>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="78"/>
+        <location filename="../../src/config/configwindow.cpp" line="245"/>
         <source>General</source>
         <translation>Algemeen</translation>
     </message>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="87"/>
+        <location filename="../../src/config/configwindow.cpp" line="258"/>
+        <source>Use ScreenLoad as [Print Screen] handler instead of system tool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configwindow.cpp" line="260"/>
+        <source>Use ScreenLoad to capture screenshots by [Print Screen] shortcut. Unchecking this checkbox will restore the system&apos;s default behavior.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/config/configwindow.cpp" line="273"/>
         <source>Shortcuts</source>
         <translation>Sneltoetsen</translation>
     </message>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="120"/>
+        <location filename="../../src/config/configwindow.cpp" line="306"/>
         <source>Resolve</source>
         <translation>Oplossen</translation>
     </message>
     <message>
-        <location filename="../../src/config/configwindow.cpp" line="124"/>
+        <location filename="../../src/config/configwindow.cpp" line="310"/>
         <source>&lt;b&gt;Configuration file has errors. Resolve them before continuing.&lt;/b&gt;</source>
         <translation>&lt;b&gt;Configuratie bestand heeft fouten. Los ze op alvorens verder te gaan.&lt;/b&gt;</translation>
     </message>
@@ -739,6 +698,43 @@ Los ze alstublieft handmatig op in het configuratiebestand.</translation>
     </message>
 </context>
 <context>
+    <name>DwnldrAuthHttpServer</name>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldrauthhttpserver.cpp" line="81"/>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldrauthhttpserver.cpp" line="82"/>
+        <source>Successful Authorization!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldrauthhttpserver.cpp" line="83"/>
+        <source>You have successfully authorize &lt;strong class=&quot;text-info&quot;&gt;ScreenLoad&lt;/strong&gt; to use your account!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldrauthhttpserver.cpp" line="84"/>
+        <source>This window will be closed automatically within 5 seconds.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>DwnldrUploader</name>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldruploader.cpp" line="125"/>
+        <source>Error during access key request!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldruploader.cpp" line="175"/>
+        <source>An error occurred while uploading the file!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/imgupload/storages/dwnldr/dwnldruploader.cpp" line="277"/>
+        <source>Unable to open the URL.</source>
+        <translation type="unfinished">Kan URL niet openen.</translation>
+    </message>
+</context>
+<context>
     <name>ExitTool</name>
     <message>
         <location filename="../../src/tools/exit/exittool.cpp" line="23"/>
@@ -801,47 +797,6 @@ Los ze alstublieft handmatig op in het configuratiebestand.</translation>
         <location filename="../../src/config/filenameeditor.cpp" line="89"/>
         <source>Deletes the name</source>
         <translation>Wist de naam</translation>
-    </message>
-</context>
-<context>
-    <name>ScreenLoad</name>
-    <message>
-        <location filename="../../src/core/screenload.cpp" line="111"/>
-        <source>Error</source>
-        <translation>Error</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/screenload.cpp" line="111"/>
-        <source>Unable to close active modal widgets</source>
-        <translation type="unfinished">De actieve, modale widgets kunnen niet worden gesloten</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/screenload.cpp" line="400"/>
-        <source>URL copied to clipboard.</source>
-        <translation type="unfinished">URL gekopieerd naar klembord.</translation>
-    </message>
-</context>
-<context>
-    <name>ScreenLoadDaemon</name>
-    <message>
-        <location filename="../../src/core/screenloaddaemon.cpp" line="363"/>
-        <source>New version %1 is available</source>
-        <translation type="unfinished">Er is een nieuwe versie beschikbaar: %1</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/screenloaddaemon.cpp" line="369"/>
-        <source>You have the latest version</source>
-        <translation type="unfinished">Je beschikt over de nieuwste versie</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/screenloaddaemon.cpp" line="378"/>
-        <source>Failed to get information about the latest version.</source>
-        <translation type="unfinished">Er kan geen versie-informatie worden opgehaald.</translation>
-    </message>
-    <message>
-        <location filename="../../src/core/screenloaddaemon.cpp" line="399"/>
-        <source>Unable to connect via DBus</source>
-        <translation>Kan niet verbinden via DBus</translation>
     </message>
 </context>
 <context>
@@ -918,47 +873,47 @@ Los ze alstublieft handmatig op in het configuratiebestand.</translation>
 <context>
     <name>GeneralConf</name>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="156"/>
-        <location filename="../../src/config/generalconf.cpp" line="326"/>
+        <location filename="../../src/config/generalconf.cpp" line="159"/>
+        <location filename="../../src/config/generalconf.cpp" line="329"/>
         <source>Import</source>
         <translation>Importeren</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="163"/>
-        <location filename="../../src/config/generalconf.cpp" line="171"/>
-        <location filename="../../src/config/generalconf.cpp" line="195"/>
-        <location filename="../../src/config/generalconf.cpp" line="681"/>
+        <location filename="../../src/config/generalconf.cpp" line="166"/>
+        <location filename="../../src/config/generalconf.cpp" line="174"/>
+        <location filename="../../src/config/generalconf.cpp" line="198"/>
+        <location filename="../../src/config/generalconf.cpp" line="714"/>
         <source>Error</source>
         <translation>Foutmelding</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="163"/>
+        <location filename="../../src/config/generalconf.cpp" line="166"/>
         <source>Unable to read file.</source>
         <translation>Kan bestand niet uitlezen.</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="171"/>
-        <location filename="../../src/config/generalconf.cpp" line="195"/>
+        <location filename="../../src/config/generalconf.cpp" line="174"/>
+        <location filename="../../src/config/generalconf.cpp" line="198"/>
         <source>Unable to write file.</source>
         <translation>Kan bestand niet wegschrijven.</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="182"/>
+        <location filename="../../src/config/generalconf.cpp" line="185"/>
         <source>Save File</source>
         <translation>Bestand opslaan</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="204"/>
+        <location filename="../../src/config/generalconf.cpp" line="207"/>
         <source>Confirm Reset</source>
         <translation>Herstellen bevestigen</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="205"/>
+        <location filename="../../src/config/generalconf.cpp" line="208"/>
         <source>Are you sure you want to reset the configuration?</source>
         <translation>Weet je zeker dat je de standwaardwaarden van de configuratie wilt herstellen?</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="236"/>
+        <location filename="../../src/config/generalconf.cpp" line="239"/>
         <source>Show help message</source>
         <translation>Uitleg tonen</translation>
     </message>
@@ -967,7 +922,7 @@ Los ze alstublieft handmatig op in het configuratiebestand.</translation>
         <translation type="vanished">Toont een bericht met uitleg bij het openen van de vastlegmodus.</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="260"/>
+        <location filename="../../src/config/generalconf.cpp" line="263"/>
         <source>Show the side panel button</source>
         <translation>Zijpaneelknop tonen</translation>
     </message>
@@ -976,12 +931,12 @@ Los ze alstublieft handmatig op in het configuratiebestand.</translation>
         <translation type="vanished">Toont de zijpaneelknop in de vastlegmodus.</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="273"/>
+        <location filename="../../src/config/generalconf.cpp" line="276"/>
         <source>Show desktop notifications</source>
         <translation>Bureaubladmeldingen tonen</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="286"/>
+        <location filename="../../src/config/generalconf.cpp" line="289"/>
         <source>Show tray icon</source>
         <translation>Systeemvakpictogram tonen</translation>
     </message>
@@ -990,32 +945,32 @@ Los ze alstublieft handmatig op in het configuratiebestand.</translation>
         <translation type="vanished">Toont het systeemvakpictogram</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="299"/>
+        <location filename="../../src/config/generalconf.cpp" line="302"/>
         <source>Confirmation required to delete screenshot from the latest uploads</source>
         <translation>Schermfoto verwijderen uit recentste uploads bevestigen</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="314"/>
+        <location filename="../../src/config/generalconf.cpp" line="317"/>
         <source>Configuration File</source>
         <translation>Configuratiebestand</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="319"/>
+        <location filename="../../src/config/generalconf.cpp" line="322"/>
         <source>Export</source>
         <translation>Exporteren</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="333"/>
+        <location filename="../../src/config/generalconf.cpp" line="336"/>
         <source>Reset</source>
         <translation>Standaardwaarden</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="343"/>
+        <location filename="../../src/config/generalconf.cpp" line="346"/>
         <source>Automatic check for updates</source>
         <translation>Automatisch controleren op updates</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="356"/>
+        <location filename="../../src/config/generalconf.cpp" line="359"/>
         <source>Allow multiple screenload GUI instances simultaneously</source>
         <translation>Sta meerdere screenload GUI instanties tegelijk toe</translation>
     </message>
@@ -1024,13 +979,13 @@ Los ze alstublieft handmatig op in het configuratiebestand.</translation>
         <translation type="vanished">Hiermee kunt u screenshots maken van bijvoorbeeld ScreenLoad zelf.</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="369"/>
-        <location filename="../../src/config/generalconf.cpp" line="371"/>
+        <location filename="../../src/config/generalconf.cpp" line="372"/>
+        <location filename="../../src/config/generalconf.cpp" line="374"/>
         <source>Automatically close daemon when it is not needed</source>
         <translation>Automatisch sluiten van de daemon wanneer deze niet nodig is</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="381"/>
+        <location filename="../../src/config/generalconf.cpp" line="384"/>
         <source>Launch at startup</source>
         <translation>Automatisch opstarten</translation>
     </message>
@@ -1039,17 +994,17 @@ Los ze alstublieft handmatig op in het configuratiebestand.</translation>
         <translation type="vanished">ScreenLoad openen</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="393"/>
+        <location filename="../../src/config/generalconf.cpp" line="396"/>
         <source>Show welcome message on launch</source>
         <translation>Welkomstbericht tonen na opstarten</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="408"/>
+        <location filename="../../src/config/generalconf.cpp" line="411"/>
         <source>Use large predefined color palette</source>
         <translation>Gebruik groot voorgedefinieerd kleurenpalet</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="432"/>
+        <location filename="../../src/config/generalconf.cpp" line="435"/>
         <source>Copy URL after upload</source>
         <translation>URL kopiëren na uploaden</translation>
     </message>
@@ -1058,7 +1013,7 @@ Los ze alstublieft handmatig op in het configuratiebestand.</translation>
         <translation type="vanished">Kopieer de url en sluit het venster na het uploaden</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="444"/>
+        <location filename="../../src/config/generalconf.cpp" line="447"/>
         <source>Save image after copy</source>
         <translation>Afbeelding opslaan na kopiëren</translation>
     </message>
@@ -1067,179 +1022,193 @@ Los ze alstublieft handmatig op in het configuratiebestand.</translation>
         <translation type="vanished">Sla de afbeelding op na deze gekopieerd te hebben</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="237"/>
+        <location filename="../../src/config/generalconf.cpp" line="240"/>
         <source>Show the help message at the beginning in the capture mode</source>
         <translation>Toon het helpbericht aan het begin in de vastlegmodus</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="247"/>
+        <location filename="../../src/config/generalconf.cpp" line="250"/>
         <source>Use last region</source>
         <translation>Use last region</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="248"/>
+        <location filename="../../src/config/generalconf.cpp" line="251"/>
         <source>Uses the last region as the default selection for the next screenshot</source>
         <translation>Uses the last region as the default selection for the next screenshot</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="262"/>
+        <location filename="../../src/config/generalconf.cpp" line="265"/>
         <source>Show the side panel toggle button in the capture mode</source>
         <translation>Toon de schakelknop op het zijpaneel in de vastlegmodus</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="274"/>
+        <location filename="../../src/config/generalconf.cpp" line="277"/>
         <source>Enable desktop notifications</source>
         <translation>Meldingen op bureaublad inschakelen</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="287"/>
+        <location filename="../../src/config/generalconf.cpp" line="290"/>
         <source>Show icon in the system tray</source>
         <translation>Pictogram in systeemvak tonen</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="302"/>
+        <location filename="../../src/config/generalconf.cpp" line="305"/>
         <source>Ask for confirmation to delete screenshot from the latest uploads</source>
         <translation>Vraag om bevestiging om screenshot te verwijderen van de laatste uploads</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="344"/>
+        <location filename="../../src/config/generalconf.cpp" line="347"/>
         <source>Check for updates automatically</source>
         <translation>Automatisch controleren op updates</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="357"/>
+        <location filename="../../src/config/generalconf.cpp" line="360"/>
         <source>This allows you to take screenshots of ScreenLoad itself for example</source>
         <translation>Hiermee kunt u screenshots maken van ScreenLoad zelf, bijvoorbeeld</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="383"/>
+        <location filename="../../src/config/generalconf.cpp" line="386"/>
         <source>Launch ScreenLoad daemon when computer is booted</source>
         <translation>Start ScreenLoad daemon wanneer de computer wordt opgestart</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="396"/>
+        <location filename="../../src/config/generalconf.cpp" line="399"/>
         <source>Show the welcome message box in the middle of the screen while taking a screenshot</source>
         <translation>Toon de welkomstboodschap in het midden van het scherm tijdens het maken van een screenshot</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="410"/>
+        <location filename="../../src/config/generalconf.cpp" line="413"/>
         <source>Use a large predefined color palette</source>
         <translation>Gebruik een groot voorgedefinieerd kleurenpalet</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="420"/>
+        <location filename="../../src/config/generalconf.cpp" line="423"/>
         <source>Copy on double click</source>
         <translation>Copy on double click</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="421"/>
+        <location filename="../../src/config/generalconf.cpp" line="424"/>
         <source>Enable Copy on Double Click</source>
         <translation>Enable Copy on Double Click</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="434"/>
+        <location filename="../../src/config/generalconf.cpp" line="437"/>
         <source>Copy URL and close window after uploading was successful</source>
         <translation>Kopieer URL en sluit venster nadat het uploaden succesvol was</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="446"/>
+        <location filename="../../src/config/generalconf.cpp" line="449"/>
         <source>After copying the screenshot, save it to a file as well</source>
         <translation>Nadat u de schermafbeelding hebt gekopieerd, slaat u deze ook op in een bestand</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="453"/>
+        <location filename="../../src/config/generalconf.cpp" line="456"/>
         <source>Save Path</source>
         <translation>Opslaglocatie</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="469"/>
+        <location filename="../../src/config/generalconf.cpp" line="472"/>
         <source>Change...</source>
         <translation>Wijzigen...</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="477"/>
+        <location filename="../../src/config/generalconf.cpp" line="480"/>
         <source>Use fixed path for screenshots to save</source>
         <translation>Schermfoto&apos;s altijd opslaan op dezelfde locatie</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="489"/>
+        <location filename="../../src/config/generalconf.cpp" line="492"/>
         <source>Preferred save file extension:</source>
         <translation>Voorkeursbestandsextensie:</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="518"/>
+        <location filename="../../src/config/generalconf.cpp" line="521"/>
         <source>Latest Uploads Max Size</source>
         <translation>Max. grootte van recentste uploads</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="540"/>
-        <source>Imgur Application Client ID</source>
-        <translation>Imgur Application Client ID</translation>
+        <location filename="../../src/config/generalconf.cpp" line="564"/>
+        <source>Download.RU settings</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="571"/>
+        <location filename="../../src/config/generalconf.cpp" line="572"/>
+        <source>Share image after upload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="574"/>
+        <source>Share image after upload after uploading was successful</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Imgur Application Client ID</source>
+        <translation type="vanished">Imgur Application Client ID</translation>
+    </message>
+    <message>
+        <location filename="../../src/config/generalconf.cpp" line="604"/>
         <source>Undo limit</source>
         <translation>Beperking ongedaan maken</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="597"/>
-        <location filename="../../src/config/generalconf.cpp" line="599"/>
+        <location filename="../../src/config/generalconf.cpp" line="630"/>
+        <location filename="../../src/config/generalconf.cpp" line="632"/>
         <source>Use JPG format for clipboard (PNG default)</source>
         <translation>JPG-formaat gebruiken op klembord (standaard: png)</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="629"/>
+        <location filename="../../src/config/generalconf.cpp" line="662"/>
         <source>Copy file path after save</source>
         <translation>Bestandspad kopiëren na opslaan</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="630"/>
+        <location filename="../../src/config/generalconf.cpp" line="663"/>
         <source>Copy the file path to clipboard after the file is saved</source>
         <translation>Kopieer het bestandspad naar het klembord nadat het bestand is opgeslagen</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="641"/>
+        <location filename="../../src/config/generalconf.cpp" line="674"/>
         <source>Anti-aliasing image when zoom the pinned image</source>
         <translation>Anti-aliasing afbeelding bij het inzoomen van de vastgepinde afbeelding</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="643"/>
+        <location filename="../../src/config/generalconf.cpp" line="676"/>
         <source>After zooming the pinned image, should the image get smoothened or stay pixelated</source>
         <translation>Na het zoomen van de vastgepinde afbeelding, moet de afbeelding gladder worden of pixelig blijven</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="654"/>
-        <location filename="../../src/config/generalconf.cpp" line="656"/>
+        <location filename="../../src/config/generalconf.cpp" line="687"/>
+        <location filename="../../src/config/generalconf.cpp" line="689"/>
         <source>Upload image without confirmation</source>
         <translation>Afbeelding uploaden zonder bevestiging</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="672"/>
+        <location filename="../../src/config/generalconf.cpp" line="705"/>
         <source>Choose a Folder</source>
         <translation>Kies een map</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="681"/>
+        <location filename="../../src/config/generalconf.cpp" line="714"/>
         <source>Unable to write to directory.</source>
         <translation>Kan niet wegschrijven naar map.</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="690"/>
+        <location filename="../../src/config/generalconf.cpp" line="723"/>
         <source>Show magnifier</source>
         <translation>Vergrootglas tonen</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="691"/>
+        <location filename="../../src/config/generalconf.cpp" line="724"/>
         <source>Enable a magnifier while selecting the screenshot area</source>
         <translation>Een vergrootglas inschakelen bij het selecteren van het screenshotgebied</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="702"/>
+        <location filename="../../src/config/generalconf.cpp" line="735"/>
         <source>Square shaped magnifier</source>
         <translation>Vierkant vergrootglas</translation>
     </message>
     <message>
-        <location filename="../../src/config/generalconf.cpp" line="703"/>
+        <location filename="../../src/config/generalconf.cpp" line="736"/>
         <source>Make the magnifier to be square-shaped</source>
         <translation>Maak de loep vierkant</translation>
     </message>
@@ -1357,52 +1326,53 @@ Los ze alstublieft handmatig op in het configuratiebestand.</translation>
         <translation>Afbeelding uploaden</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="130"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="119"/>
         <source>Copy URL</source>
         <translation>URL kopiëren</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="131"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="120"/>
         <source>Open URL</source>
         <translation>URL openen</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="132"/>
         <source>Delete image</source>
-        <translation>Afbeelding verwijderen</translation>
+        <translation type="vanished">Afbeelding verwijderen</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="133"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="121"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="182"/>
         <source>Image to Clipboard.</source>
         <translation>Afbeelding naar klembord.</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="134"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="122"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="183"/>
         <source>Save image</source>
         <translation>Beeld bewaren</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="164"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="217"/>
         <source>Unable to open the URL.</source>
         <translation>Kan URL niet openen.</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="171"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="224"/>
         <source>URL copied to clipboard.</source>
         <translation>URL gekopieerd naar klembord.</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="177"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="230"/>
         <source>Screenshot copied to clipboard.</source>
         <translation>Screenshot gekopieerd naar klembord.</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="191"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="244"/>
         <source>Unable to save the screenshot to disk.</source>
         <translation>Kan de schermafbeelding niet op schijf opslaan.</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="194"/>
+        <location filename="../../src/tools/imgupload/storages/imguploaderbase.cpp" line="247"/>
         <source>Screenshot saved.</source>
         <translation>Screenshot bewaard.</translation>
     </message>
@@ -1447,9 +1417,8 @@ Los ze alstublieft handmatig op in het configuratiebestand.</translation>
         <translation type="vanished">Afbeelding naar klembord.</translation>
     </message>
     <message>
-        <location filename="../../src/tools/imgupload/storages/imgur/imguruploader.cpp" line="93"/>
         <source>Unable to open the URL.</source>
-        <translation>Kan URL niet openen.</translation>
+        <translation type="vanished">Kan URL niet openen.</translation>
     </message>
     <message>
         <source>URL copied to clipboard.</source>
@@ -1475,65 +1444,41 @@ Los ze alstublieft handmatig op in het configuratiebestand.</translation>
     <name>InfoWindow</name>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="14"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="117"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="117"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="117"/>
         <source>About</source>
         <translation>Over</translation>
     </message>
     <message>
         <location filename="../../src/widgets/infowindow.ui" line="26"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="118"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="118"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="118"/>
         <source>Icon</source>
         <translation>Ikoontje</translation>
     </message>
     <message>
-        <location filename="../../src/widgets/infowindow.ui" line="43"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="119"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="119"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="119"/>
+        <location filename="../../src/widgets/infowindow.ui" line="42"/>
         <source>License</source>
         <translation>Licentie</translation>
     </message>
     <message>
-        <location filename="../../src/widgets/infowindow.ui" line="56"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="120"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="120"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="120"/>
+        <location filename="../../src/widgets/infowindow.ui" line="55"/>
         <source>GPLv3+</source>
         <translation>GPLv3+</translation>
     </message>
     <message>
-        <location filename="../../src/widgets/infowindow.ui" line="89"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="121"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="121"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="121"/>
+        <location filename="../../src/widgets/infowindow.ui" line="87"/>
         <source>Version</source>
         <translation>Versie</translation>
     </message>
     <message>
-        <location filename="../../src/widgets/infowindow.ui" line="102"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="122"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="122"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="122"/>
+        <location filename="../../src/widgets/infowindow.ui" line="100"/>
         <source>ScreenLoad v</source>
         <translation>ScreenLoad versie</translation>
     </message>
     <message>
-        <location filename="../../src/widgets/infowindow.ui" line="115"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="123"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="123"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="123"/>
+        <location filename="../../src/widgets/infowindow.ui" line="113"/>
         <source>OS Info</source>
         <translation>Besturingssysteem info</translation>
     </message>
     <message>
-        <location filename="../../src/widgets/infowindow.ui" line="128"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_infowindow.h" line="124"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_infowindow.h" line="124"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_infowindow.h" line="124"/>
+        <location filename="../../src/widgets/infowindow.ui" line="126"/>
         <source>Copy Info</source>
         <translation>Kopieer Info</translation>
     </message>
@@ -1687,19 +1632,24 @@ Los ze alstublieft handmatig op in het configuratiebestand.</translation>
 <context>
     <name>PinWidget</name>
     <message>
-        <location filename="../../src/tools/pin/pinwidget.cpp" line="225"/>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="229"/>
         <source>Context menu</source>
         <translation>Context menu</translation>
     </message>
     <message>
-        <location filename="../../src/tools/pin/pinwidget.cpp" line="227"/>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="231"/>
         <source>Copy to clipboard</source>
         <translation type="unfinished">Kopiëren naar klembord</translation>
     </message>
     <message>
-        <location filename="../../src/tools/pin/pinwidget.cpp" line="234"/>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="238"/>
         <source>Save to file</source>
         <translation>Save to file</translation>
+    </message>
+    <message>
+        <location filename="../../src/tools/pin/pinwidget.cpp" line="243"/>
+        <source>Close</source>
+        <translation type="unfinished">Sluiten</translation>
     </message>
 </context>
 <context>
@@ -1785,42 +1735,42 @@ Los ze alstublieft handmatig op in het configuratiebestand.</translation>
         <translation type="vanished">De schermfoto is opgeslagen en gekopieerd naar het klembord als </translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="136"/>
+        <location filename="../../src/main.cpp" line="148"/>
         <source>Unable to connect via DBus</source>
         <translation>Kan niet verbinden via DBus</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="152"/>
+        <location filename="../../src/main.cpp" line="164"/>
         <source>Powerful yet simple to use screenshot software.</source>
         <translation>Eenvoudig doch krachtig schermfotoprogramma.</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="153"/>
+        <location filename="../../src/main.cpp" line="165"/>
         <source>See</source>
         <translation>Bekijken</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="156"/>
+        <location filename="../../src/main.cpp" line="168"/>
         <source>Capture the entire desktop.</source>
         <translation>Leg de volledige werkomgeving vast.</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="158"/>
+        <location filename="../../src/main.cpp" line="170"/>
         <source>Open the capture launcher.</source>
         <translation>Open de schermfotostarter.</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="161"/>
+        <location filename="../../src/main.cpp" line="173"/>
         <source>Start a manual capture in GUI mode.</source>
         <translation>Start een handmatige vastlegging in programmamodus.</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="163"/>
+        <location filename="../../src/main.cpp" line="175"/>
         <source>Configure</source>
         <translation>Instellen</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="165"/>
+        <location filename="../../src/main.cpp" line="177"/>
         <source>Capture a single screen.</source>
         <translation>Leg een beeldscherm vast.</translation>
     </message>
@@ -1829,107 +1779,107 @@ Los ze alstublieft handmatig op in het configuratiebestand.</translation>
         <translation type="vanished">Het pad waar de schermfoto wordt opgeslagen</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="170"/>
+        <location filename="../../src/main.cpp" line="182"/>
         <source>Existing directory or new file to save to</source>
         <translation>Bestaande map of nieuw bestand om op te slaan</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="173"/>
+        <location filename="../../src/main.cpp" line="185"/>
         <source>Save the capture to the clipboard</source>
         <translation>Schermfoto opslaan op klembord</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="175"/>
+        <location filename="../../src/main.cpp" line="187"/>
         <source>Pin the capture to the screen</source>
         <translation>Zet de opname vast op het scherm</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="177"/>
+        <location filename="../../src/main.cpp" line="189"/>
         <source>Upload screenshot</source>
         <translation>Upload screenshot</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="179"/>
+        <location filename="../../src/main.cpp" line="191"/>
         <source>Delay time in milliseconds</source>
         <translation>Wachttijd (in milliseconden)</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="184"/>
+        <location filename="../../src/main.cpp" line="196"/>
         <source>Repeat screenshot with previously selected region</source>
         <translation>Repeat screenshot with previously selected region</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="187"/>
+        <location filename="../../src/main.cpp" line="199"/>
         <source>Screenshot region to select</source>
         <translation>Screenshot regio te selecteren</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="190"/>
+        <location filename="../../src/main.cpp" line="202"/>
         <source>Set the filename pattern</source>
         <translation>Bestandsnaampatroon instellen</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="194"/>
+        <location filename="../../src/main.cpp" line="206"/>
         <source>Accept capture as soon as a selection is made</source>
         <translation>Accepteer vastlegging zodra een selectie is gemaakt</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="196"/>
+        <location filename="../../src/main.cpp" line="208"/>
         <source>Enable or disable the trayicon</source>
         <translation>Systeemvakpictogram in- of uitschakelen</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="200"/>
+        <location filename="../../src/main.cpp" line="212"/>
         <source>Enable or disable run at startup</source>
         <translation>Automatisch opstarten in- of uitschakelen</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="203"/>
+        <location filename="../../src/main.cpp" line="215"/>
         <source>Check the configuration for errors</source>
         <translation>Controleer de configuratie op fouten</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="206"/>
+        <location filename="../../src/main.cpp" line="218"/>
         <source>Show the help message in the capture mode</source>
         <translation>Uitleg tonen in vastlegmodus</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="209"/>
+        <location filename="../../src/main.cpp" line="221"/>
         <source>Define the main UI color</source>
         <translation>Standaard vormgevingskleur instellen</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="213"/>
+        <location filename="../../src/main.cpp" line="225"/>
         <source>Define the contrast UI color</source>
         <translation>Standaard contrasterende vormgevingskleur instellen</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="216"/>
+        <location filename="../../src/main.cpp" line="228"/>
         <source>Print raw PNG capture</source>
         <translation>Onbewerkte PNG schermfoto tonen</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="219"/>
+        <location filename="../../src/main.cpp" line="231"/>
         <source>Print geometry of the selection in the format W H X Y. Does nothing if raw is specified</source>
         <translation>Print de geometrie van de selectie in het formaat W H X Y. Doet niets als raw is opgegeven</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="223"/>
+        <location filename="../../src/main.cpp" line="235"/>
         <source>Define the screen to capture (starting from 0)</source>
         <translation>Definieer het vast te leggen scherm (beginnend bij 0)</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="243"/>
+        <location filename="../../src/main.cpp" line="255"/>
         <source>Invalid delay, it must be a number greater than 0</source>
         <translation>Ongeldige vertraging, het moet een getal groter dan 0 zijn</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="246"/>
+        <location filename="../../src/main.cpp" line="258"/>
         <source>Invalid region, use &apos;WxH+X+Y&apos; or &apos;all&apos; or &apos;screen0/screen1/...&apos;.</source>
         <translation>Ongeldige regio, gebruik &apos;BxH+X+Y&apos; of &apos;alle&apos; of &apos;screen0/screen1/...&apos;.</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="259"/>
+        <location filename="../../src/main.cpp" line="271"/>
         <source>Invalid path, must be an existing directory or a new file in an existing directory</source>
         <translation>Ongeldig pad, moet een bestaande map zijn of een nieuw bestand in een bestaande map</translation>
     </message>
@@ -1938,17 +1888,17 @@ Los ze alstublieft handmatig op in het configuratiebestand.</translation>
         <translation type="vanished">Kies het vast te leggen scherm</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="224"/>
+        <location filename="../../src/main.cpp" line="236"/>
         <source>default: screen containing the cursor</source>
         <translation>standaard: het scherm met de cursor</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="225"/>
+        <location filename="../../src/main.cpp" line="237"/>
         <source>Screen number</source>
         <translation>Beeldschermnummer</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="234"/>
+        <location filename="../../src/main.cpp" line="246"/>
         <source>Invalid color, this flag supports the following formats:
 - #RGB (each of R, G, and B is a single hex digit)
 - #RRGGBB
@@ -1969,7 +1919,7 @@ Mogelijk moet je het &apos;#&apos;-teken insluiten. Voorbeeld: &apos;\#FFF&apos;
         <translation type="vanished">Ongeldige wachttijd: de wachttijd moet hoger dan 0 zijn</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="245"/>
+        <location filename="../../src/main.cpp" line="257"/>
         <source>Invalid screen number, it must be non negative</source>
         <translation>Ongeldig beeldschermnummer: het nummer mag geen negatief getal zijn</translation>
     </message>
@@ -1978,7 +1928,7 @@ Mogelijk moet je het &apos;#&apos;-teken insluiten. Voorbeeld: &apos;\#FFF&apos;
         <translation type="vanished">Ongeldig pad: het pad moet bestaan</translation>
     </message>
     <message>
-        <location filename="../../src/main.cpp" line="272"/>
+        <location filename="../../src/main.cpp" line="284"/>
         <source>Invalid value, it must be defined as &apos;true&apos; or &apos;false&apos;</source>
         <translation>Ongeldige waarde: deze moet worden opgegeven als &apos;true&apos; of &apos;false&apos;</translation>
     </message>
@@ -1993,12 +1943,12 @@ Mogelijk moet je het &apos;#&apos;-teken insluiten. Voorbeeld: &apos;\#FFF&apos;
         <translation>Kan niet wegschrijven naar</translation>
     </message>
     <message>
-        <location filename="../../src/core/screenload.cpp" line="148"/>
+        <location filename="../../src/core/screenload.cpp" line="155"/>
         <source>Requested screen exceeds screen count</source>
         <translation>Requested screen exceeds screen count</translation>
     </message>
     <message>
-        <location filename="../../src/core/screenload.cpp" line="378"/>
+        <location filename="../../src/core/screenload.cpp" line="385"/>
         <source>Full screen screenshot pinned to screen</source>
         <translation>Schermvullende schermafbeelding vastgepind op scherm</translation>
     </message>
@@ -2166,19 +2116,60 @@ Mogelijk moet je het &apos;#&apos;-teken insluiten. Voorbeeld: &apos;\#FFF&apos;
 <context>
     <name>ScreenGrabber</name>
     <message>
-        <location filename="../../src/utils/screengrabber.cpp" line="112"/>
+        <location filename="../../src/utils/screengrabber.cpp" line="134"/>
         <source>Unable to detect desktop environment (GNOME? KDE? Sway? ...)</source>
         <translation>Unable to detect desktop environment (GNOME? KDE? Sway? ...)</translation>
     </message>
     <message>
-        <location filename="../../src/utils/screengrabber.cpp" line="115"/>
+        <location filename="../../src/utils/screengrabber.cpp" line="137"/>
         <source>Hint: try setting the XDG_CURRENT_DESKTOP environment variable.</source>
         <translation>Hint: try setting the XDG_CURRENT_DESKTOP environment variable.</translation>
     </message>
     <message>
-        <location filename="../../src/utils/screengrabber.cpp" line="120"/>
+        <location filename="../../src/utils/screengrabber.cpp" line="142"/>
         <source>Unable to capture screen</source>
         <translation>Kan scherm niet vastleggen</translation>
+    </message>
+</context>
+<context>
+    <name>ScreenLoad</name>
+    <message>
+        <location filename="../../src/core/screenload.cpp" line="113"/>
+        <source>Error</source>
+        <translation>Error</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/screenload.cpp" line="113"/>
+        <source>Unable to close active modal widgets</source>
+        <translation type="unfinished">De actieve, modale widgets kunnen niet worden gesloten</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/screenload.cpp" line="409"/>
+        <source>URL copied to clipboard.</source>
+        <translation type="unfinished">URL gekopieerd naar klembord.</translation>
+    </message>
+</context>
+<context>
+    <name>ScreenLoadDaemon</name>
+    <message>
+        <location filename="../../src/core/screenloaddaemon.cpp" line="366"/>
+        <source>New version %1 is available</source>
+        <translation type="unfinished">Er is een nieuwe versie beschikbaar: %1</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/screenloaddaemon.cpp" line="376"/>
+        <source>You have the latest version</source>
+        <translation type="unfinished">Je beschikt over de nieuwste versie</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/screenloaddaemon.cpp" line="387"/>
+        <source>Failed to get information about the latest version.</source>
+        <translation type="unfinished">Er kan geen versie-informatie worden opgehaald.</translation>
+    </message>
+    <message>
+        <location filename="../../src/core/screenloaddaemon.cpp" line="408"/>
+        <source>Unable to connect via DBus</source>
+        <translation>Kan niet verbinden via DBus</translation>
     </message>
 </context>
 <context>
@@ -2680,9 +2671,6 @@ Mogelijk moet je het &apos;#&apos;-teken insluiten. Voorbeeld: &apos;\#FFF&apos;
     <name>UploadHistory</name>
     <message>
         <location filename="../../src/widgets/uploadhistory.ui" line="14"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_uploadhistory.h" line="67"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadhistory.h" line="67"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadhistory.h" line="67"/>
         <source>Upload History</source>
         <translation>Uploaden Geschiedenis</translation>
     </message>
@@ -2696,33 +2684,21 @@ Mogelijk moet je het &apos;#&apos;-teken insluiten. Voorbeeld: &apos;\#FFF&apos;
     <name>UploadLineItem</name>
     <message>
         <location filename="../../src/widgets/uploadlineitem.ui" line="20"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_uploadlineitem.h" line="113"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadlineitem.h" line="113"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadlineitem.h" line="113"/>
         <source>Form</source>
         <translation>Formulier</translation>
     </message>
     <message>
         <location filename="../../src/widgets/uploadlineitem.ui" line="49"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_uploadlineitem.h" line="114"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadlineitem.h" line="114"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadlineitem.h" line="114"/>
         <source>TextLabel</source>
         <translation>TekstLabel</translation>
     </message>
     <message>
         <location filename="../../src/widgets/uploadlineitem.ui" line="82"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_uploadlineitem.h" line="115"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadlineitem.h" line="115"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadlineitem.h" line="115"/>
         <source>Copy URL</source>
         <translation>Kopieer URL</translation>
     </message>
     <message>
         <location filename="../../src/widgets/uploadlineitem.ui" line="95"/>
-        <location filename="../../build/src/screenload_autogen/include/ui_uploadlineitem.h" line="116"/>
-        <location filename="../../cmake-build-debug/src/screenload_autogen/include/ui_uploadlineitem.h" line="116"/>
-        <location filename="../../cmake-build-relwithdebinfo/src/screenload_autogen/include/ui_uploadlineitem.h" line="116"/>
         <source>Open In Browser</source>
         <translation>Openen in browser</translation>
     </message>
@@ -2811,65 +2787,41 @@ Mogelijk moet je het &apos;#&apos;-teken insluiten. Voorbeeld: &apos;\#FFF&apos;
     <name>color_widgets::ColorPaletteWidget</name>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="59"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="209"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="209"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="209"/>
         <source>Open a new palette from file</source>
         <translation>Open een nieuw palet vanuit een bestand</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="71"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="212"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="212"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="212"/>
         <source>Create a new palette</source>
         <translation>Maak een nieuw palet</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="83"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="215"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="215"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="215"/>
         <source>Duplicate the current palette</source>
         <translation>Dupliceer het huidige palet</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="121"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="218"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="218"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="218"/>
         <source>Delete the current palette</source>
         <translation>Verwijder het huidige palet</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="133"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="221"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="221"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="221"/>
         <source>Revert changes to the current palette</source>
         <translation>Wijzigingen terugdraaien naar het huidige palet</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="145"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="224"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="224"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="224"/>
         <source>Save changes to the current palette</source>
         <translation>Wijzigingen opslaan in het huidige palet</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="170"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="227"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="227"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="227"/>
         <source>Add a color to the palette</source>
         <translation>Voeg een kleur toe aan het palet</translation>
     </message>
     <message>
         <location filename="../../external/Qt-Color-Widgets/src/QtColorWidgets/color_palette_widget.ui" line="182"/>
-        <location filename="../../build/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="230"/>
-        <location filename="../../cmake-build-debug/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="230"/>
-        <location filename="../../cmake-build-relwithdebinfo/external/Qt-Color-Widgets/QtColorWidgets_autogen/include/ui_color_palette_widget.h" line="230"/>
         <source>Remove the selected color from the palette</source>
         <translation>Verwijder de geselecteerde kleur uit het palet</translation>
     </message>

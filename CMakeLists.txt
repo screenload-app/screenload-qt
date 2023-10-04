@@ -59,7 +59,7 @@ set(RUN_IN_PLACE
 
 option(SCREENLOAD_DEBUG_CAPTURE "Enable mode to make debugging easier" OFF)
 option(USE_MONOCHROME_ICON "Build using monochrome icon as default" OFF)
-option(GENERATE_TS "Regenerate translation source files" OFF)
+option(GENERATE_TS "Regenerate translation source files" ON)
 option(USE_EXTERNAL_SINGLEAPPLICATION "Use external QtSingleApplication library" OFF)
 option(USE_LAUNCHER_ABSOLUTE_PATH "Use absolute path for the desktop launcher" ON)
 option(USE_WAYLAND_CLIPBOARD "USE KF Gui Wayland Clipboard" OFF)
@@ -157,7 +157,7 @@ if(WIN32)
     set(CPACK_RESOURCE_FILE_README "${CMAKE_SOURCE_DIR}/README.md")
 
     # The correct way would be to include both x32 and x64 into one installer and install the appropriate one. CMake
-    # does not support that, so there are two separate GUID's
+    # does not support that, so there are two separate GUIDs
     if(CMAKE_SIZEOF_VOID_P EQUAL 8)
       set(CPACK_WIX_UPGRADE_GUID "26D8062A-66D9-48D9-8924-42090FB9B3F9")
     else()

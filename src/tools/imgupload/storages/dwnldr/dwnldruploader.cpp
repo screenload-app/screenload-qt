@@ -122,7 +122,7 @@ void DwnldrUploader::handleReply(QNetworkReply* reply)
             }
             else
             {
-                setErrorText("Error during access key request!");
+                setErrorText(tr("Error during access key request!"));
                 emit uploadFailed();
             }
         }
@@ -172,7 +172,7 @@ void DwnldrUploader::handleReply(QNetworkReply* reply)
             }
             else
             {
-                setErrorText("An error occurred while uploading the file!");
+                setErrorText(tr("An error occurred while uploading the file!"));
                 emit uploadFailed();
             }
         }
